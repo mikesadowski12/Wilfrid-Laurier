@@ -1,0 +1,33 @@
+//
+//  Constants.swift
+//  sado2560_a5
+//
+//  Created by Mike Sadowski on 2021-03-21.
+//
+
+import UIKit
+
+// DEFENDER CONSTANTS
+let DFNDR_Y_PADDING = CGFloat(230.0);
+let DFNDR_SPEED = CGFloat(10.0);
+let DFNDR_PADDING = CGFloat(50.0);
+let BULLET_PADDING = CGFloat(50.0);
+
+// INVADER CONSTANTS
+let INVDR_X_PADDING = CGFloat(40.0);
+let INVDR_Y_PADDING = CGFloat(15.0);
+let INVDR_SPEED = CGFloat(3.0);
+let INVDR_SPEED_DOWN = CGFloat(30.0);
+let SHOOT_SPEED = 100;
+
+// CONTROLLER CONSTANTS
+let LEFT_RIGHT_BTN_OVERFLOW = CGFloat(20.0);
+let BTN_X_PADDING = CGFloat(115.0);
+let BTN_Y_PADDING = CGFloat(115.0);
+let NUM_BTNS = CGFloat(3.0);
+
+// MAIN MENU CONSTANTS
+let MAIN_MENU_OFFSET = CGFloat(70.0);
+
+// INSTRUCTION CONTANTS
+let INSTRUCTIONS_Y_PADDING = CGFloat(150.0);

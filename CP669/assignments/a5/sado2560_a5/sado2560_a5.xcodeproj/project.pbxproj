@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D788F651260158C100AD769C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788F650260158C100AD769C /* AppDelegate.swift */; };
+		D788F653260158C100AD769C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D788F652260158C100AD769C /* GameScene.sks */; };
+		D788F655260158C100AD769C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D788F654260158C100AD769C /* Actions.sks */; };
+		D788F657260158C100AD769C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788F656260158C100AD769C /* GameScene.swift */; };
+		D788F659260158C100AD769C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788F658260158C100AD769C /* GameViewController.swift */; };
+		D788F65C260158C100AD769C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D788F65A260158C100AD769C /* Main.storyboard */; };
+		D788F65E260158C200AD769C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D788F65D260158C200AD769C /* Assets.xcassets */; };
+		D788F669260158C200AD769C /* sado2560_a5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788F668260158C200AD769C /* sado2560_a5Tests.swift */; };
+		D788F674260158C200AD769C /* sado2560_a5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D788F673260158C200AD769C /* sado2560_a5UITests.swift */; };
+		D7A259A52602714F00B72697 /* InstructionScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A259A42602714F00B72697 /* InstructionScene.swift */; };
+		D7A259E426027FAF00B72697 /* spaceinvaders-background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7A259DC26027FAF00B72697 /* spaceinvaders-background.mp3 */; };
+		D7A259E526027FAF00B72697 /* artillery2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D7A259DD26027FAF00B72697 /* artillery2.m4a */; };
+		D7A259E626027FAF00B72697 /* crash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7A259DE26027FAF00B72697 /* crash.mp3 */; };
+		D7A259E726027FAF00B72697 /* invaderkilled.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7A259DF26027FAF00B72697 /* invaderkilled.wav */; };
+		D7A259E826027FAF00B72697 /* crash.caf in Resources */ = {isa = PBXBuildFile; fileRef = D7A259E026027FAF00B72697 /* crash.caf */; };
+		D7A259E926027FAF00B72697 /* fastinvader1.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7A259E126027FAF00B72697 /* fastinvader1.wav */; };
+		D7A259EA26027FAF00B72697 /* scream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7A259E226027FAF00B72697 /* scream.mp3 */; };
+		D7A259EB26027FAF00B72697 /* fastinvader3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7A259E326027FAF00B72697 /* fastinvader3.wav */; };
+		D7A259F02602801400B72697 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A259EF2602801400B72697 /* AudioPlayer.swift */; };
+		D7A259F52602890D00B72697 /* Level1Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A259F42602890D00B72697 /* Level1Scene.swift */; };
+		D7A25A072602DC5900B72697 /* DefenderUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A25A062602DC5900B72697 /* DefenderUtils.swift */; };
+		D7A25A0C2602DEB800B72697 /* ControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A25A0B2602DEB800B72697 /* ControllerUtils.swift */; };
+		D7C2F32F2603E0B500C7DCBC /* InvaderUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2F32E2603E0B500C7DCBC /* InvaderUtils.swift */; };
+		D7C2F3342603EA1900C7DCBC /* CollisionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2F3332603EA1900C7DCBC /* CollisionDetection.swift */; };
+		D7C2F3392606C48000C7DCBC /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2F3382606C48000C7DCBC /* GameOverScene.swift */; };
+		D7C2F33E2606CEAE00C7DCBC /* NextLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2F33D2606CEAE00C7DCBC /* NextLevelScene.swift */; };
+		D7C2F3432606D07300C7DCBC /* Level2Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2F3422606D07300C7DCBC /* Level2Scene.swift */; };
+		D7C2F3482606D0C800C7DCBC /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2F3472606D0C800C7DCBC /* Level.swift */; };
+		D7C2F34D2608050500C7DCBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2F34C2608050500C7DCBC /* Constants.swift */; };
+		D7C2F3522608127C00C7DCBC /* Level3Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2F3512608127C00C7DCBC /* Level3Scene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D788F665260158C200AD769C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D788F645260158C100AD769C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D788F64C260158C100AD769C;
+			remoteInfo = sado2560_a5;
+		};
+		D788F670260158C200AD769C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D788F645260158C100AD769C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D788F64C260158C100AD769C;
+			remoteInfo = sado2560_a5;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D788F64D260158C100AD769C /* sado2560_a5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sado2560_a5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D788F650260158C100AD769C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D788F652260158C100AD769C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D788F654260158C100AD769C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		D788F656260158C100AD769C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D788F658260158C100AD769C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D788F65B260158C100AD769C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D788F65D260158C200AD769C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D788F65F260158C200AD769C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D788F664260158C200AD769C /* sado2560_a5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sado2560_a5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D788F668260158C200AD769C /* sado2560_a5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sado2560_a5Tests.swift; sourceTree = "<group>"; };
+		D788F66A260158C200AD769C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D788F66F260158C200AD769C /* sado2560_a5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sado2560_a5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D788F673260158C200AD769C /* sado2560_a5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sado2560_a5UITests.swift; sourceTree = "<group>"; };
+		D788F675260158C200AD769C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A259A42602714F00B72697 /* InstructionScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionScene.swift; sourceTree = "<group>"; };
+		D7A259DC26027FAF00B72697 /* spaceinvaders-background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "spaceinvaders-background.mp3"; sourceTree = "<group>"; };
+		D7A259DD26027FAF00B72697 /* artillery2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = artillery2.m4a; sourceTree = "<group>"; };
+		D7A259DE26027FAF00B72697 /* crash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crash.mp3; sourceTree = "<group>"; };
+		D7A259DF26027FAF00B72697 /* invaderkilled.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = invaderkilled.wav; sourceTree = "<group>"; };
+		D7A259E026027FAF00B72697 /* crash.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = crash.caf; sourceTree = "<group>"; };
+		D7A259E126027FAF00B72697 /* fastinvader1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fastinvader1.wav; sourceTree = "<group>"; };
+		D7A259E226027FAF00B72697 /* scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scream.mp3; sourceTree = "<group>"; };
+		D7A259E326027FAF00B72697 /* fastinvader3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fastinvader3.wav; sourceTree = "<group>"; };
+		D7A259EF2602801400B72697 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		D7A259F42602890D00B72697 /* Level1Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1Scene.swift; sourceTree = "<group>"; };
+		D7A25A062602DC5900B72697 /* DefenderUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefenderUtils.swift; sourceTree = "<group>"; };
+		D7A25A0B2602DEB800B72697 /* ControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerUtils.swift; sourceTree = "<group>"; };
+		D7C2F32E2603E0B500C7DCBC /* InvaderUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvaderUtils.swift; sourceTree = "<group>"; };
+		D7C2F3332603EA1900C7DCBC /* CollisionDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionDetection.swift; sourceTree = "<group>"; };
+		D7C2F3382606C48000C7DCBC /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		D7C2F33D2606CEAE00C7DCBC /* NextLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLevelScene.swift; sourceTree = "<group>"; };
+		D7C2F3422606D07300C7DCBC /* Level2Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level2Scene.swift; sourceTree = "<group>"; };
+		D7C2F3472606D0C800C7DCBC /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		D7C2F34C2608050500C7DCBC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D7C2F3512608127C00C7DCBC /* Level3Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level3Scene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D788F64A260158C100AD769C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788F661260158C200AD769C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788F66C260158C200AD769C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D788F644260158C100AD769C = {
+			isa = PBXGroup;
+			children = (
+				D788F64F260158C100AD769C /* sado2560_a5 */,
+				D788F667260158C200AD769C /* sado2560_a5Tests */,
+				D788F672260158C200AD769C /* sado2560_a5UITests */,
+				D788F64E260158C100AD769C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D788F64E260158C100AD769C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D788F64D260158C100AD769C /* sado2560_a5.app */,
+				D788F664260158C200AD769C /* sado2560_a5Tests.xctest */,
+				D788F66F260158C200AD769C /* sado2560_a5UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D788F64F260158C100AD769C /* sado2560_a5 */ = {
+			isa = PBXGroup;
+			children = (
+				D7A259A42602714F00B72697 /* InstructionScene.swift */,
+				D788F650260158C100AD769C /* AppDelegate.swift */,
+				D788F652260158C100AD769C /* GameScene.sks */,
+				D788F654260158C100AD769C /* Actions.sks */,
+				D788F656260158C100AD769C /* GameScene.swift */,
+				D7C2F3332603EA1900C7DCBC /* CollisionDetection.swift */,
+				D7A259F42602890D00B72697 /* Level1Scene.swift */,
+				D7C2F3472606D0C800C7DCBC /* Level.swift */,
+				D7C2F3512608127C00C7DCBC /* Level3Scene.swift */,
+				D7C2F34C2608050500C7DCBC /* Constants.swift */,
+				D7C2F3422606D07300C7DCBC /* Level2Scene.swift */,
+				D7C2F3382606C48000C7DCBC /* GameOverScene.swift */,
+				D7C2F32E2603E0B500C7DCBC /* InvaderUtils.swift */,
+				D7C2F33D2606CEAE00C7DCBC /* NextLevelScene.swift */,
+				D7A25A062602DC5900B72697 /* DefenderUtils.swift */,
+				D7A25A0B2602DEB800B72697 /* ControllerUtils.swift */,
+				D7A259EF2602801400B72697 /* AudioPlayer.swift */,
+				D788F658260158C100AD769C /* GameViewController.swift */,
+				D788F65A260158C100AD769C /* Main.storyboard */,
+				D788F65D260158C200AD769C /* Assets.xcassets */,
+				D7A259DB26027FAF00B72697 /* Sounds */,
+				D788F65F260158C200AD769C /* Info.plist */,
+			);
+			path = sado2560_a5;
+			sourceTree = "<group>";
+		};
+		D788F667260158C200AD769C /* sado2560_a5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D788F668260158C200AD769C /* sado2560_a5Tests.swift */,
+				D788F66A260158C200AD769C /* Info.plist */,
+			);
+			path = sado2560_a5Tests;
+			sourceTree = "<group>";
+		};
+		D788F672260158C200AD769C /* sado2560_a5UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D788F673260158C200AD769C /* sado2560_a5UITests.swift */,
+				D788F675260158C200AD769C /* Info.plist */,
+			);
+			path = sado2560_a5UITests;
+			sourceTree = "<group>";
+		};
+		D7A259DB26027FAF00B72697 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D7A259DC26027FAF00B72697 /* spaceinvaders-background.mp3 */,
+				D7A259DD26027FAF00B72697 /* artillery2.m4a */,
+				D7A259DE26027FAF00B72697 /* crash.mp3 */,
+				D7A259DF26027FAF00B72697 /* invaderkilled.wav */,
+				D7A259E026027FAF00B72697 /* crash.caf */,
+				D7A259E126027FAF00B72697 /* fastinvader1.wav */,
+				D7A259E226027FAF00B72697 /* scream.mp3 */,
+				D7A259E326027FAF00B72697 /* fastinvader3.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D788F64C260158C100AD769C /* sado2560_a5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D788F678260158C200AD769C /* Build configuration list for PBXNativeTarget "sado2560_a5" */;
+			buildPhases = (
+				D788F649260158C100AD769C /* Sources */,
+				D788F64A260158C100AD769C /* Frameworks */,
+				D788F64B260158C100AD769C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sado2560_a5;
+			productName = sado2560_a5;
+			productReference = D788F64D260158C100AD769C /* sado2560_a5.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D788F663260158C200AD769C /* sado2560_a5Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D788F67B260158C200AD769C /* Build configuration list for PBXNativeTarget "sado2560_a5Tests" */;
+			buildPhases = (
+				D788F660260158C200AD769C /* Sources */,
+				D788F661260158C200AD769C /* Frameworks */,
+				D788F662260158C200AD769C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D788F666260158C200AD769C /* PBXTargetDependency */,
+			);
+			name = sado2560_a5Tests;
+			productName = sado2560_a5Tests;
+			productReference = D788F664260158C200AD769C /* sado2560_a5Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D788F66E260158C200AD769C /* sado2560_a5UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D788F67E260158C200AD769C /* Build configuration list for PBXNativeTarget "sado2560_a5UITests" */;
+			buildPhases = (
+				D788F66B260158C200AD769C /* Sources */,
+				D788F66C260158C200AD769C /* Frameworks */,
+				D788F66D260158C200AD769C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D788F671260158C200AD769C /* PBXTargetDependency */,
+			);
+			name = sado2560_a5UITests;
+			productName = sado2560_a5UITests;
+			productReference = D788F66F260158C200AD769C /* sado2560_a5UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D788F645260158C100AD769C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D788F64C260158C100AD769C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D788F663260158C200AD769C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D788F64C260158C100AD769C;
+					};
+					D788F66E260158C200AD769C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D788F64C260158C100AD769C;
+					};
+				};
+			};
+			buildConfigurationList = D788F648260158C100AD769C /* Build configuration list for PBXProject "sado2560_a5" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D788F644260158C100AD769C;
+			productRefGroup = D788F64E260158C100AD769C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D788F64C260158C100AD769C /* sado2560_a5 */,
+				D788F663260158C200AD769C /* sado2560_a5Tests */,
+				D788F66E260158C200AD769C /* sado2560_a5UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D788F64B260158C100AD769C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A259E826027FAF00B72697 /* crash.caf in Resources */,
+				D788F65C260158C100AD769C /* Main.storyboard in Resources */,
+				D7A259E926027FAF00B72697 /* fastinvader1.wav in Resources */,
+				D7A259E426027FAF00B72697 /* spaceinvaders-background.mp3 in Resources */,
+				D7A259E626027FAF00B72697 /* crash.mp3 in Resources */,
+				D7A259EA26027FAF00B72697 /* scream.mp3 in Resources */,
+				D7A259EB26027FAF00B72697 /* fastinvader3.wav in Resources */,
+				D7A259E726027FAF00B72697 /* invaderkilled.wav in Resources */,
+				D7A259E526027FAF00B72697 /* artillery2.m4a in Resources */,
+				D788F653260158C100AD769C /* GameScene.sks in Resources */,
+				D788F65E260158C200AD769C /* Assets.xcassets in Resources */,
+				D788F655260158C100AD769C /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788F662260158C200AD769C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788F66D260158C200AD769C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D788F649260158C100AD769C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788F657260158C100AD769C /* GameScene.swift in Sources */,
+				D7A259A52602714F00B72697 /* InstructionScene.swift in Sources */,
+				D7C2F3392606C48000C7DCBC /* GameOverScene.swift in Sources */,
+				D7C2F3342603EA1900C7DCBC /* CollisionDetection.swift in Sources */,
+				D7C2F33E2606CEAE00C7DCBC /* NextLevelScene.swift in Sources */,
+				D7C2F3522608127C00C7DCBC /* Level3Scene.swift in Sources */,
+				D7C2F34D2608050500C7DCBC /* Constants.swift in Sources */,
+				D7A259F02602801400B72697 /* AudioPlayer.swift in Sources */,
+				D7A259F52602890D00B72697 /* Level1Scene.swift in Sources */,
+				D7C2F3432606D07300C7DCBC /* Level2Scene.swift in Sources */,
+				D7C2F3482606D0C800C7DCBC /* Level.swift in Sources */,
+				D7A25A0C2602DEB800B72697 /* ControllerUtils.swift in Sources */,
+				D7C2F32F2603E0B500C7DCBC /* InvaderUtils.swift in Sources */,
+				D7A25A072602DC5900B72697 /* DefenderUtils.swift in Sources */,
+				D788F659260158C100AD769C /* GameViewController.swift in Sources */,
+				D788F651260158C100AD769C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788F660260158C200AD769C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788F669260158C200AD769C /* sado2560_a5Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D788F66B260158C200AD769C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D788F674260158C200AD769C /* sado2560_a5UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D788F666260158C200AD769C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D788F64C260158C100AD769C /* sado2560_a5 */;
+			targetProxy = D788F665260158C200AD769C /* PBXContainerItemProxy */;
+		};
+		D788F671260158C200AD769C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D788F64C260158C100AD769C /* sado2560_a5 */;
+			targetProxy = D788F670260158C200AD769C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D788F65A260158C100AD769C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D788F65B260158C100AD769C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D788F676260158C200AD769C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D788F677260158C200AD769C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D788F679260158C200AD769C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X56S9M4WXD;
+				INFOPLIST_FILE = sado2560_a5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.sado2560-a5";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D788F67A260158C200AD769C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X56S9M4WXD;
+				INFOPLIST_FILE = sado2560_a5/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.sado2560-a5";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D788F67C260158C200AD769C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X56S9M4WXD;
+				INFOPLIST_FILE = sado2560_a5Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.sado2560-a5Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sado2560_a5.app/sado2560_a5";
+			};
+			name = Debug;
+		};
+		D788F67D260158C200AD769C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X56S9M4WXD;
+				INFOPLIST_FILE = sado2560_a5Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.sado2560-a5Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sado2560_a5.app/sado2560_a5";
+			};
+			name = Release;
+		};
+		D788F67F260158C200AD769C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X56S9M4WXD;
+				INFOPLIST_FILE = sado2560_a5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.sado2560-a5UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sado2560_a5;
+			};
+			name = Debug;
+		};
+		D788F680260158C200AD769C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X56S9M4WXD;
+				INFOPLIST_FILE = sado2560_a5UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.sado2560-a5UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sado2560_a5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D788F648260158C100AD769C /* Build configuration list for PBXProject "sado2560_a5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788F676260158C200AD769C /* Debug */,
+				D788F677260158C200AD769C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D788F678260158C200AD769C /* Build configuration list for PBXNativeTarget "sado2560_a5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788F679260158C200AD769C /* Debug */,
+				D788F67A260158C200AD769C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D788F67B260158C200AD769C /* Build configuration list for PBXNativeTarget "sado2560_a5Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788F67C260158C200AD769C /* Debug */,
+				D788F67D260158C200AD769C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D788F67E260158C200AD769C /* Build configuration list for PBXNativeTarget "sado2560_a5UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D788F67F260158C200AD769C /* Debug */,
+				D788F680260158C200AD769C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D788F645260158C100AD769C /* Project object */;
+}
