@@ -49,5 +49,6 @@ def mergeSort(list):
 # Input: the input problem instance Pn for Merge sort is an unsorted array of n numbers.
 inputList = [104, 226, 3, 7, 69, 77, 144, 15, 29, 30, 31]
 
+print("Input:", inputList)
 mergeSort(inputList)
-print(inputList)
+print("Output:", inputList)
