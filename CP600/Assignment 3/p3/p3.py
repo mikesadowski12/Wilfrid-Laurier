@@ -30,7 +30,7 @@ def Build_Max_Heap(list, length):
 
 # =================================================================================================
 # Explanation:
-#   1. Loop until k numbers are inputted from the stream, store all temperatures in an array
+#   1. Loop until k numbers are inputted from the stream, store all temperatures in an array (size k)
 #   2. When k temperatures have been inputted, store the final temperature and transform input array
 #      into a max heap
 #   3. As more temperatures are inputted, compare the root (which will be the k-th smallest temperature seen so far)
