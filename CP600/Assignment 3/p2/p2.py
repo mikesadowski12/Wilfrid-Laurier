@@ -1,36 +1,44 @@
-def Partition(A, lo, hi): # Partition A[lo..hi] using A[hi] as pivot
-  x = A[hi] # x = A[hi] is the pivot element
-  i = (lo - 1) # A[lo .. i] is the ≤ x
+def swapNodes(list, pos1, pos2):
+  temp = list[pos1]
+  list[pos1] = list[pos2]
+  list[pos2] = temp
 
-  # A[i+1 .. j-1] are greater than x
-  for j in range(lo, hi):
-    if A[j] <= x: # compare current element A[j] with x
-      i = i + 1 # if A[j] ≤ x, then left array is increased
-      A[i], A[j] = A[j], A[i] # > x array is shifted one place and A[j] is added to ≤x array
+def Min_Heapify(list, n, i):
+  # The algorithm first finds the indices of the left child (l = 2*i) and the right child (r = 2*i+1)
+  leftChild = 2 * i + 1
+  rightChild = 2 * i + 2
+  smallestChild = i
 
-  # Exchange A[i+1] ← A[hi]
-  temp = A[i + 1]
-  A[i + 1] = A[hi]
-  A[hi] = temp
+  # Then it finds the index (smallest) of the maximum of 3 elements: A[i], A[Left[i]] and A[Right[i]]
+  if leftChild < n and list[leftChild] < list[smallestChild]:
+    smallestChild = leftChild
 
-  # return i + 1
-  return i + 1
+  if rightChild < n and list[rightChild] < list[smallestChild]:
+    smallestChild = rightChild
 
+  if smallestChild != i:
+    # otherwise, if the left child is larger we swap A[i] with A[l]
+    swapNodes(list, i, smallestChild)
+    Min_Heapify(list, n, smallestChild)
 
-def QuickSort(A, lo, hi):
-  if len(A) <= 1:
-    return A
+  # if A[i], i.e., parent, is the smallest, we are done
 
-  # if lo < hi: there are more than one elements
-  if lo < hi:
-    q = Partition(A, lo, hi) # Partition A into ≤x and >x sub-arrays
+def Build_Min_Heap(list, length):
+  # for i = ⌊n/2⌋  down to 1:
+  for i in range(int(length / 2) - 1, -1, -1): # range(start, stop, step)
+    Min_Heapify(list, length, i)
 
-    QuickSort(A, q + 1, hi) # Recurs on right array, i.e., > x array
-    QuickSort(A, lo, q - 1) # Recurs on left array, i.e. ≤ x array
+def HeapSort(list):
+  length = len(inputList)
+
+  Build_Min_Heap(list, length)
+
+  for i in range(length - 1, -1, -1): # range(start, stop, step)
+    swapNodes(list, 0, i) # Place the smallest element in the Heap to the end
+    Min_Heapify(list, i, 0) # Restore heap at A[1] of size n-1
 
 inputList = [104, 226, 3, 7, 69, 77, 144, 15, 29, 30, 31]
 
 print("Input:", inputList)
-QuickSort(inputList, 0, len(inputList) - 1)
+HeapSort(inputList)
 print("Output:", inputList)
-
