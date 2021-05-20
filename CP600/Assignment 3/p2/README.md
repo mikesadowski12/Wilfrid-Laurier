@@ -1,5 +1,5 @@
 # Assignment 3
-## Problem 2:
+## Problem 2: HeapSort with min heap
 * Run `python3 p2.py` inside this directory
 * sample input: `[104, 226, 3, 7, 69, 77, 144, 15, 29, 30, 31]`
 * sample output: `[226, 144, 104, 77, 69, 31, 30, 29, 15, 7, 3]`
