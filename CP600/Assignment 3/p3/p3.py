@@ -47,7 +47,7 @@ while 1:
   if (count < k - 1):
     list.append(temperature)
   else:
-    if count == k - 1: # found the k-th temperature, build a heap
+    if count == k - 1: # found the k-th temperature, build a max heap
       list.append(temperature)
       Build_Max_Heap(list, len(list))
     else:
