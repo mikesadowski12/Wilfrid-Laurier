@@ -3,23 +3,23 @@ def swapNodes(list, pos1, pos2):
   list[pos1] = list[pos2]
   list[pos2] = temp
 
-def Min_Heapify(list, n, i):
+def Min_Heapify(list, length, pos):
   # The algorithm first finds the indices of the left child (l = 2*i) and the right child (r = 2*i+1)
-  leftChild = 2 * i + 1
-  rightChild = 2 * i + 2
-  smallestChild = i
+  leftChild = 2 * pos + 1
+  rightChild = 2 * pos + 2
+  smallestChild = pos
 
   # Then it finds the index (smallest) of the maximum of 3 elements: A[i], A[Left[i]] and A[Right[i]]
-  if leftChild < n and list[leftChild] < list[smallestChild]:
+  if leftChild < length and list[leftChild] < list[smallestChild]:
     smallestChild = leftChild
 
-  if rightChild < n and list[rightChild] < list[smallestChild]:
+  if rightChild < length and list[rightChild] < list[smallestChild]:
     smallestChild = rightChild
 
-  if smallestChild != i:
+  if smallestChild != pos:
     # otherwise, if the left child is larger we swap A[i] with A[l]
-    swapNodes(list, i, smallestChild)
-    Min_Heapify(list, n, smallestChild)
+    swapNodes(list, pos, smallestChild)
+    Min_Heapify(list, length, smallestChild)
 
   # if A[i], i.e., parent, is the smallest, we are done
 
