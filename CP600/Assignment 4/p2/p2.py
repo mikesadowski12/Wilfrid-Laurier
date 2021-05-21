@@ -1,3 +1,4 @@
+# Taken from Assignment 3 Problem 1
 def swapNodes(list, pos1, pos2):
   temp = list[pos1]
   list[pos1] = list[pos2]
@@ -32,15 +33,26 @@ def QuickSort(A, lo, hi):
     QuickSort(A, q + 1, hi) # Recurs on right array, i.e., > x array
     QuickSort(A, lo, q - 1) # Recurs on left array, i.e. ≤ x array
 
-def InsertionSort():
-  print("InsertionSort")
+def InsertionSort(A):
+  n = len(A) # length of input array A
+
+  for j in range(1, n):
+    key = A[j]
+
+    i = j - 1
+
+    while i >= 0 and A[i] > key:
+      A[i + 1] = A[i]
+      i -= 1
+
+    A[i + 1] = key
 
 def QuickInsertionSort(A, n, k):
   if n > k:
     QuickSort(A, 0, len(A) - 1)
 
   if n <= k:
-    InsertionSort(A, 0, len(A) - 1)
+    InsertionSort(A)
 
 inputList = [104, 226, 3, 7, 69, 77, 144, 15, 29, 30, 31]
 
