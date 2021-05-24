@@ -1,4 +1,4 @@
-# Assignment 3
+# Assignment 4
 ## Problem 3: RadixSort
 * Run `python3 p3.py` inside this directory
 * sample input: ``

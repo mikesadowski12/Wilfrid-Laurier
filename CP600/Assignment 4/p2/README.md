@@ -1,4 +1,4 @@
-# Assignment 3
+# Assignment 4
 ## Problem 2: QuickInsertionSort/QuickSort
 * Run `python3 p2.py` inside this directory
 * sample input: `[104, 226, 3, 7, 69, 77, 144, 15, 29, 30, 31]`
