@@ -1,7 +1,7 @@
 # Assignment 5
 ## Problem 1: BST_Ceiling
 * Run `python3 p1.py` inside this directory
-* sample input: `Tree: [11, 3, 15, 1, 9, 12, 14`
+* sample input: `Tree: [11, 3, 15, 1, 9, 12, 14]`
 * sample output: `0 - 1,
 1 - 1,
 2 - 3,
