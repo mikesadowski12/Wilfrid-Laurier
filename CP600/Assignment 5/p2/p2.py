@@ -38,8 +38,6 @@ def getHeight(root):
 
   return max(heightLeft, heightRight) + 1
 
-
-
 def isBalanced(root):
   if root is None:
     return True
