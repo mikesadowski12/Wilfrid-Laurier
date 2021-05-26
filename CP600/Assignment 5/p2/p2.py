@@ -30,13 +30,15 @@ def buildNotBalancedTestTree():
   return root
 
 def getHeight(root):
-  if root:
-    heightLeft = getHeight(root.left)
-    heightRight = getHeight(root.right)
+  if root is None:
+    return 0
 
-    return max(heightLeft, heightRight) + 1
+  heightLeft = getHeight(root.left)
+  heightRight = getHeight(root.right)
 
-  return 0
+  return max(heightLeft, heightRight) + 1
+
+
 
 def isBalanced(root):
   if root is None:
