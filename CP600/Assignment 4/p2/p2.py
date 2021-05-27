@@ -87,6 +87,7 @@ testCase3 = []
 print("testCase3 Input:", testCase3)
 QuickInsertionSort(testCase3, len(testCase3), 0)
 print("testCase3 Output:", testCase3)
+print("----------------------------------------")
 testCase4 = [1, 2, 3]
 print("testCase4 Input:", testCase4)
 QuickInsertionSort(testCase4, len(testCase4), 3)
