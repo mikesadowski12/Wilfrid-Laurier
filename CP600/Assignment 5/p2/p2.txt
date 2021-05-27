@@ -16,4 +16,9 @@ of heights between the left/right subtrees is <= 1.
 
 As you can see I process the tree once technically, but realistically I am processing the nodes multiple
 times each (to check height of total tree, then to check if left sub tree is balanced I check if the height of
-left sub tree vs the height of right sub tree is <= 1, etc)
+left sub tree vs the height of right sub tree is <= 1, etc). My solution is n^2 as I am processing each
+node in the tree, then for each node I am also processing its subtree.
+
+I think it is possible to solve this in linear time (O(n), and processing the tree once). If you start
+your processing at the bottom of the tree and return a node's subtree height with respect to its parent
+node. This will visit all nodes only once and traverse the tree one time.
