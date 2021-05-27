@@ -23,6 +23,9 @@ def CountingSort(A, B, k, p):
     A[i] = B[i]
 
 def RadixSort(A, B):
+  if len(A) == 0:
+    return A
+
   k = max(A)
 
   p = 1
@@ -30,9 +33,33 @@ def RadixSort(A, B):
     CountingSort(A, B, 10, p) # Sort A on position p using a sable sorting algorithm
     p = p * 10
 
-inputList = [ 418, 336, 457, 419, 386, 312, 310, 452 ]
-outputList = [0] * (len(inputList))
-
-print("Input:", inputList)
-RadixSort(inputList, outputList)
-print("Output:", outputList)
+testCase1 = [ 418, 336, 457, 419, 386, 312, 310, 452 ]
+outputList = [0] * (len(testCase1))
+print("testCase1 Input:", testCase1)
+RadixSort(testCase1, outputList)
+print("testCase1 Output:", outputList)
+print("----------------------------------------")
+testCase2 = []
+outputList = [0] * (len(testCase2))
+print("testCase2 Input:", testCase2)
+RadixSort(testCase2, outputList)
+print("testCase2 Output:", outputList)
+print("----------------------------------------")
+testCase3 = [1]
+outputList = [0] * (len(testCase3))
+print("testCase3 Input:", testCase3)
+RadixSort(testCase3, outputList)
+print("testCase3 Output:", outputList)
+print("----------------------------------------")
+testCase4 = [1, 1, 1, 1]
+outputList = [0] * (len(testCase4))
+print("testCase4 Input:", testCase4)
+RadixSort(testCase4, outputList)
+print("testCase4 Output:", outputList)
+print("----------------------------------------")
+testCase5 = [133, 12, 1444, 1]
+outputList = [0] * (len(testCase5))
+print("testCase5 Input:", testCase5)
+RadixSort(testCase5, outputList)
+print("testCase5 Output:", outputList)
+print("----------------------------------------")
