@@ -1,5 +1,16 @@
+import random
+import sys
+
+# sys.setrecursionlimit(10**6)
+
+# recursionCounter = 0
+# swapCounter = 0
+
 # Taken from Assignment 3 Problem 1
 def swapNodes(list, pos1, pos2):
+  # global swapCounter
+  # swapCounter += 1
+
   temp = list[pos1]
   list[pos1] = list[pos2]
   list[pos2] = temp
@@ -23,6 +34,9 @@ def Partition(A, lo, hi): # Partition A[lo..hi] using A[hi] as pivot
 
 # Taken from Assignment 3 Problem 1
 def QuickSort(A, lo, hi):
+  # global recursionCounter
+  # recursionCounter += 1
+
   if len(A) <= 1:
     return A
 
@@ -51,11 +65,34 @@ def QuickInsertionSort(A, n, k):
   if n > k:
     QuickSort(A, 0, len(A) - 1)
 
-  if n <= k:
-    InsertionSort(A)
+  InsertionSort(A)
 
-inputList = [104, 226, 3, 7, 69, 77, 144, 15, 29, 30, 31]
+# k = 10
+# inputList = [random.randint(1, k) for _ in range(10000)]
+# QuickInsertionSort(inputList, len(inputList), k)
+# print("Recursion count is ", recursionCounter)
+# print("Swap count is ", swapCounter)
 
-print("Input:", inputList)
-QuickInsertionSort(inputList, len(inputList) - 1, 100)
-print("Output:", inputList)
+testCase1 = [104, 226, 3, 7, 69, 77, 144, 15, 29, 30, 31]
+print("testCase1 Input:", testCase1)
+QuickInsertionSort(testCase1, len(testCase1), 144)
+print("testCase1 Output:", testCase1)
+print("----------------------------------------")
+testCase2 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+print("testCase2 Input:", testCase2)
+QuickInsertionSort(testCase2, len(testCase2), 1)
+print("testCase2 Output:", testCase2)
+print("----------------------------------------")
+testCase3 = []
+print("testCase3 Input:", testCase3)
+QuickInsertionSort(testCase3, len(testCase3), 0)
+print("testCase3 Output:", testCase3)
+testCase4 = [1, 2, 3]
+print("testCase4 Input:", testCase4)
+QuickInsertionSort(testCase4, len(testCase4), 3)
+print("testCase4 Output:", testCase4)
+print("----------------------------------------")
+testCase5 = [1]
+print("testCase5 Input:", testCase5)
+QuickInsertionSort(testCase5, len(testCase5), 1)
+print("testCase5 Output:", testCase5)
