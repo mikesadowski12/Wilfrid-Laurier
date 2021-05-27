@@ -21,4 +21,5 @@ node in the tree, then for each node I am also processing its subtree.
 
 I think it is possible to solve this in linear time (O(n), and processing the tree once). If you start
 your processing at the bottom of the tree and return a node's subtree height with respect to its parent
-node. This will visit all nodes only once and traverse the tree one time.
+node. This will visit all nodes only once and traverse the tree one time. This would be a postorder
+traversal of the tree.
