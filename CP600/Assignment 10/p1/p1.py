@@ -20,4 +20,8 @@ def longestPalindrome(s):
 
   return matrix[0][n - 1]
 
+print("longest palindrome in \'\':", longestPalindrome(""))
+print("longest palindrome in \'bab\':", longestPalindrome("bab"))
 print("longest palindrome in \'character\':", longestPalindrome("character"))
+print("longest palindrome in \'baroihgfsdjnb\':", longestPalindrome("baroihgfsdjnb"))
+print("longest palindrome in \'abcdefg\':", longestPalindrome("abcdefg"))
