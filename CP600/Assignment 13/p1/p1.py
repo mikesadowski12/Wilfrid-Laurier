@@ -49,46 +49,48 @@
 
 # Backtrack(board, 0, 0)
 
-# Function to check if two queens threaten each other or not
+count = 0
+
+def IsSolution(A, k, S):
+  return k == len(A)	# each queen is placed without conflict and we do not use array index 0
+
 def ConstructCandidates(mat, r, c):
+  # return false if two queens share the same column
+  for i in range(r):
+    if mat[i][c] == 1:
+      return False
 
-    # return false if two queens share the same column
-    for i in range(r):
-        if mat[i][c] == 'Q':
-            return False
+  # return false if two queens share the same `` diagonal
+  (i, j) = (r, c)
+  while i >= 0 and j >= 0:
+    if mat[i][j] == 1:
+      return False
+    i = i - 1
+    j = j - 1
 
-    # return false if two queens share the same `` diagonal
-    (i, j) = (r, c)
-    while i >= 0 and j >= 0:
-        if mat[i][j] == 'Q':
-            return False
-        i = i - 1
-        j = j - 1
+  # return false if two queens share the same `/` diagonal
+  (i, j) = (r, c)
+  while i >= 0 and j < N:
+    if mat[i][j] == 1:
+      return False
+    i = i - 1
+    j = j + 1
 
-    # return false if two queens share the same `/` diagonal
-    (i, j) = (r, c)
-    while i >= 0 and j < N:
-        if mat[i][j] == 'Q':
-            return False
-        i = i - 1
-        j = j + 1
+  return True
 
-    return True
+def Process(A, k, S):
+  global count
+  count += 1	# Count the number of solution in a global variable count. used by IsFinished callback
 
+def IsFinished():
+  return count > 0		# Assuming we want to find any one solution
 
-def printSolution(mat):
-    for i in range(N):
-        print(mat[i])
-    print()
+def Backtrack(A, k, S):
+  if IsSolution(A, k, S):
+    Process(A, k, S)
+    return
 
-counter = 0
-def Backtrack(A, k):
-    if k == N:
-        printSolution(A)
-        global counter
-        counter += 1
-        return
-
+  else:
     # place queen at every square in the current row `r`
     # and recur for each valid movement
     for i in range(N):
@@ -96,23 +98,17 @@ def Backtrack(A, k):
         # if no two queens threaten each other
         if ConstructCandidates(A, k, i):
             # place queen on the current square
-            A[k][i] = 'Q'
+            A[k][i] = 1
 
             # recur for the next row
-            Backtrack(A, k + 1)
+            Backtrack(A, k + 1, S)
 
             # backtrack and remove the queen from the current square
-            A[k][i] = '–'
+            A[k][i] = 0
 
 
-if __name__ == '__main__':
+N = 8
 
-    # `N × N` chessboard
-    N = 8
-
-    # `mat[][]` keeps track of the position of queens in
-    # the current configuration
-    mat = [['–' for x in range(N)] for y in range(N)]
-
-    Backtrack(mat, 0)
-    print(counter)
+board = [[0] * N for _ in range(N)]
+Backtrack(board, 0, 0)
+print(count)
