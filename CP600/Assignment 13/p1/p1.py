@@ -1,36 +1,3 @@
-# def ConstructCandidates(A, k, S):
-#   result = [] # empty array, will contain the column indexes where the k-th queen has no threat
-
-#   for i in range(0, len(A)): # try each column i in row k
-#     hasThreat = False
-
-#     for j in range(0, k - 1): # check all the previously placed queen in rows 1 to k-1
-#       if i == A[i] or abs(k - j) == abs(i - A[j]): 	# if queen ir row j has same column as i or, queens are in the same diagonal means delta row (i.e., abs(k-j)) == delta column (i.e., abs(i-A[j])
-#         hasThreat = True # queen [k, i] and [j, A[j]] are in same column or diagonal
-
-#     if not hasThreat:
-#       result.append(i)
-
-#   return result
-
-
-# def Backtrack(A, k, S):
-#   if IsSolution(A, k, S):
-#     Process(A, k, S)
-
-#   else:
-#     L = ConstructCandidates(A, k, S)
-
-#     for c in L:
-#       A[k + 1] = c
-#       Backtrack(A, k + 1, S)
-
-#     if IsFinished():
-#       return
-
-# print ("Enter the number of queens")
-# N = int(input())
-
 QUEEN = 1
 EMPTY = 0
 
@@ -44,27 +11,30 @@ def IsSolution(A, k, S):
 def ConstructCandidates(A, k, S):
   for i in range(k): # try each column i in row k
     if A[i][S] == QUEEN:
-      return False
+      return False # can't place queen as it is attacked vertically
 
-  # return false if two queens share the same `` diagonal
+
+  # check all the previously placed queen in rows 1 to k-1
+
   i = k
   j = S
   while i >= 0 and j >= 0:
     if A[i][j] == QUEEN:
-      return False
+      return False # can't place queen as it is attacked diagonally
+
     i = i - 1
     j = j - 1
 
-  # return false if two queens share the same `/` diagonal
   i = k
   j = S
   while i >= 0 and j < numberOfQueens:
     if A[i][j] == QUEEN:
-      return False
+      return False # can't place queen as it is attacked diagonally
+
     i = i - 1
     j = j + 1
 
-  return True
+  return True # can place queen in the current position as it is not attack by any of queen
 
 def Process(A, k, S):
   global count
@@ -81,7 +51,9 @@ def Backtrack(A, k, S):
 
   else:
     for i in range(numberOfQueens):
-      if ConstructCandidates(A, k, i):
+      L = ConstructCandidates(A, k, i)
+
+      if L:
         A[k][i] = QUEEN # place queen
         Backtrack(A, k + 1, S) # try queen for the next row
         A[k][i] = EMPTY # backtrack and remove the queen
