@@ -3,7 +3,7 @@ EMPTY = 0
 
 count = 0
 numberOfQueens = 8
-board = [[0] * numberOfQueens for _ in range(numberOfQueens)]
+board = [[EMPTY] * numberOfQueens for _ in range(numberOfQueens)]
 
 def IsSolution(A, k, S):
   return k == len(A)	# each queen is placed without conflict and we do not use array index 0
