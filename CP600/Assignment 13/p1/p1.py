@@ -83,7 +83,8 @@ def Process(A, k, S):
   count += 1	# Count the number of solution in a global variable count. used by IsFinished callback
 
 def IsFinished():
-  return count > 0		# Assuming we want to find any one solution
+  # return count > 0		# Assuming we want to find any one solution
+  return False
 
 def Backtrack(A, k, S):
   if IsSolution(A, k, S):
@@ -91,21 +92,14 @@ def Backtrack(A, k, S):
     return
 
   else:
-    # place queen at every square in the current row `r`
-    # and recur for each valid movement
     for i in range(N):
+      if ConstructCandidates(A, k, i):
+        A[k][i] = 1 # place queen
+        Backtrack(A, k + 1, S) # try the queen for the next row
+        A[k][i] = 0 # backtrack and remove the queen
 
-        # if no two queens threaten each other
-        if ConstructCandidates(A, k, i):
-            # place queen on the current square
-            A[k][i] = 1
-
-            # recur for the next row
-            Backtrack(A, k + 1, S)
-
-            # backtrack and remove the queen from the current square
-            A[k][i] = 0
-
+      if IsFinished():
+        return
 
 N = 8
 
