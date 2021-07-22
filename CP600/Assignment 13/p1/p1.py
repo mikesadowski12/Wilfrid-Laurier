@@ -85,6 +85,6 @@ numberOfQueens = 12
 board = [[EMPTY] * numberOfQueens for _ in range(numberOfQueens)]
 
 Backtrack(board, 0, 0)
-print("10-Queens Solutions:", count)
-print("10-Queens Recursive Calls:", recursiveCalls)
+print("12-Queens Solutions:", count)
+print("12-Queens Recursive Calls:", recursiveCalls)
 print("===========")
