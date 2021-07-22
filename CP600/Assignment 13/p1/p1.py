@@ -2,6 +2,7 @@ QUEEN = 1
 EMPTY = 0
 
 count = 0
+recursiveCalls = 0
 numberOfQueens = 8
 board = [[EMPTY] * numberOfQueens for _ in range(numberOfQueens)]
 
@@ -12,7 +13,6 @@ def ConstructCandidates(A, k, S):
   for i in range(k): # try each column i in row k
     if A[i][S] == QUEEN:
       return False # can't place queen as it is attacked vertically
-
 
   # check all the previously placed queen in rows 1 to k-1
 
@@ -45,6 +45,9 @@ def IsFinished():
   return False
 
 def Backtrack(A, k, S):
+  global recursiveCalls
+  recursiveCalls += 1
+
   if IsSolution(A, k, S):
     Process(A, k, S)
     return
@@ -62,4 +65,26 @@ def Backtrack(A, k, S):
         return
 
 Backtrack(board, 0, 0)
-print("Solutions:", count)
+print("8-Queens Solutions:", count)
+print("8-Queens Recursive Calls:", recursiveCalls)
+print("===========")
+
+count = 0
+recursiveCalls = 0
+numberOfQueens = 10
+board = [[EMPTY] * numberOfQueens for _ in range(numberOfQueens)]
+
+Backtrack(board, 0, 0)
+print("10-Queens Solutions:", count)
+print("10-Queens Recursive Calls:", recursiveCalls)
+print("===========")
+
+count = 0
+recursiveCalls = 0
+numberOfQueens = 12
+board = [[EMPTY] * numberOfQueens for _ in range(numberOfQueens)]
+
+Backtrack(board, 0, 0)
+print("10-Queens Solutions:", count)
+print("10-Queens Recursive Calls:", recursiveCalls)
+print("===========")
