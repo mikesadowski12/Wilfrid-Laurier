@@ -1,8 +1,3 @@
-# count = 0
-
-# def IsSolution(A, k, S):
-#   return k > len(A)	# each queen is placed without conflict and we do not use array index 0
-
 # def ConstructCandidates(A, k, S):
 #   result = [] # empty array, will contain the column indexes where the k-th queen has no threat
 
@@ -18,13 +13,6 @@
 
 #   return result
 
-# def Process(A, k, S):
-#   global count
-#   count += 1	# Count the number of solution in a global variable count. used by IsFinished callback
-#   print(A)
-
-# def IsFinished():
-#   return count > 0		# Assuming we want to find any one solution
 
 # def Backtrack(A, k, S):
 #   if IsSolution(A, k, S):
@@ -43,13 +31,9 @@
 # print ("Enter the number of queens")
 # N = int(input())
 
-# #chessboard
-# #NxN matrix with all elements 0
-# board = [[0] * N for _ in range(N)]
-
-# Backtrack(board, 0, 0)
-
 count = 0
+numberOfQueens = 8
+board = [[0] * numberOfQueens for _ in range(numberOfQueens)]
 
 def IsSolution(A, k, S):
   return k == len(A)	# each queen is placed without conflict and we do not use array index 0
@@ -70,7 +54,7 @@ def ConstructCandidates(mat, r, c):
 
   # return false if two queens share the same `/` diagonal
   (i, j) = (r, c)
-  while i >= 0 and j < N:
+  while i >= 0 and j < numberOfQueens:
     if mat[i][j] == 1:
       return False
     i = i - 1
@@ -92,7 +76,7 @@ def Backtrack(A, k, S):
     return
 
   else:
-    for i in range(N):
+    for i in range(numberOfQueens):
       if ConstructCandidates(A, k, i):
         A[k][i] = 1 # place queen
         Backtrack(A, k + 1, S) # try the queen for the next row
@@ -101,8 +85,5 @@ def Backtrack(A, k, S):
       if IsFinished():
         return
 
-N = 8
-
-board = [[0] * N for _ in range(N)]
 Backtrack(board, 0, 0)
-print(count)
+print("Solutions:", count)
