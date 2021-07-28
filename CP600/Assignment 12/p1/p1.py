@@ -1,6 +1,6 @@
 INT_MAX = 2147483647
 matrix = [
-  [0,120,11,12,13,14],
+  [0,10,11,12,13,14],
   [10,0,15,16,17,18],
   [11,15,0,19,20,21],
   [12,16,19,0,22,23],
@@ -61,10 +61,19 @@ def PreorderTraversal(node):
     PreorderTraversal(tree[node][i])
 
 def ApproxTSPTour():
+  global cost
+
   initialise()
   MST_Prim()
   PreorderTraversal(rootNode)
   path.append(rootNode) # go back to the first city, can do this since we are assuming a complete graph as per the spec
 
+  # calculate the total cost of the trip
+  for i in range(0, len(path) - 1):
+    src = path[i]
+    dest = path[i + 1]
+    cost += matrix[src][dest]
+
 ApproxTSPTour()
 print(path)
+print(cost)
