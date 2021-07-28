@@ -18,7 +18,7 @@ tree = [None] * NUM_NODES
 path = []
 cost = 0
 
-def initialise():
+def initialize():
   for i in range(0, NUM_NODES):
     nodes[i] = i
     tree[i] = []
@@ -63,7 +63,7 @@ def PreorderTraversal(node):
 def ApproxTSPTour():
   global cost
 
-  initialise()
+  initialize()
   MST_Prim()
   PreorderTraversal(rootNode)
   path.append(rootNode) # go back to the first city, can do this since we are assuming a complete graph as per the spec
