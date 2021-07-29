@@ -92,7 +92,7 @@ def TSPTour():
   for i in range(1, NUM_NODES): # we start at node 0 so don't include it
     nodes.append(i)
 
-  unvisited = permutations(nodes) # get all combinations of points
+  unvisited = permutations(nodes) # get all combinations of points (assuming a complete graph as per the spec)
 
   # all paths that are possible and choose the shortest (naive/brute force)
   for i in unvisited:
