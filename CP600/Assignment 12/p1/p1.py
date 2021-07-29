@@ -92,7 +92,8 @@ def TSPTour(matrix):
 
   print("Cost: ", cost)
 
-matrix = [
+print("======================")
+testCase1 = [
   [0,10,11,12,13,14],
   [10,0,15,16,17,18],
   [11,15,0,19,20,21],
@@ -100,6 +101,59 @@ matrix = [
   [13,17,20,22,0,24],
   [14,18,21,23,24,0],
 ]
+print("Test Case #1")
+ApproxTSPTour(testCase1)
+TSPTour(testCase1)
+print("======================")
 
-ApproxTSPTour(matrix)
-TSPTour(matrix)
+testCase2 = [
+  [0,10,11,12,13,14],
+  [10,0,15,16,17,18],
+  [11,15,0,19,20,21],
+  [12,16,19,0,22,23],
+  [13,17,20,22,0,24],
+  [14,18,21,23,24,0],
+]
+print("Test Case #2")
+ApproxTSPTour(testCase2)
+TSPTour(testCase2)
+print("======================")
+
+testCase3 = [
+  [0,10,11,12,13,14],
+  [10,0,15,16,17,18],
+  [11,15,0,19,20,21],
+  [12,16,19,0,22,23],
+  [13,17,20,22,0,24],
+  [14,18,21,23,24,0],
+]
+print("Test Case #3")
+ApproxTSPTour(testCase3)
+TSPTour(testCase3)
+print("======================")
+
+testCase4 = [
+  [0,10,11,12,13,14],
+  [10,0,15,16,17,18],
+  [11,15,0,19,20,21],
+  [12,16,19,0,22,23],
+  [13,17,20,22,0,24],
+  [14,18,21,23,24,0],
+]
+print("Test Case #4")
+ApproxTSPTour(testCase4)
+TSPTour(testCase4)
+print("======================")
+
+testCase5 = [
+  [0,10,11,12,13,14],
+  [10,0,15,16,17,18],
+  [11,15,0,19,20,21],
+  [12,16,19,0,22,23],
+  [13,17,20,22,0,24],
+  [14,18,21,23,24,0],
+]
+print("Test Case #5")
+ApproxTSPTour(testCase5)
+TSPTour(testCase5)
+print("======================")
