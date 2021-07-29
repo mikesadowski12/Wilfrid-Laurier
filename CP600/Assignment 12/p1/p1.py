@@ -11,7 +11,6 @@ matrix = [
   [14,18,21,23,24,0],
 ]
 NUM_NODES = len(matrix[0])
-nodes = [None] * NUM_NODES
 
 rootNode = None
 unvisited = [None] * NUM_NODES
@@ -27,7 +26,6 @@ def initialize():
   path = []
 
   for i in range(0, NUM_NODES):
-    nodes[i] = i
     tree[i] = []
     unvisited[i] = i
 
