@@ -14,16 +14,14 @@ NUM_NODES = len(matrix[0])
 nodes = [None] * NUM_NODES
 
 rootNode = None
-visited = []
 unvisited = [None] * NUM_NODES
 tree = [None] * NUM_NODES
 path = []
 
 def initialize():
-  global rootNode, visited, unvisited, tree, path
+  global rootNode, unvisited, tree, path
 
   rootNode = None
-  visited = []
   unvisited = [None] * NUM_NODES
   tree = [None] * NUM_NODES
   path = []
@@ -39,6 +37,7 @@ def MST_Prim():
   currentNode = None
   nextNode = None
   nextNodePos = None
+  visited = []
 
   rootNode = unvisited[0]
   visited.append(rootNode)
