@@ -1,3 +1,5 @@
+from itertools import permutations
+
 INT_MAX = 2147483647
 matrix = [
   [0,10,11,12,13,14],
@@ -74,6 +76,30 @@ def ApproxTSPTour():
     dest = path[i + 1]
     cost += matrix[src][dest]
 
+  print("Approximate Cost: ", cost)
+
+def TSPTour():
+  cost = INT_MAX
+  nodes = []
+
+  for i in range(1, NUM_NODES): # we start at node 0 so don't include it
+    nodes.append(i)
+
+  unvisited = permutations(nodes) # get all combinations of points
+
+  # all paths that are possible and choose the shortest (naive/brute force)
+  for i in unvisited:
+    currentNodeCost = 0
+    k = 0
+
+    for j in i:
+      currentNodeCost += matrix[k][j]
+      k = j
+
+    currentNodeCost += matrix[k][0]
+    cost = min(cost, currentNodeCost)
+
+  print("Cost: ", cost)
+
 ApproxTSPTour()
-print(path)
-print(cost)
+TSPTour()
