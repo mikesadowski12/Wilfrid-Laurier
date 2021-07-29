@@ -58,7 +58,6 @@ def MST_Prim():
           currentNode = visited[i]
           nextNode = unvisited[j]
 
-
     visited.append(unvisited[nextNodePos])
     unvisited.pop(nextNodePos)
     tree[currentNode].append(nextNode)
