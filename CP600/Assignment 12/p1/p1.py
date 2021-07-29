@@ -2,42 +2,22 @@ from itertools import permutations
 
 INT_MAX = 2147483647
 
-matrix = [
-  [0,10,11,12,13,14],
-  [10,0,15,16,17,18],
-  [11,15,0,19,20,21],
-  [12,16,19,0,22,23],
-  [13,17,20,22,0,24],
-  [14,18,21,23,24,0],
-]
-NUM_NODES = len(matrix[0])
-
 rootNode = None
-
-tree = [None] * NUM_NODES
 path = []
 
-def initialize():
-  global rootNode, tree, path
-
-  rootNode = None
-  tree = [None] * NUM_NODES
-  path = []
-
-  for i in range(0, NUM_NODES):
-    tree[i] = []
-
-def MST_Prim():
+def MST_Prim(matrix):
   global rootNode
 
+  nodeCount = len(matrix[0])
   currentNode = None
   nextNode = None
   nextNodePos = None
   visited = []
-  unvisited = [None] * NUM_NODES
+  unvisited = [None] * nodeCount
+  tree = [None] * nodeCount
 
-  for i in range(0, NUM_NODES):
-    # tree[i] = []
+  for i in range(0, nodeCount):
+    tree[i] = []
     unvisited[i] = i
 
   rootNode = unvisited[0]
@@ -62,18 +42,22 @@ def MST_Prim():
     unvisited.pop(nextNodePos)
     tree[currentNode].append(nextNode)
 
-def PreorderTraversal(node):
+  return tree
+
+def PreorderTraversal(node, tree):
   path.append(node)
 
   for i in range(0, len(tree[node])):
-    PreorderTraversal(tree[node][i])
+    PreorderTraversal(tree[node][i], tree)
 
-def ApproxTSPTour():
+def ApproxTSPTour(matrix):
+  global rootNode, path
+  rootNode = None
+  path = []
   cost = 0
 
-  initialize()
-  MST_Prim()
-  PreorderTraversal(rootNode)
+  tree = MST_Prim(matrix)
+  PreorderTraversal(rootNode, tree)
   path.append(rootNode) # go back to the first city, can do this since we are assuming a complete graph as per the spec
 
   # calculate the total cost of the trip
@@ -84,11 +68,12 @@ def ApproxTSPTour():
 
   print("Approximate Cost: ", cost)
 
-def TSPTour():
+def TSPTour(matrix):
   cost = INT_MAX
   nodes = []
+  nodeCount = len(matrix[0])
 
-  for i in range(1, NUM_NODES): # we start at node 0 so don't include it
+  for i in range(1, nodeCount): # we start at node 0 so don't include it
     nodes.append(i)
 
   unvisited = permutations(nodes) # get all combinations of points (assuming a complete graph as per the spec)
@@ -107,5 +92,14 @@ def TSPTour():
 
   print("Cost: ", cost)
 
-ApproxTSPTour()
-TSPTour()
+matrix = [
+  [0,10,11,12,13,14],
+  [10,0,15,16,17,18],
+  [11,15,0,19,20,21],
+  [12,16,19,0,22,23],
+  [13,17,20,22,0,24],
+  [14,18,21,23,24,0],
+]
+
+ApproxTSPTour(matrix)
+TSPTour(matrix)
