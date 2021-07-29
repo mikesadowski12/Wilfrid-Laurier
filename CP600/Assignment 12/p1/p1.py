@@ -1,6 +1,7 @@
 from itertools import permutations
 
 INT_MAX = 2147483647
+
 matrix = [
   [0,10,11,12,13,14],
   [10,0,15,16,17,18],
@@ -16,10 +17,17 @@ rootNode = None
 visited = []
 unvisited = [None] * NUM_NODES
 tree = [None] * NUM_NODES
-
 path = []
 
 def initialize():
+  global rootNode, visited, unvisited, tree, path
+
+  rootNode = None
+  visited = []
+  unvisited = [None] * NUM_NODES
+  tree = [None] * NUM_NODES
+  path = []
+
   for i in range(0, NUM_NODES):
     nodes[i] = i
     tree[i] = []
