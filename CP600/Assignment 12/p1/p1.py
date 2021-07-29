@@ -30,10 +30,10 @@ def MST_Prim(matrix):
 
     for i in range(0, len(visited)):
       for j in range(0, len(unvisited)):
-        record = matrix[visited[i]][unvisited[j]]
+        cost = matrix[visited[i]][unvisited[j]]
 
-        if record < max:
-          max = record
+        if cost < max:
+          max = cost
           nextNodePos = j
           currentNode = visited[i]
           nextNode = unvisited[j]
@@ -79,13 +79,13 @@ def TSPTour(matrix):
   unvisited = permutations(nodes) # get all combinations of points (assuming a complete graph as per the spec)
 
   # all paths that are possible and choose the shortest (naive/brute force)
-  for i in unvisited:
+  for node in unvisited:
     currentNodeCost = 0
     k = 0
 
-    for j in i:
-      currentNodeCost += matrix[k][j]
-      k = j
+    for path in node:
+      currentNodeCost += matrix[k][path]
+      k = path
 
     currentNodeCost += matrix[k][0]
     cost = min(cost, currentNodeCost)
