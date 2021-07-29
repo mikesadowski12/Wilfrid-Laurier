@@ -18,7 +18,6 @@ unvisited = [None] * NUM_NODES
 tree = [None] * NUM_NODES
 
 path = []
-cost = 0
 
 def initialize():
   for i in range(0, NUM_NODES):
@@ -63,7 +62,7 @@ def PreorderTraversal(node):
     PreorderTraversal(tree[node][i])
 
 def ApproxTSPTour():
-  global cost
+  cost = 0
 
   initialize()
   MST_Prim()
