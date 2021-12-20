@@ -1,0 +1,82 @@
+<h1 id="project-report">PROJECT Report</h1>
+<p>Author: Mike Sadowski</p>
+<p>Date: December 5th, 2021</p>
+<p>Check <a href="readme.txt" class="uri">readme.txt</a> for lab work statement and self-evaluation.</p>
+<pre><code>    Setup
+    1. Start MySql/Apache via XAMPP Control Panel
+    2. &#39;stats-db-client-mvn&#39;, run StatsDBClient.java as Java Application (creates tables in MySql)
+    3. Open CMD terminal to &#39;lr-weka-mvn&#39; of this project. Run &#39;java -jar WekaRegressionModel.jar -i 2018-2019.arff -o weka_regression.bin&#39; (train the model and create file weka_regression.bin)
+    4. Copy &#39;data&#39; folder from project root to &#39;C:\enterprise\wildfly-18.0.1.Final\bin\&#39;
+    5. &#39;lr-weka-mvn&#39;, run ModelInsert.java as Java Application (inserts linear regression data into DB)
+    6. Deploy &#39;stats-ejb-web-ear&#39; to WildFly
+
+    Usage
+    (http://localhost:8080/stats-ejb-web/login.html)
+    1. Select Home team + Away team to see future match outcome result between these 2 teams
+    2. If no score is present for those teams (error in data file), appropriate error message will be displayed
+    3. (Admin only) Data input #1: Select input file used for analysis (only 1 available for now)
+    4. (Admin only) Data input #2: Input data manually (ensure correctness, e.g. 10/8/18, Man United, Arsenal, 1, 4)
+
+    Readme
+    1. Admin User:  username=user1, password=password
+    2. Standard User:  username=user2, password=password
+    3. No input validation is present, input correct data at all times
+    4. Must load data into DB before trying to retrieve stats</code></pre>
+<h2 id="project-requirements-project">Project Requirements (project)</h2>
+<h3 id="r1-write-a-project-proposal-2-3-pages.">R1 Write a project proposal (2-3 pages).</h3>
+<p>Complete? yes</p>
+<p>Check <code>project/proposal/proposal_template.html</code> file for project proposal</p>
+<h3 id="r2-design-data-format-collect-data-create-dataset-for-the-application.">R2 Design data format, collect data, create dataset for the application.</h3>
+<p>Complete? yes</p>
+<p>If Yes, briefly describe:</p>
+<p>I used the website <code>https://data.world/</code> and retrieved 2 csv files that contain data for all the premier league match results from 2016-2017, 2018-2019 seasons.</p>
+<p>I created the data set I will be using by parsing the file using Java functions, and parsed the data I wanted to use (division, data, home team, away team, home team goals, away teams goals).</p>
+<p>The data is located in the <code>project/data/</code> directory as <code>2016-2017.arff</code> and <code>2018-2019.arff</code></p>
+<h3 id="r3-develop-and-implement-data-application-algorithms-for-the-proposed-application-problem.">R3 Develop and implement data application algorithms for the proposed application problem.</h3>
+<p>Complete? yes</p>
+<p>If Yes, briefly describe:</p>
+<p>I used WEKA API to classify data models from the datasets. Then using the data between 2 inputted teams (e.g. Arsenal vs ManUnited), I calculate a simple linear regression to product a prediction of the result of a future match between these 2 teams. More data would more accurately predict the result, but for simplicity I have only used the 2 seasons listed above.</p>
+<h3 id="r4-do-data-computing-to-generate-models-representing-models-in-portable-format-and-stored-in-file-or-database.-more-credit-is-given-if-distributed-approach-is-used-data-mining-of-big-dataset.">R4 Do data computing to generate models, representing models in portable format and stored in file or database. More credit is given if distributed approach is used data mining of big dataset.</h3>
+<p>Complete? yes</p>
+<p>If Yes, briefly describe:</p>
+<p>Using WEKA API, I classified the data models from the data set. The data is then stored in the MySQL database for portability and ease of access (See screenshot).</p>
+<figure>
+<img src="images/database.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="r5-create-deployable-service-components-using-application-models-using-java-based-enterprise-computing-technologies-to-create-client-program-to-do-remote-call-of-the-data-mining-services.">R5 Create deployable service components using application models using Java based enterprise computing technologies, to create client program to do remote call of the data mining services.</h3>
+<p>Complete? yes</p>
+<p>Used a service to provide information to the front end of the application. Calls are made via HTTP to the backend though servlets. Data is stored in MySQL and shown as requested to the user on the front end.</p>
+<figure>
+<img src="images/sample-prediction.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="r6-deploy-service-components-onto-enterprise-application-servers.">R6 Deploy service components onto enterprise application servers.</h3>
+<p>Complete? yes</p>
+<p>Web servers are deployed onto WildFly 18</p>
+<figure>
+<img src="images/deployment.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="r7-create-web-services-soap-restful-to-use-the-data-service-components.">R7 Create web services (SOAP, RESTful) to use the data service components.</h3>
+<figure>
+<img src="images/sample-prediction.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="r8-create-web-user-interfacemobile-applications-to-use-the-applicationweb-services.">R8 Create web user interface/mobile applications to use the application/web services.</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/admin.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="r9-test-your-services-log-your-services-and-document-your-term-project.">R9 Test your services, log your services, and document your term project.</h3>
+<p>Complete? yes</p>
+<p>If Yes, briefly describe:</p>
+<p>Manual testing performed, see screenshot. Various logging throughout app (such as saving to DB). See powerpoint file for documentation.</p>
+<figure>
+<img src="images/sample-prediction.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="r10-demonstrate-your-term-project-in-final-project-presentation-slides-short-video.">R10 Demonstrate your term project in final project presentation, slides, short video.</h3>
+<p>Complete? yes</p>
+<p>If Yes, briefly describe:</p>
+<p>See powerpoint file for documentation</p>
+<p><strong>References</strong></p>
+<ol class="incremental" type="1">
+<li>CP630OC project</li>
+<li>Add your references if you used.</li>
+</ol>

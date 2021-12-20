@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Servlet test page</title>
+</head>
+<body>
+
+Test links:<br>
+
+<p><a href = "ec-servlet">Servlet example, configured by web.xml</a></p>
+<p><a href = "ecgs">GenericServlet example, URI:ecgs configured by annotation</a></p>
+<p><a href = "ec-gs">GenericServlet example, URI:ec-gs configured by web.xml</a></p>
+
+<p>
+<form action = "/ec-web/echs" method = "GET">
+HttpServlet example, URI:echs configured by annotation<br>
+Send value by GET : <input type = "text" name = "value"> <br>
+<input type = "submit" value = "Submit" />
+</form>
+</p>
+
+<form action = "/ec-web/echs" method = "POST">
+HttpServlet example, URI:echs configured by annotation<br>
+Send value by POST : <input type = "text" name = "value"> <br>
+<input type = "submit" value = "Submit" />
+</form>
+
+<p>
+<form action = "/ec-web/ec-hs" method = "GET">
+HttpServlet example, URI:ec-hs configured by web.xml<br>
+Send value by GET : <input type = "text" name = "value"> <br>
+<input type = "submit" value = "Submit" />
+</form>
+</p>
+
+<p>
+<form action = "/ec-web/ec-hs" method = "POST">
+HttpServlet example, URI:ec-hs configured by web.xml<br>
+Send value by POST : <input type = "text" name = "value"> <br>
+<input type = "submit" value = "Submit" />
+</form>
+</p>
+</body>
+</html>

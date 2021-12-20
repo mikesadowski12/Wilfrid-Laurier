@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="player" class="ec.lab.bean.Player">
+		<property name="firstName" value="AOP" />
+		<property name="lastName" value="Spring" />
+		<property name="score" value="-1" />
+	</bean>
+	
+	<bean id="aroundMethodBean" class="ec.lab.aop.AroundMethod" />
+	<bean id="throuExceptionBean" class="ec.lab.aop.ThrowException" />
+	
+	<bean id="PlayerProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target" ref="player" />
+		<property name="interceptorNames">
+			<list>
+				<value>aroundMethodBean</value>
+				<value>throuExceptionBean</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="J2EE_EXPORT_JST_EJB">
+		<item value="C:\Users\Mike Sadowski\Desktop\stats-ejb.jar"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\Mike Sadowski\Desktop\stats-ejb-web.war"/>
+	</list>
+</section>

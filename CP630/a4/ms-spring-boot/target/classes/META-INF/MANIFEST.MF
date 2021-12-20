@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ms-spring-boot
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Mike Sadowski
+Implementation-Vendor-Id: ec.lab
+Build-Jdk: 1.8.0_191
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ms-spring-boot
+Created-By: Maven Integration for Eclipse
+

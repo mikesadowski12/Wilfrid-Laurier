@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/stats/ejb/StatsWS.java=UTF-8
+encoding//src/stats/ejb/StatsWSService.java=UTF-8
+encoding//src/stats/ejb/StatsWSServiceLocator.java=UTF-8
+encoding//src/stats/ejb/StatsWSServiceSoapBindingStub.java=UTF-8

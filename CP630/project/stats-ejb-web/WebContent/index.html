@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Simple Statistics</title>
+</head>
+<body>
+(Singleton) Input a number:
+<form action = "/stats-ejb-web/SingletonServlet" method = "GET">
+     Value: <input type = "text" name = "value"> <br>
+     <input type = "submit" value = "Submit"/>
+</form>
+<br>
+<br>
+(Stateless) Input a query message (count, min, max, mean, std, summary):
+<form action = "/stats-ejb-web/StatelessServlet" method = "GET">
+     Value: <input type = "text" name = "value"> <br>
+     <input type = "submit" value = "Submit"/>
+</form>
+<br>
+<br>
+(Stateful) Input a number:
+<form action = "/stats-ejb-web/StatefulServlet" method = "GET">
+     Value: <input type = "text" name = "value"> <br>
+     <input type = "submit" value = "Submit"/>
+</form>
+</body>
+</html>

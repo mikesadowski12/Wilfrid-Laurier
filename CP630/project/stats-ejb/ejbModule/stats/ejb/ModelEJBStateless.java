@@ -1,0 +1,44 @@
+package stats.ejb;
+
+import java.util.ArrayList;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.enterprise.inject.Alternative;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityNotFoundException;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import ec.jpa.model.Model;
+
+@Stateless
+@LocalBean
+public class ModelEJBStateless implements ModelEJBStatelessLocal {
+	@PersistenceContext(unitName = "primary")
+	private EntityManager entityManager;
+
+	@Override
+	public Model getModelByName(String modelname) {
+		Query query = entityManager.createQuery("select m from Model m where m.name = :modelname ORDER BY m.date DESC");
+		query.setParameter("modelname", modelname);
+
+		try {
+			Model model = null;
+			ArrayList<Model> models = (ArrayList<Model>) query.getResultList();
+			
+			for (Model m : models) {
+				model = m;
+			}
+			
+			return model;
+		} catch (EntityNotFoundException notFound) {
+			return null;
+		}
+	}
+
+	@Override
+	public void saveModel(Model model) {
+		entityManager.merge(model);
+	}
+}

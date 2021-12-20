@@ -1,0 +1,24 @@
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>Example TLD</short-name>
+  <tag>
+    <name>ectag</name>
+    <tag-class>ec.lab.jsp.ECTag</tag-class>
+    <body-content>empty</body-content>
+  </tag>
+    <tag>
+    <name>ectag2</name>
+    <tag-class>ec.lab.jsp.ECTag2</tag-class>
+    <body-content>scriptless</body-content>
+  </tag>
+  
+    <tag>
+    <name>ectag3</name>
+    <tag-class>ec.lab.jsp.ECTag3</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>message</name>
+    </attribute>
+  </tag>
+</taglib>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Manual Data Input</h3>
+	<form action = "/stats-ejb-web/ModelEJBJMSServlet" method = "POST">
+	  Match Date (mm/dd/yy): <input type = "text" name = "date">
+	  
+	  <br>
+	  
+	  <label for="homeTeamName">Home team:</label>
+	  <select name="homeTeamName" id="homeTeamName">
+	    <option value="Man United">Man United</option>
+	    <option value="Leicester">Leicester</option>
+	    <option value="Arsenal">Arsenal</option>
+	  </select>
+	  
+	  <br>
+	  
+	  <label for="awayTeamName">Away team: </label>
+	  <select name="awayTeamName" id="awayTeamName">
+	    <option value="Man United">Man United</option>
+	    <option value="Leicester">Leicester</option>
+	    <option value="Arsenal">Arsenal</option>
+	  </select>
+	  
+	  <br>
+	  
+	  Home Team Goals: <input type = "text" name = "fthg"> <br>
+	  Away Team Goals: <input type = "text" name = "ftag"> <br>
+	  
+	  <input type = "submit" value = "Save match result"/>
+	</form>
+	
+	<br>
+	<br>
+</body>
+</html>

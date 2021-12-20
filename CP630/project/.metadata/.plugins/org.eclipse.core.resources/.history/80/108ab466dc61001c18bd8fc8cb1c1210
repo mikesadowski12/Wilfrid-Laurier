@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>	
+	<h1>Standard User Interface</h1>
+	<h3>Get Match Prediction</h3>
+	<form action = "/stats-ejb-web/ModelEJBJMSServlet" method = "GET">
+	  <label for="homeTeamNameGet">Home team:</label>
+	  <select name="homeTeamNameGet" id="homeTeamNameGet">
+	    <option value="Man United">Man United</option>
+	    <option value="Leicester">Leicester</option>
+	    <option value="Arsenal">Arsenal</option>
+	  </select>
+	  
+	  <br>
+	  
+	  <label for="awayTeamNameGet">Away team: </label>
+	  <select name="awayTeamNameGet" id="awayTeamNameGet">
+	    <option value="Man United">Man United</option>
+	    <option value="Leicester">Leicester</option>
+	    <option value="Arsenal">Arsenal</option>
+	  </select>
+	  <br>
+	  <input type = "submit" value = "Get prediction"/>
+	</form>
+	
+	<hr>
+	<h1>About</h1>
+		<h3>Setup</h3>
+		1. Start MySql/Apache via XAMPP Control Panel <br>
+		2. 'stats-db-client-mvn' -> run StatsDBClient.java (creates tables in MySql) <br>
+		<br>
+		<h3>Usage</h3>
+		1. Select Home team + Away team to see prediction of future result/statistics between these 2 teams <br>
+		2. If no score is present for those teams (error in data file), appropriate error message will be displayed <br>
+		3. (Admin only) Data input #1: Select input file used for analysis (only 1 available for now) <br>
+		4. (Admin only) Data input #2: Input data manually (ensure correctness, e.g. 10/8/18, Man United, Arsenal, 1, 4)<br>
+		<br>
+		<h3>Readme</h3>
+		1. Admin User:  username=user1, password=password <br>
+		2. Standard User:  username=user2, password=password <br>
+		3. No input validation is present, input correct data at all times <br>
+		4. Must load data into DB before trying to retrieve stats <br>
+</body>
+</html>

@@ -1,0 +1,5 @@
+stats\db\ModelInsert.class
+stats\db\ModelSelect.class
+lr\model\RegressionModel.class
+lr\prediction\RegressionPredict.class
+ec\jpa\Model.class

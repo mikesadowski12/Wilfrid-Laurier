@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#submit').click(function() {
+        $.ajax({
+            type: "POST",
+            url: 'http://127.0.0.1:8080/ec-web/echs',
+            data: {
+               value:$("#value").val()
+            },
+            success: function(data)
+            {
+                $("#p").html(data);
+            }
+        });
+    });
+});
+
+</script>
+</head>
+<body>
+<p id="p">EC jquery and ajax</p><br>
+<label for="value">Value : </label>
+<input type="text" id="value" placeholder="value" />
+<button id="submit">submit</button>
+</body>
+</html>

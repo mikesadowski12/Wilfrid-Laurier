@@ -1,0 +1,9 @@
+digraph "ec.stats.test.StatisticsTest.testMax"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node29 [label="ec.stats.test.Statistics\lTest.testMax",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node29 -> Node30 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="ec.stats.ECStatistics.getMax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a8b2714fd78189774569a9e8fdd4ab616",tooltip="Getter for the max property. "];
+}

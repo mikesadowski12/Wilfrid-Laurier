@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<script type="text/babel">
+class Title extends React.Component {
+  render() {
+    return <h1>EC React</h1>
+  }
+}
+
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+  render() {
+    return (
+      <form action="http://localhost:8080/ec-web/echs" method="get">
+        <label>Value:</label>
+          <input type="text" name="value" />
+          <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+
+ReactDOM.render(<Title />, document.getElementById('title'));
+ReactDOM.render(<NameForm />, document.getElementById('form'));
+</script>
+</head>
+<body>  
+<div id="title"></div>
+<div id="form"></div>
+</body>
+</html>

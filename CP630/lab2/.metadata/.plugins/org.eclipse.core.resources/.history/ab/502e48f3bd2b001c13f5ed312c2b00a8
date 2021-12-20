@@ -1,0 +1,5 @@
+package ec.db;
+
+public class ECDBClient {
+
+}

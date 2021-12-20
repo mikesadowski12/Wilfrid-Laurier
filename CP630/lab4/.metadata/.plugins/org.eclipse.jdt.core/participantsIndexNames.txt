@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4023237619.index
+\spring-greeter\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2521308142.index
+\spring-greeter\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\841697030.index
+\ec-spring-boot-jsp-wildfly\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4016448043.index
+\spring-kitchensink-springmvctest\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\319246139.index
+\ec-spring-MVC\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3740925022.index
+\spring-greeter\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\200161213.index
+\spring-greeter\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\230801651.index
+\ec-spring-MVC\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3584810231.index
+\ec-spring-boot-jpa\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1642660969.index
+\ec-spring-boot-jsp-wildfly\src\main\java
+C:\cp630\workspace\lab4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1959112142.index
+\ec-spring-boot-jsp\src\main\java

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script language="javascript">
+
+  var xhttp;
+  function init() {
+     xhttp = new XMLHttpRequest();
+  }
+
+  function callREST(id) {
+      var input = document.getElementById(id);
+      var url = id + "/" + input.value;
+
+      //alert(url);		
+      xhttp.open('GET', url, true);
+      xhttp.send();	
+
+      xhttp.onreadystatechange = function() {
+      //alert(this.responseText);
+          if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("response").innerHTML = this.responseText;
+          }
+      };
+  }
+</script>
+
+</head>
+
+<body onload="init()">
+
+	<p id="response">Return value</p>
+	<br>
+	<br>
+	<br>
+	Input score (grade):
+	<input type="text" id="grade">
+	<br>
+	<input type="button" value="Get grade" onclick="callREST('grade')" />
+	<br>
+	<br>
+	<br>
+	<br>	
+	Input score (rank):
+	<input type="text" id="rank">
+	<br>
+	<input type="button" value="Get rank" onclick="callREST('rank')" />
+	<br>
+	<br>
+	<br>
+	<br>
+	Input score (grade + rank):
+	<input type="text" id="grade_rank">
+	<br>
+	<input type="button" value="Get grade + rank" onclick="callREST('grade_rank')" />
+	<br>
+	<br>
+	<br>
+	<br>
+	Input prediction:
+	<input type="text" id="prediction">
+	<br>
+	<input type="button" value="Get prediction" onclick="callREST('prediction')" />
+	<br>
+
+</body>
+</html>

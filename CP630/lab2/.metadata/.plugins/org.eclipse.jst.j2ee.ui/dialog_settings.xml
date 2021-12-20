@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="J2EE_IMPORT_EJB">
+		<item value="C:\cp630\workspace\lab2\ec-ejb-lab1\ec-ejb\build\ec-ejb.jar"/>
+	</list>
+	<list key="J2EE_IMPORT_APP_CLIENT">
+		<item value="C:\cp630\workspace\lab2\ec-ejb-lab1\ec-ejb\build\ec-ejb.jar"/>
+	</list>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="WildFly 14.0 Runtime"/>
+	</list>
+</section>

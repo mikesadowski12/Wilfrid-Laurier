@@ -1,0 +1,10 @@
+digraph "ec.stats.ECStatistics"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="ec.stats.ECStatistics",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ec.stats.Statistics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfaceec_1_1stats_1_1_statistics.html",tooltip="This is the interface for Statistics class implemented by ECStatistics class. "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" data" ,fontname="Helvetica"];
+  Node4 [label="ArrayList\< Double \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}
