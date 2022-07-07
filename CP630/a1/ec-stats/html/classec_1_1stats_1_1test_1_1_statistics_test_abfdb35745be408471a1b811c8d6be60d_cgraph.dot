@@ -1,0 +1,18 @@
+digraph "ec.stats.test.StatisticsTest.testStatsNewDataMin"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node55 [label="ec.stats.test.Statistics\lTest.testStatsNewDataMin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node55 -> Node56 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="ec.stats.ECStatistics.addData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a6529c36c2e76dcebd8d81f5d7510eb50",tooltip="Add double to the data array and re-compute the count/min/max/mean/standard deviation. "];
+  Node56 -> Node57 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="ec.stats.ECStatistics.compute\lTotalSTD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a89857f7a47ae0c7f697c0dc889425311",tooltip="Compute the total standard deviation for all values in the data array. "];
+  Node55 -> Node58 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="ec.stats.ECStatistics.get\lCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a2dd48a948c6790d2343bb6ad5a8fbdec",tooltip="Getter for the count property. "];
+  Node55 -> Node59 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="ec.stats.ECStatistics.getMin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a6bf9d8b0d5bc4700a37247d7cc90fe17",tooltip="Getter for the min property. "];
+  Node55 -> Node60 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="ec.stats.ECStatistics.stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#ae8230870f1079b3efbc7681c96f35d7f",tooltip="Compute the count/min/max/mean/standard deviation. "];
+  Node60 -> Node57 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\cp630\workspace\lab4\ec-spring-boot-jsp-wildfly"/>
+		<item value="C:\cp630\workspace\lab4\ec-spring-boot-jpa"/>
+		<item value="C:\cp630\workspace\lab4\ec-spring-boot-jsp"/>
+		<item value="C:\cp630\workspace\lab4\ec-spring-MVC"/>
+		<item value="C:\cp630\workspace\lab4\ec-spring-mvn"/>
+	</list>
+</section>

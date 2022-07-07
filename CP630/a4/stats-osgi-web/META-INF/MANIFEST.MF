@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Stats-osgi-web
+Bundle-SymbolicName: stats-osgi-web
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: stats_osgi_web.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package:  javax.servlet;version="3.1.0",
+ javax.servlet.http;version="3.1.0",
+ org.osgi.framework;version="1.3.0",
+ org.osgi.service.http;version="1.2.1",
+ org.osgi.util.tracker;version="1.5.1",
+ stats.osgi.impl
+Automatic-Module-Name: stats-osgi-web
+Web-ContextPath: /stats-osgi

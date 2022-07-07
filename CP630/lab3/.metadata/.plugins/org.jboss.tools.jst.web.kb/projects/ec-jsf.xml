@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths/>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource declaration="true" name="%1;" path="%0"/>
+  </core>
+  <core validator-id="batch-verification"/>
+  <el>
+   <linked-el length="24" name="%2" offset="223" path="%3"/>
+   <linked-el length="24" name="%4" offset="223" path="%3"/>
+   <linked-el length="17" name="%5" offset="243" path="%6"/>
+   <linked-el length="17" name="%7" offset="243" path="%6"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="helloWorldBean.msg" value="%2"/>
+  <alias path="helloWorldBean" value="%4"/>
+  <alias path="/ec-jsf/WebContent/user.xhtml" value="%6"/>
+  <alias path="userNew.name" value="%5"/>
+  <alias path="/ec-jsf/WebContent/index.xhtml" value="%3"/>
+  <alias path="user" value="%1"/>
+  <alias path="/ec-jsf/src/ec/lab/User.java" value="%0"/>
+  <alias path="userNew" value="%7"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

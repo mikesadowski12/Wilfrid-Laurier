@@ -1,0 +1,15 @@
+digraph "ec.stats.test.StatisticsTest.testAddDataAddMinNumber"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node12 [label="ec.stats.test.Statistics\lTest.testAddDataAddMinNumber",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="ec.stats.ECStatistics.addData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a6529c36c2e76dcebd8d81f5d7510eb50",tooltip="Add double to the data array and re-compute the count/min/max/mean/standard deviation. "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="ec.stats.ECStatistics.compute\lTotalSTD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a89857f7a47ae0c7f697c0dc889425311",tooltip="Compute the total standard deviation for all values in the data array. "];
+  Node12 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="ec.stats.ECStatistics.get\lCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a2dd48a948c6790d2343bb6ad5a8fbdec",tooltip="Getter for the count property. "];
+  Node12 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="ec.stats.ECStatistics.getMin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classec_1_1stats_1_1_e_c_statistics.html#a6bf9d8b0d5bc4700a37247d7cc90fe17",tooltip="Getter for the min property. "];
+}

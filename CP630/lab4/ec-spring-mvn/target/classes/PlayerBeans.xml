@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="ec-spring" class="ec.lab.bean.ECSpring">
+		<property name="name" value="EC Spring" />
+	</bean>
+
+	<bean id="player1" class="ec.lab.bean.Player">
+		<property name="firstName" value="ICO" />
+		<property name="lastName" value="Spring" />
+		<property name="score" value="10" />
+	</bean>
+	
+	<bean id="player2" class="ec.lab.bean.Player">
+		<property name="firstName" value="AOP" />
+		<property name="lastName" value="Spring" />
+		<property name="score" value="9" />
+	</bean>
+
+</beans>

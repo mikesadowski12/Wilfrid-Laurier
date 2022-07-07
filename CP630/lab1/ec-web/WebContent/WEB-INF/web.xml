@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app> 
+  <servlet> 
+    <servlet-name>ecservlet</servlet-name> 
+    <servlet-class>ec.lab.ECServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>ecservlet</servlet-name> 
+    <url-pattern>/ec-servlet</url-pattern> 
+  </servlet-mapping>
+  
+  <servlet> 
+    <servlet-name>s2</servlet-name>
+    <servlet-name>s2</servlet-name>
+    <servlet-class>ec.lab.ECGenericServlet</servlet-class>
+    <init-param>
+        <param-name>username</param-name>
+        <param-value>me</param-value>
+    </init-param>
+    <init-param>
+        <param-name>password</param-name>
+        <param-value>cp630</param-value>
+    </init-param>   
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>s2</servlet-name> 
+    <url-pattern>/ec-gs</url-pattern> 
+  </servlet-mapping>  
+  
+  <servlet> 
+    <servlet-name>s3</servlet-name> 
+    <servlet-class>ec.lab.ECHttpServlet</servlet-class> 
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>s3</servlet-name> 
+    <url-pattern>/ec-hs</url-pattern> 
+  </servlet-mapping>
+</web-app>

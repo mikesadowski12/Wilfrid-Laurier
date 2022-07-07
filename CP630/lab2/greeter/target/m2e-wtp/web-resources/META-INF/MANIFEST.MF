@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Implementation-Title: Quickstart: greeter
+Implementation-Version: 18.0.1.Final
+Java-Version: 1.8.0_191
+Built-By: Mike Sadowski
+Scm-Connection: scm:git:git@github.com:jboss/jboss-parent-pom.git/quic
+ kstart-parent/greeter
+Specification-Vendor: JBoss by Red Hat
+Os-Arch: amd64
+Specification-Title: Quickstart: greeter
+Implementation-Vendor-Id: org.wildfly.quickstarts
+Java-Vendor: Oracle Corporation
+Os-Name: Windows 10
+Scm-Url: http://github.com/jboss/jboss-parent-pom/quickstart-parent/gr
+ eeter
+Implementation-Vendor: JBoss by Red Hat
+Os-Version: 10.0
+Scm-Revision: 
+Build-Jdk: 1.8.0_191
+Specification-Version: 18.0
+Created-By: Maven Integration for Eclipse
+Implementation-URL: https://github.com/wildfly/quickstart/greeter
+

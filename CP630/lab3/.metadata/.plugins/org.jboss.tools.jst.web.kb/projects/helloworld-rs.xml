@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/jakarta/inject/jakarta.inject-api/1.0/jakarta.inject-api-1.0.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/2.0.2/jakarta.enterprise.cdi-api-2.0.2.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/2.0.0.Final/jboss-jaxrs-api_2.1_spec-2.0.0.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.3_spec/2.0.1.Final/jboss-annotations-api_1.3_spec-2.0.1.Final.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource name="%1;" path="%0"/>
+  </core>
+  <el/>
+ </validation>
+ <aliases>
+  <alias
+   path="/helloworld-rs/src/main/java/org/jboss/as/quickstarts/rshelloworld/HelloWorld.java" value="%1"/>
+  <alias
+   path="/helloworld-rs/src/main/java/org/jboss/as/quickstarts/rshelloworld/HelloService.java" value="%0"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

@@ -1,0 +1,17 @@
+Testsuite: ec.stats.test.StatisticsTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+
+Testcase: testAddDataAddMinNumber took 0.001 sec
+Testcase: testMax took 0 sec
+Testcase: testMin took 0 sec
+Testcase: testAddDataNewStd took 0 sec
+Testcase: testCount took 0 sec
+Testcase: testStats took 0 sec
+Testcase: testMean took 0 sec
+Testcase: testStds took 0.001 sec
+Testcase: testAddDataNewMean took 0 sec
+Testcase: testStatsNewDataMean took 0 sec
+Testcase: testAddDataAddMaxNumber took 0 sec
+Testcase: testStatsNewDataMax took 0 sec
+Testcase: testStatsNewDataMin took 0 sec
+Testcase: testStatsNewDataStd took 0 sec

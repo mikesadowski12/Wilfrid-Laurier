@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\cp630\workspace\lab3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\913479157.index
+\kitchensink-jsp\src\main\java
+C:\cp630\workspace\lab3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1880750050.index
+\ec-jsp\src
+C:\cp630\workspace\lab3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\190169729.index
+\kitchensink-jsp\src\main\java

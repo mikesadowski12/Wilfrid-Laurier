@@ -1,0 +1,10 @@
+package ec.lab;
+
+import javax.ejb.Remote;
+
+@Remote
+public interface SBStatefulRemote1 {
+	 public String getSBType();
+	 public String Predict(int a);
+	 public int getCounter();
+}

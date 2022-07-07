@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>stats rs</title>
+</head>
+<body>
+GET SUMMARY JSON<br>
+<form action = "/stats-rs/rest/getsummaryjson" method = "GET">
+    <input type = "submit" value = "Submit" />
+</form>
+</body>
+</html>

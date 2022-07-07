@@ -1,0 +1,68 @@
+<h1 id="a1-report">A1 Report</h1>
+<p>Author: Mike Sadowski</p>
+<p>Date: September 21st, 2021</p>
+<p>Check <a href="readme.txt" class="uri">readme.txt</a> for lab work statement and self-evaluation.</p>
+<h2 id="q1-ec-story">Q1 EC story</h2>
+<p>At my current job I work on a product called Core Share. It is a cloud storage system for any type of file a user may wish to store/backup/share to others. It also allows users and companies to easily share documents (word, power point, excel, etc) to each other and simultaneously collaborate on them. Users can also create brand new word documents using the Microsoft Online service (Word, Powerpoint, Excel) and edit them. There are also many other smaller features such as digital signatures for forms and share groups that make collaborating and sharing files within companies (or even between companies) seamless and simple. The service is provided as a Software as a Service solution (Saas), users may access the service through a browser or from a mobile application on their phone. It is used by large companies mostly, as opposed to single users for Google Drive, since most of the features are related to sharing and collaboration on the files uploaded.</p>
+<p>The problem that this service solves is companies have many files they need to share amongst their employees. Our service allows all of the files to be in 1 convenient location (so everyone knows where to find them within the company), it allows controlled viewing of sensitive documents (permission level, for example a manager can view files a regular employee can’t) and enables employees to collaborate on files as well. A lot of times there are excel spreadsheets or word documents that multiple people need to edit, instead of passing the file itself around to eachother, our service allows the simultaneous collaboration and editing on the document in real time.</p>
+<p>An example of the data processing the service does is it scans an entire document (such as a PDF or word document) when it is uploaded, and stores the words in an ElasticSearch database. This allows the contents of documents to be searched, you can type a word into the search bar and the documents containing that word will come up in the search. This is similar to a hash table, the word is a key that corresponds to the document ID’s which contain that word.</p>
+<p>The technology platform it uses vary as there are many micro services (it is Service Oriented) involved in creating the overall service. Most of the services are written in JavaScript; Node, Sails/Express, Angular (if there is a front end component). A few are written in Java, and one is written in the .NET stack. The deployment of the services is orchestrated using Docker to build images, and the images are deployed using Kubernetes.</p>
+<h2 id="q2-descriptive-statistics-project-programming">Q2 Descriptive statistics project (programming)</h2>
+<h3 id="q2.1-interface-design">Q2.1 Interface design</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task2-1.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="q2.2-implementation">Q2.2 Implementation</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task2-2.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="q2.3-unit-test">Q2.3 Unit test</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task2-3.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="q2.4-main-program">Q2.4 Main program</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task2-4.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="q2.5-logging-and-documentation">Q2.5 Logging and documentation</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task2-5.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="q2.6-build-by-ant">Q2.6 Build by ANT</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task2-6.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h2 id="q3-java-ee-project-on-stats-programming">Q3 Java EE project on stats (programming)</h2>
+<h3 id="q3.1-stats-ejb-project">Q3.1 stats-ejb project</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task3-1.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="q3.2-stats-ejb-client-project">Q3.2 stats-ejb-client project</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task3-2.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<p>Note: I tried naming the function <code>toString()</code> in the stateless session bean. However, with this name only the string: <code>Proxy for remote EJB StatelessEJBLocator for &quot;/stats-ejb/StatsEJBStateless&quot;, view is interface stats.ejb.StatsEJBStatelessRemote, affinity is URI&lt;http-remoting://localhost:8080&gt;</code> was returned. After renaming it to <code>summaryString()</code>, only then did it return a correct string for me.</p>
+<h3 id="q3.3-stats-ejb-web-project">Q3.3 stats-ejb-web project</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task3-3.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<h3 id="q3.4-stats-ejb-web-ear-project">Q3.4 stats-ejb-web-ear project</h3>
+<p>Complete? yes</p>
+<figure>
+<img src="images/task3-4.png" alt="image caption" style="width:90.0%" /><figcaption>image caption</figcaption>
+</figure>
+<p><strong>References</strong></p>
+<ol class="incremental" type="1">
+<li>CP630OC a1</li>
+<li>https://www.tutorialspoint.com/java/java_serialization.htm</li>
+<li>Course notes</li>
+</ol>

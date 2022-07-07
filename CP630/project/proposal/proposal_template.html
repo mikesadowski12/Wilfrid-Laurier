@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Mike Sadowski" />
+  <meta name="dcterms.date" content="2021-11-29" />
+  <title>CP630 project proposal Soccer Outcome Predictor</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="proposal.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">CP630 project proposal<br>Soccer Outcome Predictor</h1>
+<p class="author">Mike Sadowski</p>
+<p class="date">2021-11-29</p>
+</header>
+<h2 id="introduction">Introduction</h2>
+<p>Sports betting has been a popular activity for many sports enthousiasts over the last few decades. It is a growing hobby that can garner people large amounts of money, or lead them into copious amounts of debt. Information technology and data analysis can provide a promising way for sport betters to gain an edge over the competition in predicting the outcome of sport matches.</p>
+<p>The primary focus of this project is to analyze previous match outcomes for soccer teams competing in the English Premier League in order to provide a more accurate estimate of which team is going to beat the other. Team results (opposing team, score, goals for, goals against) will be analyzed over past seasons (primarily the 2018-2019 season) from a publicy available dataset from <code>data.world</code>.</p>
+<p>Although the data set used in this project is from an older season, a more up to date dataset will provide better results for outcome prediction. In addition, using more than 1 dataset will also improve the accuracy of prediction (i.e. more than 1 season of results). For the sake of this project, only 1 dataset will be analyzed for simplicity.</p>
+<p>Weka API is used as the main tool to evaluate the match outcomes and provide statistical analysis of the results.</p>
+<h2 id="problem-solving-and-algorithms">Problem solving and algorithms</h2>
+<ol class="incremental" type="1">
+<li>Application data</li>
+</ol>
+<ul class="incremental">
+<li>The dataset comes from reference [1]</li>
+<li>Dataset contains 22 descriptive features and 381 match results (2018-2019 season)</li>
+<li>The HomeTeam, AwayTeam, FTHG (full time home team goals), FTAG (full time away team goals) will be used for analysis</li>
+<li>For example, Manchester United played Leicester City a total of 2 times, first score being 2-1 in favor of Manchester United, second score being 1-0 in favor of Manchester United. Analysis of these games shows that both times Manchester United came out on top with 3 goals for, 1 goal against, averaging 1.5 goals for in a game, and 0.5 goals against in a match against Leicester City. The prediction result would show Manchester United winning the next game against Leicester City for both home/away game with a probably score of 2-1 (rounded up).</li>
+</ul>
+<ol class="incremental" start="2" type="1">
+<li>Models to represent information, knowledge and patterns.</li>
+</ol>
+<ul class="incremental">
+<li>HomeTeam: represents the home team of the match (hosting away team in their stadium)</li>
+<li>AwayTeam: represents the away team of the match (travelling to home team’s stadium)</li>
+<li>FTHG (full time home team goals): represents the number of goals the home team scored</li>
+<li>FTAG (full time away team goals): represents the number of goals the away team scored</li>
+<li>AverageGoalsFor: number of goals scored, divided by total games played against that particular team (2 in a season)</li>
+<li>AverageGoalsAgainst: number of goals conceded, divided by total games played against that particular team (2 in a season)</li>
+<li>probableOutcome: computed winner based on the above statistics, along with approximate goals scored against the opposing team and approximate goals conceded against the opposing team</li>
+</ul>
+<ol class="incremental" start="3" type="1">
+<li>Algorithms to solve the problems and compute the models.</li>
+</ol>
+<ul class="incremental">
+<li>Weka provides a vast set of classification algorithms, including many of the most popular. For this project, minimum, maximum, average (mean), and standard deviation will be used to analyze the results of all the matches.</li>
+<li>Other possible methods of analysis that may be utilized also inlucde linear regression, KMeans, and/or decision trees</li>
+</ul>
+<h2 id="proposed-system-design">Proposed System Design</h2>
+<ol class="incremental" type="1">
+<li>System design of your solutions as an enterprise computing application.</li>
+</ol>
+<ul class="incremental">
+<li>Login page:</li>
+<li>If admin user logged in:</li>
+<li>Admin has capability to see the “admin user” user interface</li>
+<li>Admin has capability to see the “standard user” user interface</li>
+<li>Admin has capability to save/load a dataset of their choosing from database (via “admin user” user interface)</li>
+<li>Admin has capability to manually input data for individual matches (via “admin user” user interface)</li>
+<li><p>Admin has capability to input a home team and an away team and retrieve statistical analysis/prediction of the result of the match (via “standard user” user interface)</p></li>
+<li>If standard user logged in:</li>
+<li>Standard user has capability to see the “standard user” user interface</li>
+<li>Standard user has capability to input a home team and an away team and retrieve statistical analysis/prediction of the result of the match (via “standard user” user interface)</li>
+<li><p>About page: information and instructions on how to use the application</p></li>
+</ul>
+<ol class="incremental" start="2" type="1">
+<li>System architecture (better use a diagram to illustrate the components and their relations.</li>
+</ol>
+<ul class="incremental">
+<li>Web application user interface, component modules, and database I/O are to be deployed on a Wildfly Server</li>
+<li>Communication from front end to back end/database will be done through a RESTful API interface</li>
+<li>model.java: will save/load prediction model from DB (MySQL)</li>
+<li>all components will have java servlets to make appropriate API calls to REST API interface to send/retrieve appropriate data</li>
+</ul>
+<ol class="incremental" start="3" type="1">
+<li>Platform and tools to be used in the project.</li>
+</ol>
+<ul class="incremental">
+<li>Eclipse</li>
+<li>MySql</li>
+<li>Java EE</li>
+<li>Weka API</li>
+</ul>
+<h2 id="project-plan-and-schedule">Project plan and schedule</h2>
+<p>List of tasks/milestones/check points of the project with time schedule.</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 38%" />
+<col style="width: 20%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Task ID</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: center;">Due date</th>
+<th style="text-align: center;">Lead</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Weka API integration for dataset, analysis of data, save/load model to DB (MySQL)</td>
+<td style="text-align: center;">Day 6 of week 12</td>
+<td style="text-align: center;">Mike</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Admin user Component development + REST API’s</td>
+<td style="text-align: center;">Day 3 of week 13</td>
+<td style="text-align: center;">Mike</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Standard user Component development + REST API’s</td>
+<td style="text-align: center;">Day 6 of week 13</td>
+<td style="text-align: center;">Mike</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Component integration with DB</td>
+<td style="text-align: center;">Day 6 of week 14</td>
+<td style="text-align: center;">Mike</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ol class="incremental" type="1">
+<li>https://data.world/</li>
+</ol>
+<h2 id="appendices">Appendices</h2>
+<ol class="incremental" type="1">
+<li>Check the project <a href="readme.txt" class="uri">readme.txt</a> for detailed requirements and evaluation. You need to describe and claim new features in your project, so it is good (not required) to mention some new features in the proposal. For example,</li>
+</ol>
+<ul class="incremental">
+<li>You can introduce more security features such as password encryption and HTTPS for web component access.</li>
+<li>You can try domain deployment WildFly for load balancing. We only did standalone deployment.</li>
+<li>You can try to deploy on Spring boot based microservice component on Docker or K8S.</li>
+<li>You can use Big Data tool for model computing (will be covered in weeks 10-12).</li>
+</ul>
+<ol class="incremental" start="2" type="1">
+<li>You may use html elements and css for better presentation of your proposal. For example, this html document is generated by using <a href="proposal_template.md" class="uri">proposal_template.md</a> and <a href="proposal.css" class="uri">proposal.css</a> and the following pandoc command</li>
+</ol>
+<pre><code>pandoc  -s  -i proposal_template.md -o proposal_template.html --css=proposal.css</code></pre>
+<p>When can submit your proposal in html with css and image files or the PDF file of your proposal.</p>
+</body>
+</html>

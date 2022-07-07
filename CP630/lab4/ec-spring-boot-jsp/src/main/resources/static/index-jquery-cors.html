@@ -1,0 +1,45 @@
+<!DOCTYPE HTM>
+<html>
+<head>
+<title>Spring boot RESTful WS test - JQeury, Ajax</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function callREST(id) {
+  var url = $("#domain").val(); // "http://localhost:8080/";
+  var select = "#"+id;
+  var ruri = url + id + "/" + $(select).val();
+  //alert(ruri);
+  $.ajax({
+    url: ruri,
+    type: 'GET',
+    crossDomain:true,
+    success: function(data) {	
+		$('#response').html(data);
+    },
+	error: function (xhr, ajaxOptions, thrownError) {
+	    $('#response').html("cross-origin is not allowed");
+        //alert(xhr.status);
+    }
+   });
+ }
+</script>
+</head>
+<body>
+
+<h1>Cross-Origin Resource Sharing (CORS)</h1>
+
+Input WS domain URL: <input type="text" id="domain" value="http://localhost:8080/"><br>
+
+<h2>Hello EC Spring Boot RESTful WS using API /json/{name} (allowing CORS)</h2>
+Input a name: <input type="text" id="json" value="EC"><input type="button" value="Submit" onclick="callREST('json')" />
+
+
+<h2>Hello EC Spring Boot RESTful WS using API /xml/{name}. (not allowing CORS)</h2>
+Input a name: <input type="text" id="xml" value="EC"><input type="button" value="Submit" onclick="callREST('xml')" />
+
+
+<h2 id="response" style="color:red;font-size:50px;">Will be replaced by WS returned value</h2>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+Testsuite: ec.lab.CalTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.112 sec
+------------- Standard Output ---------------
+This is executed before each Test
+This is exceuted after each Test
+This is executed before each Test
+This is exceuted after each Test
+This is executed before each Test
+This is exceuted after each Test
+------------- ---------------- ---------------
+
+Testcase: testSum took 0.01 sec
+	FAILED
+expected:<6> but was:<7>
+junit.framework.AssertionFailedError: expected:<6> but was:<7>
+	at ec.lab.CalTest.testSum(CalTest.java:35)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:36)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:460)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:142)
+
+Testcase: testEqual took 0 sec
+	SKIPPED
+Testcase: testDivisionException took 0.003 sec
+Testcase: testDivison took 0.001 sec

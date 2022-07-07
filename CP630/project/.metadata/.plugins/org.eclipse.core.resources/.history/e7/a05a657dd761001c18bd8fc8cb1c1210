@@ -1,0 +1,37 @@
+package stats.ejb;
+
+public class SoccerGameResult implements java.io.Serializable {
+	private String div;
+	private String homeTeam;
+	private String awayTeam;
+	private int fthg;
+	private int ftag;
+
+	public SoccerGameResult(String div, String homeTeam, String awayTeam, int fthg, int ftag) {
+		this.div = div;
+		this.homeTeam = homeTeam;
+		this.awayTeam = awayTeam;
+		this.fthg = fthg;
+		this.ftag = ftag;
+	}
+	
+	public String getDiv() {
+		return this.div;
+	}
+	
+	public String getHomeTeam() {
+		return this.homeTeam;
+	}
+	
+	public String getAwayTeam() {
+		return this.awayTeam;
+	}
+	
+	public int getFthg() {
+		return this.fthg;
+	}
+	
+	public int getFtag() {
+		return this.ftag;
+	}
+}

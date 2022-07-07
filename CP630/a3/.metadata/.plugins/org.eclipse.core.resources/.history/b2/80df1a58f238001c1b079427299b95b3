@@ -1,0 +1,11 @@
+package stats.ejb;
+
+import javax.ejb.EJB;
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+import stats.ejb.StatsEJBJMSStateless;
+
+public class StatsWS {
+
+}

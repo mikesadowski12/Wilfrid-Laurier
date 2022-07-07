@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ec-osgi-consumer
+Bundle-SymbolicName: ec-osgi-consumer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ec.osgi.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: ec.osgi.serviceapi,ec.osgi.serviceimpl,org.osgi.framework,org.osgi.util.tracker
+Automatic-Module-Name: ec-osgi-consumer

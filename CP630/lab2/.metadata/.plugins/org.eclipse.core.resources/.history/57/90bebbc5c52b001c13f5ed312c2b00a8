@@ -1,0 +1,5 @@
+package ec.jpa.repository;
+
+public class UserRepository {
+
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/slf4j/slf4j-api/1.7.22.jbossorg-1/slf4j-api-1.7.22.jbossorg-1.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/javassist/javassist/3.23.2-GA/javassist-3.23.2-GA.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-context-support/4.3.14.RELEASE/spring-context-support-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.5.Final/hibernate-commons-annotations-5.0.5.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-jdbc/4.3.14.RELEASE/spring-jdbc-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jvnet/staxex/stax-ex/1.7.8/stax-ex-1.7.8.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/hibernate/hibernate-core/5.3.13.Final/hibernate-core-5.3.13.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-beans/4.3.14.RELEASE/spring-beans-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-context/4.3.14.RELEASE/spring-context-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.10/jackson-annotations-2.9.10.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/com/jayway/jsonpath/json-path/2.0.0/json-path-2.0.0.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-tx/4.3.14.RELEASE/spring-tx-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.1/jackson-databind-2.9.10.1.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/apache/taglibs/taglibs-standard-impl/1.2.6-RC1/taglibs-standard-impl-1.2.6-RC1.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c-1_0-rt.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c-1_1.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fmt-1_0-rt.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fmt.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fn.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/permittedtaglibs.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/scriptfree.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/sql-1_0-rt.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/sql.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/x-1_0-rt.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/x.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/com/h2database/h2/1.4.193/h2-1.4.193.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/apache/taglibs/taglibs-standard-spec/1.2.6-RC1/taglibs-standard-spec-1.2.6-RC1.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jboss/spec/javax/servlet/jsp/jboss-jsp-api_2.3_spec/2.0.0.Final/jboss-jsp-api_2.3_spec-2.0.0.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-orm/4.3.14.RELEASE/spring-orm-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.18.Final/hibernate-validator-6.0.18.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/net/minidev/asm/1.0.2/asm-1.0.2.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/hibernate/validator/hibernate-validator-annotation-processor/6.0.18.Final/hibernate-validator-annotation-processor-6.0.18.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-expression/4.3.14.RELEASE/spring-expression-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-test/4.3.14.RELEASE/spring-test-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jboss/spec/javax/xml/bind/jboss-jaxb-api_2.3_spec/2.0.0.Final/jboss-jaxb-api_2.3_spec-2.0.0.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/net/minidev/json-smart/2.1.1/json-smart-2.1.1.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.3_spec/2.0.0.Final/jboss-transaction-api_1.3_spec-2.0.0.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/hibernate/hibernate-entitymanager/5.3.13.Final/hibernate-entitymanager-5.3.13.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/jboss/spec/javax/servlet/jboss-servlet-api_4.0_spec/2.0.0.Final/jboss-servlet-api_4.0_spec-2.0.0.Final.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-spring-webmvc-4.3.14.RELEASE.jar/meta-inf/spring-form.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-spring-webmvc-4.3.14.RELEASE.jar/meta-inf/spring.tld" project="spring-kitchensink-springmvctest"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar"/>
+  <path value="C:/Users/Mike Sadowski/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <el>
+   <linked-el length="21" name="%0" offset="3918" path="%1"/>
+   <linked-el length="8" name="%2" offset="2617" path="%1"/>
+   <linked-el length="20" name="%3" offset="2242" path="%4"/>
+   <linked-el length="27" name="%3" offset="2684" path="%4"/>
+   <linked-el length="19" name="%3" offset="2719" path="%5"/>
+   <linked-el length="27" name="%6" offset="2684" path="%4"/>
+   <linked-el length="19" name="%7" offset="2719" path="%5"/>
+   <linked-el length="12" name="%8" offset="3751" path="%1"/>
+   <linked-el length="12" name="%8" offset="4049" path="%1"/>
+   <linked-el length="45" name="%8" offset="3989" path="%1"/>
+   <linked-el length="27" name="%9" offset="2684" path="%4"/>
+   <linked-el length="20" name="%10" offset="2242" path="%4"/>
+   <linked-el length="14" name="%11" offset="3805" path="%1"/>
+   <linked-el length="13" name="%12" offset="3655" path="%1"/>
+   <linked-el length="22" name="%12" offset="3085" path="%1"/>
+   <linked-el length="20" name="%13" offset="2242" path="%4"/>
+   <linked-el length="12" name="%14" offset="3751" path="%1"/>
+   <linked-el length="21" name="%14" offset="3918" path="%1"/>
+   <linked-el length="14" name="%14" offset="3805" path="%1"/>
+   <linked-el length="12" name="%14" offset="4049" path="%1"/>
+   <linked-el length="15" name="%14" offset="3861" path="%1"/>
+   <linked-el length="45" name="%14" offset="3989" path="%1"/>
+   <linked-el length="19" name="%15" offset="2719" path="%5"/>
+   <linked-el length="15" name="%16" offset="3861" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="member.phoneNumber" value="%0"/>
+  <alias path="error" value="%2"/>
+  <alias path="version" value="%3"/>
+  <alias path="version.spring" value="%6"/>
+  <alias path="version.org" value="%7"/>
+  <alias path="member.id" value="%8"/>
+  <alias path="/spring-kitchensink-springmvctest/pom.xml" value="%4"/>
+  <alias path="version.spring.framework" value="%9"/>
+  <alias path="version.json" value="%10"/>
+  <alias
+   path="/spring-kitchensink-springmvctest/functional-tests/pom.xml" value="%5"/>
+  <alias path="member.name" value="%11"/>
+  <alias path="members" value="%12"/>
+  <alias path="version.json.path" value="%13"/>
+  <alias path="member" value="%14"/>
+  <alias path="version.org.json" value="%15"/>
+  <alias path="member.email" value="%16"/>
+  <alias
+   path="/spring-kitchensink-springmvctest/src/main/webapp/WEB-INF/views/index.jsp" value="%1"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="targetName"/>
+	<item value="false" key="apiAnalysis"/>
+	<item value="false" key="rcpPlugin"/>
+	<item value="true" key="osgiProject"/>
+	<item value="true" key="generatePluginActivator"/>
+	<section name="PDEFormActionManager">
+	</section>
+	<section name="org.eclipse.pde.ui.dialogs.PluginSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="668" key="DIALOG_X_ORIGIN"/>
+			<item value="195" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+	<section name="PluginExportWizard">
+		<item value="C:\enterprise" key="destination0"/>
+		<item value="C:\enterprise" key="destination1"/>
+		<item value="true" key="allowBinaryCycles"/>
+		<item value="202111022032" key="qualifierName"/>
+		<item value="false" key="useWorkspaceCompiledClasses"/>
+		<item value="1" key="exportType"/>
+		<item value="Generate source bundles" key="exportSourceFormat"/>
+		<item value="false" key="signJAR"/>
+		<item value="false" key="qualifier"/>
+		<item value="true" key="exportUpdate"/>
+		<item value="false" key="saveAsAnt"/>
+		<item value="false" key="exportSource"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="targetStateView">
+	</section>
+</section>

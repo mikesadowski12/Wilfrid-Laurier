@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="targetName"/>
+	<item value="false" key="apiAnalysis"/>
+	<item value="false" key="rcpPlugin"/>
+	<item value="true" key="osgiProject"/>
+	<item value="true" key="generatePluginActivator"/>
+	<section name="PDEFormActionManager">
+	</section>
+	<section name="PluginExportWizard">
+		<item value="C:\enterprise\apache-karaf-4.3.3\deploy" key="destination0"/>
+		<item value="C:\enterprise\apache-karaf-4.3.3\deploy" key="destination1"/>
+		<item value="Generate source bundles" key="exportSourceFormat"/>
+		<item value="false" key="signJAR"/>
+		<item value="C:/enterprise" key="destination2"/>
+		<item value="true" key="exportUpdate"/>
+		<item value="false" key="saveAsAnt"/>
+		<item value="false" key="exportSource"/>
+		<item value="true" key="allowBinaryCycles"/>
+		<item value="202111051202" key="qualifierName"/>
+		<item value="false" key="useWorkspaceCompiledClasses"/>
+		<item value="1" key="exportType"/>
+		<item value="false" key="qualifier"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+</section>

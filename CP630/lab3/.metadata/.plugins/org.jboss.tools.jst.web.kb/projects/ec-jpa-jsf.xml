@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths/>
+ <validation>
+  <core validator-id="jsf-verification">
+   <linked-resource declaration="true" name="%1;%2;" path="%0"/>
+  </core>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource name="%4;%5;%6;%7;" path="%3"/>
+   <linked-resource declaration="true" name="%8;" path="%6"/>
+   <linked-resource declaration="true" name="%10;%11;" path="%9"/>
+   <linked-resource name="%7;%9;%13;" path="%12"/>
+   <linked-resource name="%4;%5;%6;" path="%14"/>
+   <linked-resource name="%1;%16;%17;%18;%19;" path="%15"/>
+   <linked-resource name="%4;%12;%3;%9;%21;" path="%20"/>
+   <linked-resource declaration="true" name="%22;%23;" path="%4"/>
+   <linked-resource name="%9;%13;" path="%24"/>
+   <linked-resource declaration="true" name="%25;" path="%13"/>
+  </core>
+  <core validator-id="jboss.jsf.core">
+   <linked-resource name="%27;" path="%26"/>
+   <linked-resource name="%29;%30;%31;" path="%28"/>
+   <linked-resource name="%27;" path="%32"/>
+  </core>
+  <core validator-id="batch-verification"/>
+  <el>
+   <linked-el length="40" name="%8" offset="913" path="%33"/>
+   <linked-el length="30" name="%8" offset="615" path="%33"/>
+   <linked-el length="30" name="%8" offset="874" path="%33"/>
+   <linked-el length="27" name="%8" offset="798" path="%33"/>
+   <linked-el length="21" name="%34" offset="5617" path="%35"/>
+   <linked-el length="21" name="%34" offset="5612" path="%36"/>
+   <linked-el length="34" name="%9" offset="727" path="%37"/>
+   <linked-el length="19" name="%9" offset="596" path="%37"/>
+   <linked-el length="30" name="%25" offset="805" path="%38"/>
+   <linked-el length="35" name="%25" offset="885" path="%38"/>
+   <linked-el length="35" name="%25" offset="625" path="%38"/>
+   <linked-el length="45" name="%25" offset="929" path="%38"/>
+   <linked-el length="21" name="%39" offset="5768" path="%36"/>
+   <linked-el length="21" name="%39" offset="5773" path="%35"/>
+   <linked-el length="17" name="%40" offset="393" path="%41"/>
+   <linked-el length="35" name="%41" offset="1115" path="%42"/>
+   <linked-el length="36" name="%41" offset="1503" path="%0"/>
+   <linked-el length="39" name="%41" offset="1399" path="%42"/>
+   <linked-el length="38" name="%41" offset="472" path="%42"/>
+   <linked-el length="36" name="%41" offset="949" path="%42"/>
+   <linked-el length="39" name="%41" offset="1493" path="%42"/>
+   <linked-el length="36" name="%41" offset="1294" path="%0"/>
+   <linked-el length="35" name="%41" offset="784" path="%42"/>
+   <linked-el length="40" name="%6" offset="913" path="%33"/>
+   <linked-el length="30" name="%6" offset="615" path="%33"/>
+   <linked-el length="30" name="%6" offset="874" path="%33"/>
+   <linked-el length="27" name="%6" offset="798" path="%33"/>
+   <linked-el length="21" name="%43" offset="5617" path="%35"/>
+   <linked-el length="21" name="%43" offset="5612" path="%36"/>
+   <linked-el length="32" name="%44" offset="3445" path="%35"/>
+   <linked-el length="32" name="%44" offset="3440" path="%36"/>
+   <linked-el length="22" name="%45" offset="581" path="%46"/>
+   <linked-el length="23" name="%45" offset="783" path="%46"/>
+   <linked-el length="22" name="%45" offset="1217" path="%46"/>
+   <linked-el length="18" name="%45" offset="1419" path="%46"/>
+   <linked-el length="22" name="%45" offset="984" path="%46"/>
+   <linked-el length="17" name="%47" offset="393" path="%41"/>
+   <linked-el length="21" name="%48" offset="5768" path="%36"/>
+   <linked-el length="31" name="%48" offset="6289" path="%35"/>
+   <linked-el length="31" name="%48" offset="6284" path="%36"/>
+   <linked-el length="32" name="%48" offset="3445" path="%35"/>
+   <linked-el length="32" name="%48" offset="3440" path="%36"/>
+   <linked-el length="21" name="%48" offset="5773" path="%35"/>
+   <linked-el length="32" name="%49" offset="3445" path="%35"/>
+   <linked-el length="32" name="%49" offset="3440" path="%36"/>
+   <linked-el length="55" name="%28" offset="1096" path="%28"/>
+   <linked-el length="28" name="%28" offset="1066" path="%28"/>
+   <linked-el length="32" name="%28" offset="1293" path="%28"/>
+   <linked-el length="55" name="%28" offset="974" path="%28"/>
+   <linked-el length="30" name="%28" offset="1333" path="%28"/>
+   <linked-el length="28" name="%28" offset="1190" path="%28"/>
+   <linked-el length="22" name="%4" offset="581" path="%46"/>
+   <linked-el length="23" name="%4" offset="783" path="%46"/>
+   <linked-el length="22" name="%4" offset="1217" path="%46"/>
+   <linked-el length="18" name="%4" offset="1419" path="%46"/>
+   <linked-el length="22" name="%4" offset="984" path="%46"/>
+   <linked-el length="29" name="%4" offset="1545" path="%46"/>
+   <linked-el length="34" name="%50" offset="673" path="%26"/>
+   <linked-el length="31" name="%50" offset="588" path="%26"/>
+   <linked-el length="31" name="%50" offset="609" path="%32"/>
+   <linked-el length="21" name="%50" offset="765" path="%26"/>
+   <linked-el length="21" name="%50" offset="786" path="%32"/>
+   <linked-el length="34" name="%50" offset="694" path="%32"/>
+   <linked-el length="19" name="%10" offset="596" path="%37"/>
+   <linked-el length="31" name="%51" offset="6289" path="%35"/>
+   <linked-el length="31" name="%51" offset="6284" path="%36"/>
+   <linked-el length="31" name="%52" offset="6289" path="%35"/>
+   <linked-el length="31" name="%52" offset="6284" path="%36"/>
+   <linked-el length="19" name="%53" offset="596" path="%37"/>
+   <linked-el length="31" name="%54" offset="6289" path="%35"/>
+   <linked-el length="31" name="%54" offset="6284" path="%36"/>
+   <linked-el length="32" name="%55" offset="3445" path="%35"/>
+   <linked-el length="32" name="%55" offset="3440" path="%36"/>
+   <linked-el length="21" name="%56" offset="5768" path="%36"/>
+   <linked-el length="21" name="%56" offset="5773" path="%35"/>
+   <linked-el length="29" name="%22" offset="1545" path="%46"/>
+   <linked-el length="34" name="%5" offset="673" path="%26"/>
+   <linked-el length="31" name="%5" offset="588" path="%26"/>
+   <linked-el length="31" name="%5" offset="609" path="%32"/>
+   <linked-el length="21" name="%5" offset="765" path="%26"/>
+   <linked-el length="21" name="%5" offset="786" path="%32"/>
+   <linked-el length="34" name="%5" offset="694" path="%32"/>
+   <linked-el length="22" name="%23" offset="581" path="%46"/>
+   <linked-el length="23" name="%23" offset="783" path="%46"/>
+   <linked-el length="22" name="%23" offset="1217" path="%46"/>
+   <linked-el length="18" name="%23" offset="1419" path="%46"/>
+   <linked-el length="22" name="%23" offset="984" path="%46"/>
+   <linked-el length="35" name="%57" offset="1115" path="%42"/>
+   <linked-el length="36" name="%57" offset="1503" path="%0"/>
+   <linked-el length="39" name="%57" offset="1399" path="%42"/>
+   <linked-el length="38" name="%57" offset="472" path="%42"/>
+   <linked-el length="36" name="%57" offset="949" path="%42"/>
+   <linked-el length="39" name="%57" offset="1493" path="%42"/>
+   <linked-el length="36" name="%57" offset="1294" path="%0"/>
+   <linked-el length="35" name="%57" offset="784" path="%42"/>
+   <linked-el length="34" name="%11" offset="727" path="%37"/>
+   <linked-el length="30" name="%13" offset="805" path="%38"/>
+   <linked-el length="35" name="%13" offset="885" path="%38"/>
+   <linked-el length="35" name="%13" offset="625" path="%38"/>
+   <linked-el length="45" name="%13" offset="929" path="%38"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias
+   path="\ec-jpa-jsf\src\main\java\org\jboss\as\quickstarts\greeter\web\GreetController.java" value="%16"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/org/jboss/as/quickstarts/greeter/domain/EJBUserDao.java" value="%3"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/WEB-INF/beans.xml" value="%15"/>
+  <alias path="project" value="%34"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/login.xhtml" value="%26"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/check-model.xhtml" value="%38"/>
+  <alias path="http://java.sun.com/jsf/composite:interface" value="%29"/>
+  <alias path="http://java.sun.com/jsf/composite:attribute" value="%30"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/create.xhtml" value="%46"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/WEB-INF/faces-config.xml" value="%0"/>
+  <alias path="/ec-jpa-jsf/src/main/java/com/ec/model/ModelDao.java" value="%24"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/org/jboss/as/quickstarts/greeter/domain/UserDao.java" value="%14"/>
+  <alias
+   path="\ec-jpa-jsf\src\main\java\org\jboss\as\quickstarts\greeter\web\CreateController.java" value="%17"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/com/ec/lab/NavigationController.java" value="%41"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/org/jboss/as/quickstarts/greeter/web/GreetController.java" value="%6"/>
+  <alias path="project.artifactId" value="%43"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/org/jboss/as/quickstarts/greeter/domain/User.java" value="%45"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/com/ec/model/ModelPersistentBean.java" value="%21"/>
+  <alias path="version" value="%48"/>
+  <alias path="\ec-jpa-jsf\src\main\java\com\ec\lab\UserLogin.java" value="%1"/>
+  <alias path="version.wildfly.maven.plugin" value="%51"/>
+  <alias path="version.wildfly.maven" value="%52"/>
+  <alias path="version.jboss" value="%55"/>
+  <alias path="version.war.plugin" value="%56"/>
+  <alias path="/ec-jpa-jsf/src/main/java/com/ec/lab/UserLogin.java" value="%5"/>
+  <alias path="\ec-jpa-jsf\src\main\webapp\WEB-INF\beans.xml" value="%7"/>
+  <alias path="greetController" value="%8"/>
+  <alias
+   path="/ec-jpa-jsf/target/m2e-wtp/web-resources/META-INF/maven/org.wildfly.quickstarts/ec-jpa-jsf/pom.xml" value="%35"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/org/jboss/as/quickstarts/greeter/Resources.java" value="%20"/>
+  <alias path="com.ec.lab.UserLogin" value="%2"/>
+  <alias path="http://java.sun.com/jsf/composite/ec:loginComponent" value="%27"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/page0.xhtml" value="%42"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/org/jboss/as/quickstarts/greeter/web/CreateModelController.java" value="%9"/>
+  <alias path="http://java.sun.com/jsf/composite:implementation" value="%31"/>
+  <alias path="readModelController" value="%25"/>
+  <alias
+   path="/ec-jpa-jsf/target/m2e-wtp/web-resources/META-INF/maven/org.wildfly.quickstarts/ec-eb/pom.xml" value="%36"/>
+  <alias path="/ec-jpa-jsf/src/main/java/com/ec/model/EJBModelDao.java" value="%12"/>
+  <alias path="version.war" value="%39"/>
+  <alias path="param" value="%40"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/greet.xhtml" value="%33"/>
+  <alias
+   path="\ec-jpa-jsf\src\main\java\org\jboss\as\quickstarts\greeter\web\ReadModelController.java" value="%18"/>
+  <alias path="version.jboss.spec" value="%44"/>
+  <alias path="param.pageId" value="%47"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/org/jboss/as/quickstarts/greeter/web/CreateController.java" value="%4"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/webapp/resources/ec/loginComponent.xhtml" value="%28"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/relogin.xhtml" value="%32"/>
+  <alias path="version.jboss.spec.javaee" value="%49"/>
+  <alias path="userLogin" value="%50"/>
+  <alias path="newModel" value="%10"/>
+  <alias path="/ec-jpa-jsf/src/main/webapp/create-model.xhtml" value="%37"/>
+  <alias path="/ec-jpa-jsf/src/main/java/com/ec/model/Model.java" value="%53"/>
+  <alias path="version.wildfly" value="%54"/>
+  <alias path="createController" value="%22"/>
+  <alias path="newUser" value="%23"/>
+  <alias
+   path="\ec-jpa-jsf\src\main\java\org\jboss\as\quickstarts\greeter\web\CreateModelController.java" value="%19"/>
+  <alias path="createModelController" value="%11"/>
+  <alias
+   path="/ec-jpa-jsf/src/main/java/org/jboss/as/quickstarts/greeter/web/ReadModelController.java" value="%13"/>
+  <alias path="navigationController" value="%57"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>
