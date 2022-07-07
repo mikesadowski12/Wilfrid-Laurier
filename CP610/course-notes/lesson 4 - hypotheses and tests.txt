@@ -1,0 +1,46 @@
+INTRODUCTION
+  - when we say hypothesis, it specifically refers to the statistical hypothesis
+    - a hypothesis that is testable based on observed data modeled as the realized values taken by a collection of random variables
+
+
+
+TYPES OF HYPOTHESES
+  - There are 2 types of hypotheses:
+    - Null hypothesis (H0)
+    - Alternative hypothesis (H1)
+    - They are mutually exclusive for a given population or some random samples
+      - A hypothesis test will either reject the null hypothesis in favor of the alternative or vice versa
+    - Correspondingly, there are 2 types of errors:
+      - Type I error: reject a true null hypothesis
+      - Type II error: don’t reject a false null hypothesis
+
+
+
+CONFIDENCE INTERVAL AND SIGNIFICANCE LEVEL
+  - Hypothesis tests give us a way to quantify the likelihood of the observed samples given H0 to one value which is called the p-value
+  - Confidence Interval (CI) which is the range of values that are likely to include the ground-truth value (or population value) with a certain degree of confidence.
+    - If we set CI to 95%, we will have a range that includes 95% of possible values that can make H0 acceptable. We also call this range acceptance region
+    - Confidence intervals are usually calculated at different significance levels, depending on the test scenarios (one-tailed test or two-tailed test, etc
+
+
+
+TEST SELECTION
+  - T-test and z-test are often used for similar scenarios
+    - Z-test needs to know the variance, or the sample size is larger than 30 so that we can assume the hypothesis value for the test is in normal distribution and calculate variance by ourselves
+    - Z score which is used as a p-value for z-test is calculated on the mean/variance of the population/samples
+    - A t-test is better than a z-test on a small sample size and unknown variance because it assumes the hypothesis value for the test is in Student’s t-distribution, which is usually used for small groups of samples
+    - If the sample size is big enough, the results of both tests will be quite similar
+    - T distribution, which is the assumption on samples for t-test, will be closer and closer to a normal distribution, which is the assumption of z-test when sample size increases
+
+
+
+T-TEST
+
+
+
+Z-TEST
+
+
+
+CHI-SQUARE TEST
+  - crosstab() method to obtain the contingency table of value distribution across the two columns

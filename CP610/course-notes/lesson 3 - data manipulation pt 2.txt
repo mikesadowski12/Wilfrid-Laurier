@@ -1,0 +1,62 @@
+OVERVIEW OF DATA
+  - To understand the raw data, we have a question checklist to review:
+    - Does it have missing values?
+    - Does it have outlier values?
+    - Does it have invalid values given the column description?
+    - Does it have categorical values?
+    - Do we need to convert some numeric values into bins?
+    - Which columns are useless for this analytics task?
+    - Do we need more data to continue the task?
+  - the question mark ? is used to denote missing values
+  - To make pandas understand this, we can use the argument na_value=”?” for the method read_csv()
+    - ? is replaced by NaN automatically and the DataFrame df knows there are missing values now
+  - NaN is a special value. It denotes an unavailable value which means we don't know anything about it
+
+
+
+FORMAT CONVERSION
+  - What if a column is supposed to be numeric but is recognized as the object data type in the DataFrame? We have a convenient method to_numeric() for it
+    - It is possible to get errors when we do the casting. Some original values may not be converted to numbers. To handle that, we can use the errors
+      - If ‘raise’, then invalid parsing will raise an exception.
+      - If ‘coerce’, then invalid parsing will be set as NaN.
+      - If ‘ignore’, then invalid parsing will return the input.
+  - How about converting numeric values to texts? str()
+
+  Q: a2 and a14 are object data types, not float64. How did that happen? Think about this for 1 minute and then click the button below to reveal the answer
+  Answer: The trick is, if we don’t specify what is na_value when we use read_csv(), ? is considered as a valid value for a2 and a14. If a column has non-numeric values, it is considered as the object type.
+
+
+
+MISSING VALUES
+  - copy() copies a dataframe
+  - For numeric values, is it reasonable to fill the same values for all missing ones?
+    - A more advanced way to solve this issue is using KNN (k-nearest neighbors)
+  - fit_transform() method does the real filling work
+
+
+
+OUTLIERS
+  - a data point that differs significantly from other observations
+  - Sometimes outliers are the targets we want to find. For example, credit fraud cases are only a small ratio of all transactions
+  - outliers can determine the result of analysis, either positively or negatively. They cannot be simply removed
+  - Some outliers are just noisy data. They can decrease the performance of our analysis tools significantly. In that case, we need to remove them
+
+
+
+DATA SPLIT AND SHUFFLE
+  - When we split a dataset, we expect the 3 sets have similar data distributions
+    - Otherwise, we may miss important information in any of the training/test/validation procedure
+  - Given a DataFrame, it is easy to shuffle its rows by using the shuffle()
+    - doesn’t change the original index of each row. We can reset them by running df_shuffled.reset_index(inplace=True, drop=True)
+
+    Index shuffling
+
+    Stratified sampling
+    - The ratio of different class values in the data needs our concern. In a dataset, the occurrences of some class values can be much less than others
+      - imbalanced
+    - When the dataset is imbalanced, and we randomly pick data points from the original dataset and put them into the training/test sets, that can cause problems
+      - This cannot guarantee the minor class values to be assigned into the split sets and keep their ratio as in the original dataset
+      - If all data points with minor class values are in one set, e.g., test set, and we use the training set for some model training, the trained model will never predict the minor class values because it doesn’t see them at all
+      - To solve this problem, stratified sampling is proposed
+    - sampling in each subpopulation (stratum) independently
+      - consider stratum as one dimension/column of a DataFrame

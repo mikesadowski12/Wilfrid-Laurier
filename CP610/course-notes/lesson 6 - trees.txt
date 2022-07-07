@@ -1,0 +1,64 @@
+INTRODUCTION
+  - When people make decisions or inferences, a common scenario is dividing a problem into sub-problems and conquering each sub-problem
+  - A tree model has many pros:
+    - easy to be explained and visualized
+    - support categorical/numeric features well
+    - can automatically filter irrelevant features
+    - can be built in a short period of time even based on a large dataset
+    - can deal with a multi-classification problem (more than 2 classes)
+  - Like linear models, tree models are trained on datasets
+  - It is normal to get a tree that fits the training data very well which means it can predict the data points in the training set correctly in most or even all cases.
+    - However, it can perform very badly on the test set
+    - overfitted because it is not general enough to work well on data points it doesn't see
+
+  Q: what will the tree be like if we use the average earning feature before the total deposit one? Can we use the credit score feature in the last step and still construct a tree that gets the same result as the one in Figure 6.02?
+
+DECISION TREE
+ - Each internal node denotes a condition on one feature, branches from this node denote a split of data points passed to the node
+ - The leaf nodes, which are at the bottom of the tree, are predicted classes or numeric values
+ - When we train a decision tree model, those data points in the training set will be split again and again.
+  - For each time, we will choose one feature, and set a condition like a feature value is/isn't A or large/no larger than B
+  - Data points will be split into multiple subsets according to the condition
+
+  Q: when will H(X) be maximized?
+  Answer: when all values have the same probability of occurrence.
+
+  Decision Tree Regressor
+    - CART (Classification And Regression Tree) can support both numeric features and regression tasks
+    - We call the chosen feature a split feature, and for the feature, we will find a split point as the condition
+    - The basic idea is, we use value s on the feature j to split the dataset into two subsets.
+      - For each subset, we want the target values of its data points as close to the average target values as possible, so we use a formula which is the squared differences for all values to evaluate the compactness of this subset.
+      - And we want to also minimize the sum of the squared differences of both subsets
+    - Tree models have a very important parameter: max_depth
+      - The deeper a tree is, the more likely it can fit very complicated datasets well
+    - To show the importance of features, we can easily use the model's feature_importances_ attribute
+
+  Decision Tree Classifier
+    - to decide the split feature and the split point, and decision tree classifiers have different metrics:  information gain and Gini impurity
+      - Information gain calculates the reduction in entropy.
+        - Entropy is used to evaluate the "surprise" or "uncertainty" of data
+          - It is a value between 0 and 1.
+      - Gini impurity is the probability we classify the data point incorrectly in the dataset.
+        - It is used by the CART algorithm for classifications
+      - There is not a conclusion that one is always better than the other
+
+
+
+RANDOM FOREST
+ - A tree can be very complicated if we don't limit its max depth
+ - If we have a model and use it to match the training set very well (e.g., more than 98% accuracy), but it performs very badly on the test dataset, this model is overfitted
+ - How can we make a more robust tree model? An ensemble can help
+
+ Background
+  - Ensemble modeling, entails building multiple diverse models which can predict the target value/classes
+    - Ensemble models usually have a better generalization and better performance
+  - The random forest model is an ensemble model which is based on a group of decision trees
+    - it can be applied for both regression and classification tasks
+    - can naturally deal with big data and run in a parallel way
+    - It is expected to get decent performance even with the default parameters and avoid overfitting to some extent
+
+  Random Forest in Python
+
+  GBDT and Xgboost
+    - GBDT (Gradient Boosting Decision Tree) and its upgrade version xgboost
+    - Boosting methods are part of ensemble modeling

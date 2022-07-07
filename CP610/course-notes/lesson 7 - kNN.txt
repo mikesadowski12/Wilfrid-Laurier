@@ -1,0 +1,43 @@
+INTRODUCTION
+  - k-nearest neighbor proposed in 1967
+  - the class/target value of a data point should be the same or close to its nearest k neighbors
+  - K-NN doesn't have any parameters for training
+
+  Q: Given a new data point, the green one. If we use the k-NN model, what should be its class if k=3? Will the prediction be changed if k=5?
+  Answer: In Figure 7.01, there are 2 blue points in the 3 nearest neighbors of the green data point. When k is 5, there are 3 yellow points. The choice of k can make different results, and it is the most important parameter for the k-NN model.
+
+
+DISTANCE
+  - nearest, it means we need a metric to evaluate how close 2 data points are
+  - distance can be calculated in various ways
+    - Euclidian distance, Manhattan distance, etc
+      - Each distance metric has its scenarios
+    - The smaller the distance is, the nearer the 2 data points are
+
+  Q: Assume we have 3 data points in a 2-dimensional space and their coordinates are (2, 2), (3, 4), and (2, 5). Which 2 data points are the closest if we use the Euclidean distance?
+  Answer: (3, 4) and (2, 5). Their distance is root of 2
+
+
+CHOICE OF K
+  - no way for us to determine the best k value for k-NN models
+  - When we choose a small k, it means the use of a small group of data points in the training dataset for predicting classes or target values
+    - This makes the k-NN model very sensitive to the training data we randomly pick from the whole dataset
+  - if the prediction is determined by a few neighbors, and unfortunately there is an outlier that usually has an exceptional target value, the prediction can be far away from the correct target value because of the outlier.
+    - So, we will not use 1 or 2 for k
+  - a big k value can let us use more information in the dataset for predictions
+    - a trade-off, it is possible to use data points that are far away, but that conflicts with the idea of k-NN
+  - To solve the problem of choosing k, machine learning researchers propose some methods to fine-tune those parameters which can't be learned in the training procedure
+    - Those parameters are called hyperparameters
+    - In general, k should be a value that is much smaller than M (M = # of data points)
+
+
+
+K-NN REGRESSOR
+  - One good point of a k-NN model is its flexibility
+    - we can easily change the metric of distance and try a lot more strategies, especially when we have some knowledge about which features are more important than others
+
+
+
+K-NN CLASSIFIER
+  - a k-NN model is more suitable for classification tasks than regression tasks
+  - In classification tasks, class values are limited and usually less than the k value

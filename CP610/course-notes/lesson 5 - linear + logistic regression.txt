@@ -1,0 +1,46 @@
+INTRODUCTION
+  - given a data set, machine learning algorithms can be used to train a model, which is mathematic formula(s)
+  - If the task is to predict which category the data point belongs to, we call the category a class
+  - Models consume feature values of those data points which are called training sets, and we evaluate those models by those data points (test/validation set) which are not used for training
+  - If the predicted values are numeric, e.g., house prices, we call them target values
+
+
+
+LINEAR REGRESSION
+  Background
+    - Regression analysis estimates the relationship between a numeric variable which is the target value and one or more independent variables which are features via statistical ways
+    - The most common form of regression analysis is linear regression
+      - It is a linear method for modeling the relationship between the target value and the features
+    - A linear model in this space is an n-dimensional element, which can be projected as a line on one or more dimensions
+
+  Linear regression in python
+    - Coefficients are those parameters for features in a linear regression model
+    - Intercept
+    - Mean squared error is a common metric for regression tasks
+      - If the predicted value is quite different from the actual one, MSE will be large
+    - Coefficient of determination is a number between 0 and 1, the larger the better
+      - used to evaluate how well a model fits/explains the data
+      - if most of the prediction is far away from the target value on most test data points, will be very small
+
+  Feature importance
+    - For linear regression models, coefficients are often used as feature importance scores
+
+  Lasso and Ridge
+    - Lasso is short for The Least Absolute Shrinkage and Selection Operator
+    - The Ridge model is used when we want to control the range of coefficients
+    - Alpha is used to control the range, and by default, it is 1. When we increase alpha, the range of coefficients will be shrunken
+
+  Q: why should we keep only 1 of 2 highly correlated features for a linear regression model?
+  Answer: Their coefficients can affect each other so we don't know the actual impact of the two features on target values. If we have two features: x1/x2 which are highly and positively correlated, this means the values of x1 and x2 always change towards the same direction. An extreme case is, x1 and x2 are the same things. If y = 12 * x1, and now we use 2 features, both y = 13 * x1 - x2 and y = 5 * x1 + 7 * x2 are perfect linear models. Can we say in the first model x2 hurts y and x2 is more important than x1 for predicting y? Obviously, no.
+  The scale of feature values can also affect the range of coefficients. Usually, we will normalize the values of a feature to values in [0, 1]
+
+
+
+LOGISTIC REGRESSION
+  - Although there is "regression" in its name, it is for classification tasks
+  - As regression tasks predict numeric values, a classification task predicts the category given the feature values of a data point
+  - Specifically, logistic regression is for binary classifications which means we can only predict two categories
+
+  Logistic regression in python
+    - A confusion matrix, also known as an error matrix, is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one
+      - Each row of the matrix represents the instances in an actual class while each column represents the instances in a predicted class

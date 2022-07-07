@@ -1,0 +1,44 @@
+INTRODUCTION
+  - data point or observation is a set of one or more measurements on a single member of the unit of observation”
+  - data points are what we manipulate during data analysis
+  - A dataset contains numbers of data points
+
+
+
+INTRODUCTION TO PANDAS
+  - Pandas can do:
+    - Data cleansing
+    - Data fill
+    - Data normalization
+    - Merges and joins
+    - Statistical analysis
+    - Loading and saving data
+  - Series is a one-dimensional labeled array capable of holding any data type (integers, strings, floating-point numbers, Python objects, etc.)
+  - DataFrame is a 2-dimensional labeled data structure with columns of potentially different types. You can think of it like a spreadsheet or SQL table, or a dict of Series objects
+
+
+
+LOAD/SAVE DATA FROM CSV FILES
+  import pandas as pd
+  df = pd.read_csv("~/Documents/Data-Analysis/course-material/datasets/credit-screening/crx_data.csv", header=None)
+  df.head(5)
+
+
+
+GET THE SUMMARY OF THE RAW DATA
+  - info() is a native method of a DataFrame object
+  - value_counts() is also a very useful method to get the distinct value count of an object column
+  - describe() method of a DataFrame object give you some extra information about numeric columns
+
+
+
+ADD/DELETE COLUMNS/ROWS IN PANDAS DATAFRAME
+  - drop() is the method to drop a column or a row
+    - The argument axis is 1 when we want to drop a column and 0 for a row
+    - To actually drop it, we need to use the argument “inplace=True”
+
+
+
+GET/SET VALUE GIVEN A DATAFRAME LOCATION
+  - iloc[] can be used to get values given row/column indices
+  - iat[] which can locate the value we want as well as iloc[]. The main difference is the former doesn't support column names. It can only have integer indices for locating

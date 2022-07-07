@@ -1,0 +1,30 @@
+supervised learning:
+- Making predictions by using a labelled set of training examples
+- the learning algorithms make predictions iteratively based on a set of examples (training data) and corresponding labeled and the learning stops after achieving the desired accuracy
+- classification: goal is to predict the discrete class labels for unseen data based on past observations
+- regression: find a relationship between several predictor variables (features) and a continuous response variable (label), predicting of house prices based on the square footage of the house is an example of regression task
+
+------------------------------------------------------------------------
+unsupervised learning:
+- Finding patterns in unlabeled data
+- looks for unknown but useful structure within the collection of data points. This method is used for searching for similarities, finding patterns, learning features, detecting outliers, and reducing dimension
+- clustering: technique that groups data points without any prior knowledge of the structure in data
+	- One of the most common reasons that we use clustering in the business setting is to categorize different customers known as customer segmentation
+
+------------------------------------------------------------------------
+overfitting:
+- Overfitting means that the model fits well on the training data but leads to poor model performance on new data
+- corresponds too closely or exactly to a particular set of data, and may therefore fail to fit to additional data or predict future observations reliably
+- high variance
+- Regularization: adds a penalty on different parameters to prevent training a flexible model, therefore the model is less probable to fit the noise and the generalization capability is improved
+
+ 
+------------------------------------------------------------------------
+underfitting:
+- underfitting (high bias) occurs when the model not only fails to fit the training data but also has a poor result on test data.
+- some parameters or terms that would appear in a correctly specified model are missing
+- high bias
+
+
+
+

@@ -1,0 +1,77 @@
+WHAT IS DATA ANALYSIS?
+  - Data analysis is inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making
+  - data needs inspecting, cleansing, transforming
+  - Before we start data analysis, remember the most important principle for data analysis: garbage in, garbage out
+
+    Big data
+    - Volume, Velocity, Variety, Variability, and Value
+    - Because now we have much more technologies to collect data than before, we can consider big data as the statistical concept population
+    - Big data analysis considers how to find the needle in the haystack
+    - regular data analysis is based on samples from a population, and all the knowledge is about how to infer the real world via a small group of samples
+
+
+
+WHY DATA ANALYSIS IS NEEDED?
+  - If you have some assumptions, do a data analysis to convince other people or yourself that you are right.
+  - Sometimes you don’t know how to solve an issue in your business or life, a data analysis can help you find the root cause
+  - You need to predict what will happen (e.g., stock price or will this winter be significantly coder than before), previous data + machine learning can help
+
+
+
+GAP BETWEEN GOALS AND DATA ANALYSIS
+  - Having all the data in the world doesn’t mean you can make a correct decision
+  - When you apply data analysis, you need to understand your proper goals and ask the correct questions first
+
+
+
+TYPES OF DATA ANALYSIS
+  Descriptive Analysis
+    - describe some significant factors in complete data or a sample of summarized numerical data
+    - how many concurrent sessions should be allowed for a website. If there are no more than 100 concurrent sessions in 99% of the time, then it is unnecessary to have a powerful server to support 1000 concurrent sessions
+
+  Diagnostic Analysis
+    - investigates the root cause of the insight found in statistics
+    - useful to identify behavior patterns of data
+    - figuring out why your revenue is getting worse. Unlike descriptive analysis, you want to dig deeper and find some patterns instead
+
+  Predictive Analysis
+    - tends to forecast the future
+    - Once you figure out some patterns from diagnostic analysis, you can apply those patterns to new data to predict what is likely to happen
+    - For example, you know the pattern of people who have a high probability of getting breast cancer, you can use this to predict whether a person is likely to have this disease
+    - challenging because:
+      - Patterns that happened in the past don’t necessarily repeat in the future
+      - Patterns can be incomplete because the data we have diagnostic analysis on is biased
+      - Not all patterns are useful
+
+  Prescriptive Analysis
+    - combines the insight from all previous analyses to decide which action to take in a current problem or decision
+
+
+
+DATA ANALYSIS PROCESS
+  Data Requirement Gathering
+    - what data do you need
+    - what metric you want to use, e.g., for predictive analysis, accuracy on the test dataset is a common metric
+    - when you should stop, e.g., archive 99% accuracy on test data or find a property which matches 5 out of 10 requirements, etc
+
+  Data Collection
+    - it is helpful to keep records of data sources and all the updates
+
+  Data Cleaning
+    - when you get the data, it can have issues such as:
+      - value missing
+      - data duplications
+      - outliers and errors
+      - biased sampling
+      - irrelevant information
+    - This phase must be done before analysis because based on data cleaning, your output of analysis will be closer to your expected outcomes
+
+  Data Analysis
+    - As you manipulate data, you may find you have the necessary information you need, or you need to go back to the previous steps for a few iterations
+
+  Data Interpretation
+    - interpret your results and bind them with your goals
+    - One problem is, not all results can be interpreted
+
+  Data Visualization
+    - often appears in the form of charts and graphs
