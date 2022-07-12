@@ -1,0 +1,44 @@
+1 INTRODUCTION
+- these trees are made by putting some tests on nodes of a directed tree (e.g. an attribute being true or false), each edge out of a node represents one of the outcomes, finally leaves represent classes (in a classification problem) or numerical values (in a continuous problem, i.e. regression)
+- When using ensembles, we train multiple models and combine their results to get a better performance
+
+2 CLASSIFICATION AND REGRESSION TREE (CART)
+- Internal nodes test attributes.
+- Branching is determined by attribute value.
+- Leaf nodes are outputs (predictions).
+
+3 FIRST ATTEMPT ON THE TREE STRUCTURE
+- accuracy is not a good measure for splitting
+- There are multiple criteria used for splitting, one important measure is called information gain
+- To understand information gain, we first need to know what entropy means
+
+4 ENTROPY
+- measures the information (or the “surprise”) of a random variable; denotes how uncertain we are about a random variable that comes from a distribution
+
+4.1 CONDITIONAL ENTROPY AND INFORMATION GAIN
+- So conditional entropy shows the expected value of entropy for conditional distribution
+- Information gain (mutual information) shows how much uncertainty is reduced (in expectation) about a random variable by knowing another one
+
+4.2 GINI IMPURITY
+- We can use other measures for finding the best splitting
+- shows how often a randomly chosen element from the set would be incorrectly labeled if it was labeled by the distribution of samples in that node
+
+5 DECISION TREE MISCELLANY
+
+6 ENSEMBLE
+- means combining predictions from multiple models to get a better result
+  - majority vote or weighted average of predictions
+- the used models should differ somehow, either by using completely different models or models that are trained on different training sets or change of hyperparameters
+- Bagging means train different models on randomly chosen subsets of data, as we show later this reduces the variance of our model leading to a smaller error
+- Boosting refers to training models in sequence, each focusing on the examples that previous models got wrongs
+
+6.1 BAGGING
+
+6.2 RANDOM FOREST
+- Random Forests (RFs) are an ensemble learning method for both classification and regression tasks
+- operate by constructing multiple decision trees (which build-up a forest) at training time
+- the mode of the classes resulted from each decision tree will be the output of the random forest algorithm for a classification task
+- For regression, the mean of the individual trees will be used as output.
+- In other words, random forests are bagged decision trees, with one extra trick to decorrelate the predictions:
+  - When choosing each node of the decision tree, choose a random set of input features, and only consider splits on those features.
+

@@ -1,0 +1,63 @@
+1 INTRODUCTION
+
+2 DISCRIMINATIVE VS. GENERATIVE MODELS
+- Discriminative model
+  - checks the pixels that are active in this image with the common active pixels of each of the classes (digits) in the training data set
+- Generative model
+  - draws all of the classes (0 to 9) and compares each of them with the above image and decides on the class
+- Naïve Bayes model is one of the most common generative algorithms that is largely used for classification tasks
+
+Q: Imagine you want to classify languages of people talking at an international conference. Explain one generative and one discriminative approach to perform the classification task.
+A: Discriminative model:
+Learn the differences of languages from people’s speech without learning the languages. For instance, certain languages have certain sounds and linguistic structure that distinguishes them from the others.
+
+Generative model:
+Learn each language (completely or partially) and use your obtained knowledge to do the classification task.
+
+3 BAYES' THEOREM IN MACHINE LEARNING
+- we can use this technique to get the evidences in our data set and update our information accordingly to obtain a better prediction.
+- Similar to most of the other supervised learning algorithms, we can use this technique in either a regression or a classification problem
+
+4 BAYES' THEOREM FOR REGRESSION
+
+4.1 MAXIMUM A POSTERIORI ESTIMATION
+Q: We have just proved that in cases where we have a uniform prior, MAP and MLE are exactly the same. Also, in Bayes’ theorem, we will consider a uniform prior belief in cases where we don’t have any information about the probability of classes. Can we use MLE instead of MAP in cases of a uniform prior belief in a Bayes’ regression model?
+A: Note that in Bayes’ theorem for machine learning, we can start with a uniform prior probability, but as we use the information from the data we will update the prior and will probably have a non-uniform prior. As a result, an MAP estimation will be best choice for estimating the parameters of the model.
+
+5 BAYES' THEOREM FOR CLASSIFICATION
+Q: Assume you are a doctor and you use 200 test results to diagnose a disease. Assume the test results are binary, 1 if a patient has the symptom and 0 otherwise. Assume you want to use Bayes’ theorem to predict the class of a patient (have disease or not). As we mentioned, for Bayes’ theorem in classification, we need to consider all possible combinations of the features. In other words, each possible combination has a parameter (factor) that needs to be estimated. How many parameters do we need to estimate in a Bayes’ classification problem?
+A: The total number of possible combinations will be 2^n and we will require 2^n - 1 factors to estimate
+
+5.1 NAÏVE BAYES CLASSIFIER
+- 2^ n possible combination of the variables.
+  - The reason is that each input variable can have a relationship (covariance) with any other variable
+- Three distributions are common in the literature for the event model:
+  - Gaussian
+  - Multinomial
+  - Bernoulli
+
+5.2 GAUSSIAN NAÏVE BAYES
+- features are assumed to have a Gaussian (Normal) distribution
+- This assumption is mostly used for continuous features
+
+5.3 MULTINOMIAL NAÏVE BAYES
+- assume that each feature has a multinomial distribution
+- works well for features that can be counted (discrete categorical, binary, or especially text analysis)
+
+5.4 BERNOULLI NAÏVE BAYES
+- assumes a Bernoulli distribution for the event model
+- this algorithm is also used for discrete features
+
+6 IMPLEMENTATION OF NAÏVE BAYES IN PYTHON
+Q: Before implementing the algorithms, we expect Gaussian Naïve Bayes to perform well on Iris data set and the Multinomial Naïve Bayes on the digits data set. Explain the reason.
+A: Since in the digits data set most of the features are categorical and we know that in cases where features are categorical or binary, multinomial Naïve Bayes outperforms the other variations. However, in Iris data set, most of the features are continues and assuming a Gaussian distribution for the features seems to be a proper assumption.
+
+6.1 TRAIN NAÏVE BAYES ON IRIS DATA SET
+
+6.2 TRAIN NAÏVE BAYES ON DIGITS DATA SET
+
+7 THINKING CRITICALLY ABOUT THE NAÏVE BAYES ALGORITHM
+Q: Take a moment to reflect on our discussion so far. Try to outline key benefits and drawbacks to implementing Naïve Bayes. When you have come up with your list, click to reveal my thoughts.
+A: As we mentioned earlier, the main advantage of Naïve Bayes is that it is a generative model that can be used for generating the most likely data set based on what the algorithm learned from training data. The other advantage is that the model is generally performing well when most of the input variables are categorical. Also, thanks to the naive assumption, the number of factors are small and learning the factors requires much less training data.
+
+The main drawback of the algorithm is the independent assumption for the features. This assumption is an idealization and usually the world isn’t like that. We should be careful of this assumption before implementing the algorithm. One way could be checking the correlation matrix of the data and dropping highly correlated features. However, we should be aware of loss of information resulting from feature dropping. In addition, the output probabilities should not be considered seriously. The reason is because of the naive assumption. If two features are correlated (not truly independent), then the correlation will affect the resulting probability and will result in a misleading probability prediction.

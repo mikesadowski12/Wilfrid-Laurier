@@ -1,0 +1,52 @@
+1 INTRODUCTION TO PROBABILITY FOR MACHINE LEARNING
+- Probability theory is a mathematical framework for expressing uncertain statements and it measures uncertainty for deriving new uncertain statements
+- two major applications in artificial intelligence:
+  - machine learning algorithms make heavy use of the principles of probability theory because they deal with uncertain quantities and stochastic quantities which are coming from many sources
+  - analyzing the theoretical behaviour of the proposed AI system, the probability and statistics are very useful
+
+1.1 RANDOM VARIABLE
+- variable whose value depends on the outcome of a random experiment
+- A random variable may be discrete which takes on a countable number of possible values or it can be continuous which takes on any value in an interval
+
+1.2 PROBABILITY SPACE
+- sample space and represents all possible outcomes
+- F is called the event space
+- P is the probability function that maps events to the probabilities
+
+1.3 PROBABILITY DISTRIBUTION FUNCTIONS
+- function that maps events to the probability of occurrence of a random variable X
+- DISCRETE VARIABLES AND PROBABILITY MASS FUNCTIONS (PMF)
+  - Cumulative Distribution Function
+- CONTINUOUS VARIABLES AND PROBABILITY DENSITY FUNCTIONS
+  - Density Distribution Function
+
+1.4 JOINT PROBABILITY DISTRIBUTION
+- the probability distribution of two or more random variables happening together
+
+1.5 MARGINAL PROBABILITY
+- the probability distribution over the subset of a set of variables
+
+1.6 CONDITIONAL PROBABILITY
+- probability of occurring an event B given the knowledge of an event A
+
+1.7 THE CHAIN RULE OF CONDITIONAL PROBABILITIES
+- The joint probability distribution over a large number of random variables can be divided into many conditional distributions over a single variable
+
+1.8 BAYES' RULE
+
+1.9 EXPECTATION, VARIANCE AND COVARIANCE
+- expectation, or expected value, of a random variable X according to a probability distribution P(X) is the average or mean value, that takes on when X is drawn from the probability distribution
+- variance measures the variation in the sampling different values of random variable X from its probability distribution and is defined as the expectation of the squared distance of X from its mean
+- Covariance measures how much two values are linearly related to each other
+
+1.10 UNBIASED ESTIMATORS
+- the bias of an estimator is equal to zero which means that on average the estimator is correct
+
+1.11 COMMON PROBABILITY DISTRIBUTIONS
+- BERNOULLI DISTRIBUTION
+  - the probability distribution of a “discrete random variable” where only one of two possible outcomes, a success or a failure, may occur on each experiment like flipping a coin or whether a disk drive crashed
+- BINOMIAL DISTRIBUTION
+  - the probability distribution of the number of successes in n successive independent Bernoulli trials, like the number of heads in flipping a coin n times
+- GAUSSIAN DISTRIBUTION
+
+

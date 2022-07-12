@@ -1,0 +1,53 @@
+1 INTRODUCTION
+- non-parametric method that can be used for both classification and regression purposes
+- The idea behind the algorithm is to make the decision for the outcome variable by checking the status of its nearest neighbors
+
+2 MODEL PARAMETERS AND HYPER-PARAMETERS
+- A hyper-parameter is a configuration variable that cannot be estimated from the data and its value has to be decided before starting the learning process
+- a model parameter is internal to the model and its value can be estimated from the data during the learning process
+  - what the algorithm “learns” in a machine learning process
+  - an optimization model/algorithm is used to find the optimal values for the model parameters
+- for deciding on the value of a hyperparameter, we use a grid search rather than an optimization algorithm.
+  - In a grid search, we try a range of values for each of the hyper parameters and try to find the best value by trial and error
+- A parameter, in general, is a term that can include both model parameters and hyper-parameters
+
+3.1 PARAMETRIC MACHINE LEARNING ALGORITHMS
+- parametric machine learning algorithms:
+  - simplify the function to a “known” form or,
+  - assume a underlying distribution for the data or,
+  - summarize a data set with a set of fixed size parameters (independent of the number of training examples)
+
+3.2 NON-PARAMETRIC MACHINE LEARNING ALGORITHMS
+- Machine learning algorithms that do not simplify the mapping function by making strong assumptions about the function’s form are called non-parametric machine learning algorithms
+  - can still have hyper-parameters
+- disadvantages of non-parametric algorithms are:
+  - lower speed in training
+  - more data is required to learn the mapping function
+  - higher risk of overfitting
+    - if we have a large number of samples in our training data set, we can avoid overfitting
+
+4 CLASSIFICATION KNN
+- the computational complexity of kNN increases as the number of training examples increases
+- To determine the “closest” instances, a distance measure is used
+  - measure is also a hyper-parameter of the kNN algorithms
+  - Euclidean distance is the most common distance measure
+  - HAMMING DISTANCE
+  - MANHATTAN DISTANCE
+  - MINKOWSKI DISTANCE
+
+5 FEATURE SCALING
+- Feature scaling or data normalization is an important step in data pre-processing
+- feature scaling should be done prior to implementing a machine learning algorithm
+- MIN-MAX SCALING
+- STANDARD SCALING
+
+6 CURSE OF DIMENSIONALITY
+- most points in a high-dimensional space are far away from each other, and also approximately the same distance
+- kNN will not perform as expected in higher dimensions and in practice a dimensionality reduction pre-processing step is required for high dimensional data before implementing kNN
+
+7 HYPER-PARAMETER OPTIMIZATION
+- need to consider different values for different hyper-parameters and try all the combinations of those values
+  - CV grid search
+- Another way of defining the optimal value of a hyper-parameter and also checking the performance of the algorithm is validation curve
+
+

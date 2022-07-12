@@ -1,0 +1,74 @@
+1 INTRODUCTION
+- We need to know whether the algorithm makes correct predictions and, consequently, if we can rely on its predictions for unseen data
+- we also need to know how the algorithm performs compared to other algorithms
+
+2 MODEL EVALUATION METRICS
+- evaluation metric is required to quantify the performance of the algorithm
+- an algorithm may give promising results when evaluated using one metric, say AUC, and may give poor results with another one
+
+2.1 EVALUATION METRICS FOR REGRESSION MODELS
+- The most common regression evaluation metrics are:
+  - Mean Absolute Error (MAE)
+    - calculates the average of the absolute error (the difference between each prediction and exact target value of the sample)
+  - Root Mean Squared Error (RMSE)
+    - an error type metric, the lower the value, the better the performance of the model
+    - calculates the square root of the average of the squared difference between the predictions and real target values
+  - R–Squared
+    - a metric that returns the portion of the variance that is “explained” by our model
+  - Adjusted R–squared
+    - to prevent R–squared from making a complex model, Adjusted R–Squared is used
+    - adds a penalty to the model for the higher number of parameters included in the model
+
+2.2 EVALUATION METRICS FOR CLASSIFICATION MODELS
+- The most common classification evaluation metrics are:
+  - Confusion Matrix
+    - a matrix whose elements are the number of records in each of the categories defined above (TP, FP, TN, FN)
+  - Classification Accuracy
+    - most common and intuitive evaluation metric for classification problems
+    - Accuracy simply is the number of correct predictions (either positive or negative) as a ratio of all predictions
+  - Precision
+    - Accuracy simply is the number of correct predictions (either positive or negative) as a ratio of all predictions
+  - Recall
+    - Percentage of positive instances out of the total actual positive instances
+  - F-Measure
+    - performance metric that considers both the precision and the recall of the test to compute the score
+  - Area under curve (AUC)
+    - the area under the ROC curve and is a performance metric for measuring the ability of an algorithm to discriminate between two classes, positive and negative
+  - Logarithmic Loss
+    - Log Loss is a perfect performance metric for multi-class classification problems
+
+4 MODEL EVALUATION TECHNIQUES
+- supervised learning algorithms try to find parameters which minimize the training error, however, small training error does not necessarily indicate a good hypothesis because it may not fit well for new examples
+- HOLDOUT
+  - Training set is used to build (train) the machine learning model.
+  - Validation set is used to optimize (tune) the parameters of the algorithm. Note that some algorithms don’t have parameters to be tuned, as a result, the validation set is not required for these algorithms.
+  - Test set is used to test the performance of the algorithm on unseen (future) data. The error of the algorithm on the test set is what we call Generalization Error which is an estimate of the performance of the algorithm on future data.
+  - common split for holdout method is choosing 70% of the whole dataset as a training set, 15% as a validation set, and the remaining 15% as the test set
+
+4.2 CROSS–VALIDATION
+- Cross–Validation or K-Fold Cross–Validation splits the dataset into K equal size subsets (folds)
+- Then, runs the machine learning algorithm K times and in each time, holds out one fold as a test set and uses the other K−1 folds to train the algorithm
+- Finally, the average of the performance metric for all iterations is used as the generalization error of the algorithm
+- the generalized accuracy of the model will be the average of accuracy scores resulted from each run
+- number of folds (K) in K–fold cross–validation technique is a user-specified parameter and depends on the size of the dataset
+  - 5 or 10 are most common
+- main advantage of the K–fold cross–validation techniques is that it reduces both bias and variance
+
+6 LEARNING AND VALIDATION CURVES
+- bias is, in fact, the difference between the average predictions of our model and true values
+- model with a high bias will make huge assumptions about the data and will ignore the information (underfitting
+- model with high variance tries to even predict the noises within the dataset (overfitting)
+- One of the best methods to realize if the model suffers from any overfitting or underfitting problems, is with Learning and Validation curves
+
+6.1 LEARNING CURVE
+- tool for understanding the overfitting/underfitting problem of the model for the training sample size
+- If the training score is much greater than the validation score for the maximum number of samples, it means we have an overfitting problem.
+  - The solutions could be
+    - adding more training samples
+    - dimensionality reduction
+
+6.2 VALIDATION CURVE
+- tool for understanding the overfitting/underfitting problem of a model for a hyperparameter of the model
+- Hyperparameters are the parameters of the model that are external to the model; their value cannot be estimated from data
+-
+

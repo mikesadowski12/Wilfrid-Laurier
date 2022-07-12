@@ -1,0 +1,64 @@
+1 INTRODUCTION
+- Artificial intelligence is the comprehensive discipline of creating intelligent systems such as smart robots, cars or software application
+- ML is a system that can learn from experience and can discover patterns among data and get smarter over time without human intervention
+- deep learning is one the most on going research area of machine learning where artificial neural networks learn and discover pattern from large amount of data
+
+2 WHAT IS MACHINE LEARNING
+- Computer vision: Computer vision is an important field with a variety of applications across domains like autonomous robots and vehicles
+- Sentiment Analysis: Sentiment analysis is another application of machine learning which refers to detecting emotion from the text
+- Email Classification and Spam Filtering: Machine learning algorithms are deployed to classify email and filter the spam and non-spam more efficient rather than ruled based techniques.
+- Speech Recognition: The process of transforming spoken words into text is known as automatic speech recognition or computer speech recognition
+- Online Fraud Detection: One of the advanced applications of the machine learning algorithm is in online fraud detection which provides cybersecurity to the users efficiently
+- Recommendation for Products and Services: With machine learning techniques, based on your previous purchased from online shop related shopping websites or services are recommended for you.
+
+2.1 BASIC TERMINOLOGY AND NOTATIONS
+- in ML, matrix and vector notations are used as a reference to the data where each row of the matrix represents a sample, observation or data point, each column is a feature of that sample and usually there is an additional column named as label which its value is going to be predicted by the model
+
+2.2 TYPES OF MACHINE LEARNING
+- Supervised Learning: Making predictions by using a labelled set of training examples
+- Unsupervised Learning: Finding patterns in unlabeled data
+
+3 OVERVIEW OF SUPERVISED LEARNING ALGORITHM
+- the learning algorithms make predictions iteratively based on a set of examples (training data) and corresponding labeled and the learning stops after achieving the desired accuracy
+- After the model is trained, it can make accurate predictions about unseen data
+- Supervised learning problems are grouped into regression (continuous-labelled) and classification (discrete-labelled) problems
+
+3.1 CLASSIFICATION
+- goal is to predict the discrete class labels for unseen data based on past observations
+  - the output may have only two values which are called binary classification
+  - the more complicated case with more than two values, it is called multi-class classification
+
+3.2 REGRESSION
+- tries to find a relationship between several predictor variables (features) and a continuous response variable (label), predicting of house prices based on the square footage of the house is an example of regression task
+- Linear regression, regression tree, and support vector regression are some examples of regression techniques
+
+4 OVERVIEW OF UNSUPERVISED LEARNING
+- used for searching for similarities, finding patterns, learning features, detecting outliers, and reducing dimension
+- As an example of unsupervised learning, consider a dataset that includes images of cats and dogs without their associated labels, the unsupervised learning algorithm categorizes images into class of dogs and cats based on finding structures and pattern in the data
+
+4.1 CLUSTERING
+- machine learning technique that groups data points without any prior knowledge of the structure in data
+  - For example, categorizing customers based on demography or buying behavior
+- CENTROID CLUSTERING
+  - the number of clusters to be classified is determined
+  - For example, a pet store owner may want to divide his customer list into those who have bought dog and cat products.
+- DENSITY CLUSTERING
+  - the idea is to divide data points based on how densely they are distributed
+  - The denser the data, they are more likely to be clustered in one group
+  - According to the predefined distance criteria, it will be determined whether the two data points are related or not
+- DISTRIBUTION CLUSTERING
+  - determines the probability of a data point in the cluster belonging to the same distribution like Gaussian distribution
+  - first, possible centroids are identified and the density distribution for each cluster is defined
+
+4.2 DIMENSIONALITY REDUCTION
+- High dimensional data refers to the data that need more than two or three dimensions to represent
+- Exploring such data visually to observe the distributions of the specific variable or viewing the potential correlations among clusters as well as data points is challenging
+- finds a correlation between the features which means that there is redundant information because some features can be explained by the others
+
+5 OVERVIEW OF DEEP LEARNING
+- subfield of machine learning developed based on the structure of the neural network in the human brain and makes revolutionary advances in machine learning and AI
+- models can extract features automatically from raw data which called feature learning
+- search for unknown structure in the input distribution to discover good representation at multiple levels
+
+
+

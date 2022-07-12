@@ -1,0 +1,34 @@
+1 INTRODUCTION
+- objective is to build a classifier such that the margin of points in training set from the separating hyper-plane is maximized
+
+2 LINEAR ALGEBRA RECAP
+- orthogonal projection to find the distance of a point from a hyper-plane
+- This hyper-plane will be the one with a maximum distance from both classes
+
+3 MAXIMIZING THE MARGIN
+- For a linearly separable data set, there are infinitely many hyper-planes separating the data
+- we would select the one that has maximum distance from both classes
+  - Because the hyper-planes that are close to first class (blue circles) can easily mis-classify the green triangles and vice versa
+
+4 SOFT-MARGIN SVMS
+- Since our data are not linearly separable, we will definitely have a data point that doesn’t satisfy the corresponding constraint for our optimization problem
+- To deal with the problem, we will relax our constraints with a penalty in our objective to get a near-optimal infeasible solution
+- we will allow support vectors to get closer to the decision boundary and even pass it to the other side
+  - these support vectors (circled points) will have a penalty for the objective function of SVM
+
+5 LAGRANGE DUALITY
+- It turns out that the optimization model for SVM is one of those problems that can be solved by Lagrange duality
+
+6 USING LAGRANGIAN ON SVM OBJECTIVE
+
+7 KERNEL TRICK
+- functions k(x,y) which implicitly compute dot products between high-dimensional (or even infinite-dimensional) feature vectors; such functions are known as kernels.
+- If we can express a learning algorithm purely in terms of dot products, then we can kernelize it by expressing it in terms of kernels; this is known as the kernel trick
+
+8 WHAT CAN BE KERNELIZED
+- Theorem (Mercer)
+
+9 APPLICABILITY OF SVM WITH KERNELS
+-
+
+

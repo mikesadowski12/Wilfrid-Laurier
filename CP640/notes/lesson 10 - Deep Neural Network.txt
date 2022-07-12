@@ -1,0 +1,42 @@
+1 INTRODUCTION TO NEURAL NETWORKS
+- Artificial Neural Networks (ANNs) are some machine learning algorithms that are inspired by the structure and function of a neural network in a human brain
+- very powerful learning algorithms and are used in both regression and classification problems and there is a wide range of application of neural network in real-life problems such as speech recognition, computer vision, medical diagnosis, online recommendation systems, video games and many more
+
+1.1 SINGLE NEURON
+- A neural network with a single neuron (single node in a single hidden layer) is the simplest version of a Neural Network
+- A single neuron with sigmoid activation function can be viewed as a logistic regression classifier where the sigmoid function transforms the input data into a space that can be separated linearly and like logistic regression the goal is to find the parameters wi that minimize the cost function
+Q: Consider a single neuron with AND function with two binary features x1 and x2. Table 1 represents the output of AND function for different combinations of input features. Assume the activation function of our single neuron is as follows:
+A: C w1=1, w2=1, w3=-2
+
+2 Deep Neural Network
+- An input layer takes the input features which can be scalar, a vector, a matrix or even n-dimensional tensor like images
+- An arbitrary number of hidden (computation) layers reside between the input and the output layers and the network can have at least zero hidden layers with any number of hidden units (neurons)
+- In the case where the layer is the first hidden layer, its input is the input features
+- An output layer takes in the last hidden layer and transforms it into the desired output y
+- ”layer” refers to a collection of neurons at the specific depth within a neural network and if the number of layers is very large it is called a ”deep neural network”
+- Deep learning can be viewed as a way of extracting information in multiple stages to learn data representations
+Q: Deep learning can be viewed as a way of extracting information in multiple stages to learn data representations
+A: When the number of hidden layers increases
+
+2.1 DEEP FEED-FORWARD NETWORKS
+- The primary use of feed-forward networks is for supervised learning algorithms where the data is neither sequential nor time-dependent
+
+2.2 ACTIVATION FUNCTIONS IN NEURAL NETWORKS
+- most common activation functions:
+  - Linear
+  - Sigmoid
+  - Tanh or hyperbolic tangent
+  - Rectified Linear Unit (ReLU)
+  - Leaky ReLU
+Q: if we choose linear activation functions in all layers and sigmoid function in output then the model is no more expensive than_________?
+A: Logistic Regression
+
+2.3 BACKWARD PROPAGATION (LEARNING IN FEED-FORWARD NETWORKS)
+- Learning in feed-forward networks belongs to the scope of supervised learning and generally supervised machine learning models including neural networks consist of inference and training mode operations
+- Some possible neural network loss functions are:
+  - Mean squared error
+  - Cross-entropy cost function
+
+2.4 BATCH GRADIENT DESCENT ALGORITHM
+
+

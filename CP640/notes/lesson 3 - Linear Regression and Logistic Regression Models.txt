@@ -1,0 +1,58 @@
+1 INTRODUCTION TO SUPERVISED LEARNING ALGORITHMS
+- supervised learning models are the class of machine learning that trains a model from a set of labelled examples
+
+2 REGRESSION
+- the task of predicting continuous output which could be a real number or a floating-point value
+- Linear regression, regression tree, and support vector regression
+
+2.1 LINEAR REGRESSION
+- the learning algorithm generates a function that maps given input variables and known as explanatory variables or features to desired outputs known as target, or response variables by looking at several observations
+
+2.2 LOSS FUNCTION
+- function that evaluates the model performance by measuring the difference between actual value and the estimated value of the model and one of the most commonly used loss functions for Linear Regression is called Mean Squared Error (MSE)
+- cost function J is sum of model loss (Equation 3) over all examples (data points)
+
+2.3 GRADIENT DESCENT ALGORITHM
+- one of the most common optimization algorithms and every state-of-the-art machine leaning algorithm contains implementations of the gradient descent algorithm such as scikit learn’s, caffe’s, keras’s documentation
+- Intuition Behind Gradient Descent:
+- Choosing Learning Rate:
+- Gradient Descent for Linear Regression:
+
+2.4 MULTIVARIATE LINEAR REGRESSION
+- linear regression is a linear regression with multiple features
+- Gradient Descent for multiple variables is generally the same with repeating it for n features
+- The Challenge with Gradient Descent:
+  - Local Minima: The gradient descent algorithm has succeeded when the loss function is convex, however, if the loss function is not convex there exists a local minima where the gradient is zero and they are not the lowest loss to achieve
+
+2.6 FEATURE SCALING
+- common ways of speeding up gradient descent is by taking on similar ranges of value for different features
+- parameters will descend quickly on small ranges and slowly on large ranges.
+  - In order to prevent this, the range of the input variables is modified to be roughly in the same range
+
+3 CLASSIFICATION
+- second task in supervised learning which maps input variables into a discrete-valued output
+- In the simplest setting, the output may have only two values which are called binary classification, or in the more complicated case with more than two values, it is called multi-class classification
+- Linear classification algorithms assume that classes can be separated by a straight line
+  - logistic regression and support vector machines
+
+3.1 BASELINE LINEAR CLASSIFIER
+- classifies the input vector using hyperplane (decision boundaries), the hyperplane with two-dimensions is called a line, with three-dimensions is called a plane
+- decision boundary is created by the hypothesis function which is a linear function of the parameters, and is calculated by the weighted sum of the input vector
+- this method does not always perform well for classification problems, as sometimes the true separator is not a linear function
+
+3.2 LOGISTIC REGRESSION CLASSIFIER
+- statistical method classified in supervised learning techniques which uses one or more explanatory variables to classify data
+- estimates the probability of occurrence of an event by fitting the hypothesis into a logistic function
+
+4 OVERFITTING AND UNDERFITTING
+- Overfitting and underfitting are two terminologies in a machine learning model to see the performance of the model on new data
+- Overfitting (high variance) means that the model fits well on the training data but leads to poor model performance on new data.
+  - happens when the model tries to learn the details of the training data and separates data very precisely
+- underfitting (high bias) occurs when the model not only fails to fit the training data but also has a poor result on test data
+
+4.1 REGULARIZATION
+- technique that reduces the overfitting problem and can lead to better performance of learning algorithms
+- adds a penalty on different parameters to prevent training a flexible model, therefore the model is less probable to fit the noise and the generalization capability is improved
+- logistic regression is prone to overfitting with high order polynomial features and large coefficients
+
+

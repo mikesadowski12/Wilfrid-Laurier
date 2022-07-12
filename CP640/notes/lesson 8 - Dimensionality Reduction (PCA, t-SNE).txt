@@ -1,0 +1,42 @@
+1 INTRODUCTION
+- “unsupervised algorithm”- Principal Component Analysis
+- PCA is mostly used for dimensionality reduction purposes
+
+2 DIMENSIONALITY REDUCTION
+- Once we figured out that we have a great number of variables (compared to the number of data samples) and our machine learning algorithm is overfitting, we might think of reducing the dimension of our feature space
+- There are two classes of dimensionality reduction techniques:
+  - feature elimination
+    - we drop “unimportant” features from our data and keep the ones that are important
+  - feature extraction
+    - does include the information of the all of the features
+- The main disadvantage of these techniques is that the information included in the dropped features are lost
+
+3.1 TRANSFORMATION MATRIX
+
+3.2 ORTHOGONAL TRANSFORMATION
+- a linear transformation that preserves the inner product
+- the length of the vectors as well as the angles between vectors are untouched after transformation
+
+3.3 EIGENVECTORS AND EIGENVALUES
+
+3.4 MATRIX DECOMPOSITION
+- a method that reduces a matrix into a product of matrices
+- resulting matrices are smaller and reduce the complexity of certain matrix operations
+
+4 PRINCIPAL COMPONENT ANALYSIS (PCA)
+- Principal component analysis (PCA) is an orthogonal transformation applied to a set of possibly correlated variables and results in a set of linearly uncorrelated (orthogonal) variables called principal components
+- analyzes/finds the principal components of data
+
+4.1 PCA ALGORITHM
+- Step 1: Calculate the covariance matrix of the normalized training data
+- Step 2: Decompose the covariance matrix into its eigenvectors and eigenvalues
+- Step 3: Sort eigenvectors in descending order by their corresponding eigenvalues.
+  - In other words, find the highest eigenvalue and place its corresponding eigenvector as the first column of a new matrix called Q*
+- Step 4: Calculate Z*
+- Step 5: Finally, we have to select the number of features that we want to include (reduce dimension)
+- once we transform the features into new space, each of the resulting features include some information from all of the main features
+
+5 T-DISTRIBUTED STOCHASTIC NEIGHBOR EMBEDDING (TSNE)
+- unsupervised algorithm implemented for dimensionality reduction purpose
+- finds the local structure beneath the data and captures relationships between points to create a low-dimensional mapping
+- Since the mapped data is in two or three dimensional space, t-SNE is mostly used to visualize the data
