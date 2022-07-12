@@ -48,5 +48,16 @@
 - BINOMIAL DISTRIBUTION
   - the probability distribution of the number of successes in n successive independent Bernoulli trials, like the number of heads in flipping a coin n times
 - GAUSSIAN DISTRIBUTION
+Q: If A and B are independent random variables, what is the conditional probability of event A given B, \(P(A|B)\)
+A: If A and B are independent then \(P(A,B) = P(A)P(B)\),
+also, we know that
+\begin{equation}
+P(A|B) = \frac{P(A, B) }{P(B)}
+\end{equation}
+
+Therefore we have
+\begin{equation}
+P(A|B) = \frac{P(A)P(B)}{P(B)} = P(A)
+\end{equation}
 
 

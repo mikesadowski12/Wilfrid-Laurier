@@ -40,3 +40,5 @@
 - unsupervised algorithm implemented for dimensionality reduction purpose
 - finds the local structure beneath the data and captures relationships between points to create a low-dimensional mapping
 - Since the mapped data is in two or three dimensional space, t-SNE is mostly used to visualize the data
+Q: How should we select the “best” value for perplexity? How does low and high value of perplexity affect the result?
+A: As we mentioned, perplexity is a hyper-parameter of the t-SNE algorithm. From what we learned in previous lesson (kNN), it needs to be tuned with hyperparameter tuning techniques. With very low perplexity, local structure in the data dominate. For high values (> 50), the algorithm will probably merge the clusters.

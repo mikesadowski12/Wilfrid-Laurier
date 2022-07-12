@@ -1,0 +1,306 @@
+Multiple Choice questions 1 to 5: Multiple choice questions may have more than one correct best response (NO partial credit on multiple-choice questions: Only the set of correct answers must be checked.)
+
+Questions 6 and 7: Provide your answers in the space provided.
+
+1- Data Preparation (9)
+
+a) Which of the following methods/techniques used for identify correlation between data points?
+
+A. Boxplot
+
+B. Scatter Plot <------
+
+C. Histogram
+
+D. Bar Graph
+
+E. Pie Chart
+
+
+b) What operation is used to combine data from two diﬀerent tables?
+
+A. Select
+
+B. Group
+
+C. Summarize
+
+D. Filter
+
+E. Join <------
+
+
+c) Data cleaning means:
+
+A. Removing missing values <------
+
+B. Identifying a research questions
+
+C. Model evaluation
+
+D. Identifying missing values <------
+
+E. Removing duplicates values <------
+
+
+2- Statistics (6 points)
+
+a) For a random experiment, all possible outcomes are called:
+
+A. Numerical space
+
+B. Event space
+
+C. Sample space
+
+D. Both b and c <------
+
+
+b) The covariance is:
+
+A. A measure of the strength of relationship between two variables <------
+
+B. Covariance zero indicates that two random variables are independence
+
+C. Dependent on the units of measurement of the variables
+
+D. Two independent random variable have covariance zero <------
+
+
+3- Supervised Learning (15)
+
+a) What does the term outlier mean?
+
+A. An extreme value at either end of distribution <------
+
+B. A score that is left out of the analysis because of missing data
+
+C. The arithmetic mean
+
+D. A type of variable that cannot be quantified
+
+
+b) Hypothesis terminology in machine learning is defined as:
+
+A. A function that map the input space to output space <------
+
+B. A vector of parameters that controls model behaviour <------
+
+C. proposed explanation for a phenomenon
+
+D. Non of above
+
+
+c) Which of the following statements are true?
+
+A. training error decrease by increasing the number of features <------
+
+B. training error increase by increasing the number of features
+
+C. when feature space is larger, overfitting is more likely <------
+
+D. decreasing training error and increasing testing error indicates of underfitting
+
+
+d) Generalization error is:
+
+A. The performance of the model on validation set <------
+
+B. The performance of the model on training set
+
+C. Computed from a dataset
+
+D. Error on unseen datast <------
+
+
+e) Choose the wrong statements:
+
+A. For k cross-validation, larger k value implies less bias <------
+
+B. For k cross-validation, larger k value implies more bias
+
+C. For k cross-validation, larger k value implies less variance
+
+D. For k cross-validation, larger k value implies more variance <------
+
+
+4- Linear Models (12 points)
+
+a) Choose correct statements:
+
+A. learning rate is a hyperparameter in gradient descent to update the parameters of the model <------
+
+B. gradient descent is a supervised learning technique
+
+C. If the learning rate is too small, then gradient descent may take a very long time to converge. <------
+
+D. Setting the learning rate to be very small is not harmful, and can only speed up the convergence of gradient descent.
+
+
+b) What do we mean by hard margin?
+
+A. The SVM model allows vey low error in the classification <------
+
+B. The SVM model allows high amount of error in classification
+
+C. Estimating class probabilities
+
+D. Separating classes with non linear decision boundary
+
+
+c) Which of the following technique is used to find the best decision boundary in logistic regression?
+
+A. Least square error
+
+B. Maximum likelihood <------
+
+C. Mean squared error
+
+D. Jaccard distance
+
+
+d) Which statement is true about the slack variable?
+
+A. Slack variable is defined for each one of the data points <------
+
+B. Slack variable allows adding penalty to the objective function <------
+
+C. When Slack variable is equal to zero then point lies between the margin
+
+D. When Slack variable is equal to zero then points lies on wrong side of the decision boundary
+
+
+5- Non-Linear Models (30 points)
+
+a) select the correct answers
+
+A. Selection of kernel is very important in effectiveness SVM <------
+
+B. Kernel parameters are very important in effectiveness of SVM <------
+
+C. Soft margin parameter is very important in effectiveness of SVM <------
+
+D. None of above
+
+
+c) Which of the following can be used when training data are not linearly separable?
+
+A. Soft margin <------
+
+B. Hard margin
+
+C. Linear Logistic regression
+
+D. Kernel Trick <------
+
+
+d) Which of the following statement is true about random forest and decision tree?
+
+A. both can be used for classification and regression task <------
+
+B. Random forest is used only for classification
+
+C. Decision tree is only used for regression
+
+D. Random Forest can only be used for regression
+
+
+e) Which of the following statement is true about k nearest neighbour in terms of bias?
+
+A. Increasing the number of k increases the bias <------
+
+B. Decreasing the number of k increases the bias
+
+C. Cannot say
+
+D. None of above
+
+
+f) Building a kNN classifier results in 100% accuracy on training data and the model preforms poorly of testing set. Which of the following thing might gone wrong?
+
+A. Overfitting <------
+
+B. Underfitting
+
+C. Cannot say
+
+D. None of above
+
+
+g) What is the best value of k in K nearest neighbour?
+
+A. 10% of the size of dataset
+
+B. using k fold cross validation to select best k <------
+
+C. higher values for k is the best
+
+D. lower values for k is the best
+
+
+h) What are hyperparameters of Neural network
+
+A. Batch size <------
+
+B. Learning rate <------
+
+C. L1 and L2 regularization <------
+
+D. Drop out <------
+
+
+i) Non linearity is added to neural network model by:
+
+A. Stochastic Gradient Descent
+
+B. Rectified Linear Unit <------
+
+C. Quadratic programming
+
+D. Hyperbolic tangent <------
+
+
+j) What techniques can be used for bias and variance trading of in deep learning
+
+A. Drop out <------
+
+B. Regularization <------
+
+C. Back propagation
+
+D. Early stopping <------
+
+
+k) Select possible loss function for neural network
+
+A. Hinge loss
+
+B. Cross Entropy Loss <------
+
+C. Mean square error <------
+
+D. Root mean squared error <------
+
+
+6- Feature Brainstorming (10 points)
+
+You have been tasked with improving the interest of a shoe business company which uses online advertisements on different social media applications. They wish to predict how the contents of their advertisement affect the number of customers click on those advertisements. They have come and consulted with you, an expert Data Scientist, on what data to collect in order to develop a predictive system.
+
+In the space below, give ten features that you believe might be useful for this prediction task and briefly justify each one. You are not restricted to data that the company has; think broadly about each of them. Each feature must be clearly defined and you must give its type (e.g numeric, categorical) and you must briefly explain why it might be useful.
+
+
+7- Analysis Planning (18 points)
+
+You have a dataset with medical condition information of patients of a city and you are asked analyze this dataset.
+
+The available information for each patient includes total cholesterol level (Continuous), systolic blood pressure (numeric), diastolic blood pressure (numeric), Body Mass Index (numeric), heart rate (numeric), and blood glucose level (numeric) as well as their demographic features such as sex (male/female - string), age, their education (University degree/non university degree - string), smoking behavior (smoking/no smoking - string).
+
+All of above information for each individual are labeled as a risk of developing coronary heart disease (CHD) — (binary: “1”, means “There is a risk”, “0” means “There is no risk”) in 10 years.
+
+a) Give 2 questions that you could potentially answer using these data. Each question should be precise and should identify which components of the data would be used to answer it. (You do not need to describe in detail how features would be constructed, or similarities would be computed.) Label your questions Q1 and Q2.
+
+b) Give 2 data cleaning tasks you would undertake before beginning any analysis. For each task, brieﬂy explain why the task is relevant to this speciﬁc dataset.
+
+c) Give three analysis methods that you could use to answer either of the questions you suggested above. A “method” could be a machine learning algorithm, visualization, etc. Label your methods M1, M2, M3. For each one, brieﬂy explain which question you would use it for and why.
+
+d) For each of your methods above, describe how you would evaluate their performance. Justify your choices in terms of the speciﬁc dataset, question, and method. Use the labels M1, M2, M3 to identify your methods.

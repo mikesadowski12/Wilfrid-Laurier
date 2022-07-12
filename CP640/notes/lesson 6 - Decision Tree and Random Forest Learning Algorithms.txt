@@ -6,6 +6,8 @@
 - Internal nodes test attributes.
 - Branching is determined by attribute value.
 - Leaf nodes are outputs (predictions).
+Q: Consider the example data set in Figure 2 which is in two dimensions. The data set has two features, x1 and x2. Splitting on which one of the features (x1 or x2) will classify the data correctly? Which split will give the minimum error and how much will be the error?
+A: Splitting based on none of the features will result in a 100% accuracy. As a result, none of the features will split the data correctly. However, a splitting based on x2 will result in a minimum error value of 1. Please see the following figure.
 
 3 FIRST ATTEMPT ON THE TREE STRUCTURE
 - accuracy is not a good measure for splitting
@@ -33,6 +35,12 @@
 - Boosting refers to training models in sequence, each focusing on the examples that previous models got wrongs
 
 6.1 BAGGING
+Q: Suppose, we have a binary classification problem with 3 input features and we apply a bagging algorithm on this data. Suppose each one of our estimators have 60% accuracy. What can we tell about the maximum accuracy that we can gain by using a bagging algorithm?
+less than 60%
+Equal to 60%
+More than 60%
+We can’t guess the upper-bound for the final bagging algorithm without seeing the actual data.
+A: The correct answer is (c). We can get even 100% accuracy with a bagging algorithm despite having 60% accuracy on each of our weak classifiers. Please consider the following example:
 
 6.2 RANDOM FOREST
 - Random Forests (RFs) are an ensemble learning method for both classification and regression tasks
@@ -41,4 +49,12 @@
 - For regression, the mean of the individual trees will be used as output.
 - In other words, random forests are bagged decision trees, with one extra trick to decorrelate the predictions:
   - When choosing each node of the decision tree, choose a random set of input features, and only consider splits on those features.
+
+Q: In random forest algorithm, we generate hundreds of trees and then aggregate the results of these trees. Consider the individual trees in building a random forest classifier. Please specify the statements that are true about these individual trees.
+
+Individual trees select a subset of the features
+Individual trees select all the available features
+Individual trees select a subset of observations
+Individual trees select all of the observations
+A: Based on what we learned during the lesson, Items (a) and (c) are True statements.
 

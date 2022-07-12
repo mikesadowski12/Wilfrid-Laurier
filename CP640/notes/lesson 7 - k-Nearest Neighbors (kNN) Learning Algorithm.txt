@@ -49,5 +49,11 @@
 - need to consider different values for different hyper-parameters and try all the combinations of those values
   - CV grid search
 - Another way of defining the optimal value of a hyper-parameter and also checking the performance of the algorithm is validation curve
-
+Q: Based on what we learned, which one of the following data sets can be used for hyper-parameter optimization? Why?
+Training set
+Validation set
+Test set
+Training set with cross-validation
+Test set with cross-validation
+A: (b) and (d) are correct answers
 

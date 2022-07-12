@@ -38,5 +38,43 @@ A: Logistic Regression
   - Cross-entropy cost function
 
 2.4 BATCH GRADIENT DESCENT ALGORITHM
+- initialize parameters by randomly sampling from standard normal distribution
+- While stopping conditions are False:
+  - Randomly select a subsample of the training data named as mini-batch
+  - Compute the gradient of loss function with respect to the parameter over all training examples named as backpropagation
+  - Update parameters
+- Stopping Conditions:
+  - Number of iterations: the number of training iterations needed to perform the neural network
+- the batch gradient descent suffers from a severe drawback when the data set is very big
+- Stochastic mini-batch Gradient Descent:
+
+3.1 DATA SPLIT
+- Training split is directly used by the model during model training to minimize the loss function. But as stated earlier, the value of this function is expected to be very low over the set.
+- Validation split is used to choose the best hyper-parameters. Just to review, hyper-parameters are parameters which control the model behaviour. Unlike the main algorithm parameters (\(\theta\)), hyper-parameters cannot be directly learned from training data
+- Testing split: The neural network never observes this data set during the training or hyper-parameter optimization process. It is only used to evaluate an unbiased estimate of the performance of final architecture and hyper-parameter sets
+
+3.2 BIAS/VARIANCE TRADE OFF
+- To Reduce the Effect of Underfitting/ Overfitting in Neural Networks the following strategies can be applied:
+  - Underfitting (Training error is high):
+    - Train the model longer when the architecture of a network is suitable for the task
+    - Use more hidden layers or more parameters per layer when the architecture of the network is too small.
+    - Try different architecture when the architecture of the network is not suitable for the task
+  - Overfitting (Generalization gap is large)
+    - Collect more training data
+    - Regularization: modification to the learning algorithm
+    - Try different architecture when both above solutions have failed, like reducing the number of hidden layers or neurons at each layer
+
+3.3 NEURAL NETWORK REGULARIZATION
+- technique which reduces the overfitting problem and can lead to better performance of learning algorithms
+- adds a penalty on different parameters to prevent training a flexible model, therefore the model is less probable to fit the noise and the generalization capability is improved
+- Parameter Norm Penalties is the most traditional form of regularization to the neural network
+- Dropout is the second powerful regularization technique that is specifically designed for the neural network
+- Early Stopping is another form of regularization
+
+3.4 VANISHING GRADIENT
+- each of the neural network’s weights receives an update proportional to the partial derivative of the error function with respect to the current weight in each iteration of training
+- in some cases, the gradient will be vanishingly small, effectively preventing the weight from changing its value
+- In the worst case, this may completely stop the neural network from further training
+
 
 

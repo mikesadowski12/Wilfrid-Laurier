@@ -36,6 +36,8 @@
     - the area under the ROC curve and is a performance metric for measuring the ability of an algorithm to discriminate between two classes, positive and negative
   - Logarithmic Loss
     - Log Loss is a perfect performance metric for multi-class classification problems
+Q: In the above example, we discussed that the company will not care about “negative” predictions. What can be the reason?
+A: The reason is that the company doesn’t endure any cost for “negative” predictions. The only cost could be missing a potential customer, which can be compensated by maximizing the number of TPs.
 
 4 MODEL EVALUATION TECHNIQUES
 - supervised learning algorithms try to find parameters which minimize the training error, however, small training error does not necessarily indicate a good hypothesis because it may not fit well for new examples
@@ -44,6 +46,8 @@
   - Validation set is used to optimize (tune) the parameters of the algorithm. Note that some algorithms don’t have parameters to be tuned, as a result, the validation set is not required for these algorithms.
   - Test set is used to test the performance of the algorithm on unseen (future) data. The error of the algorithm on the test set is what we call Generalization Error which is an estimate of the performance of the algorithm on future data.
   - common split for holdout method is choosing 70% of the whole dataset as a training set, 15% as a validation set, and the remaining 15% as the test set
+Q: Assume you want to use holdout method to validate the model we have fitted in section 3. Using Python, split sciki-learn’s breast cancer data into three different datasets: training (70%), validation (15%), and test (15%) sets.
+A: We can use scikit-learn’s train test split function twice:
 
 4.2 CROSS–VALIDATION
 - Cross–Validation or K-Fold Cross–Validation splits the dataset into K equal size subsets (folds)

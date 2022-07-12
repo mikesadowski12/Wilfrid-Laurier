@@ -7,6 +7,8 @@
 
 2.1 LINEAR REGRESSION
 - the learning algorithm generates a function that maps given input variables and known as explanatory variables or features to desired outputs known as target, or response variables by looking at several observations
+Q: What would be the effect on the prediction if a feature vector’s weight is zero?
+A: It does not affect the prediction.
 
 2.2 LOSS FUNCTION
 - function that evaluates the model performance by measuring the difference between actual value and the estimated value of the model and one of the most commonly used loss functions for Linear Regression is called Mean Squared Error (MSE)
@@ -28,6 +30,13 @@
 - common ways of speeding up gradient descent is by taking on similar ranges of value for different features
 - parameters will descend quickly on small ranges and slowly on large ranges.
   - In order to prevent this, the range of the input variables is modified to be roughly in the same range
+Q: Which of the following statements are true and why?
+
+A To make gradient descent converge, α must slowly decrease over time.
+B Gradient descent is guaranteed to find the global minimum for any function J(θ).
+C Gradient descent could converge even if α is kept fixed, but cannot converge or may fail to converge if α is too large.
+A: C
+
 
 3 CLASSIFICATION
 - second task in supervised learning which maps input variables into a discrete-valued output

@@ -14,6 +14,17 @@
 2.1 BASIC TERMINOLOGY AND NOTATIONS
 - in ML, matrix and vector notations are used as a reference to the data where each row of the matrix represents a sample, observation or data point, each column is a feature of that sample and usually there is an additional column named as label which its value is going to be predicted by the model
 
+Q: What is a vector?
+A: A vector is a one-dimensional array of numbers.
+
+Q: What is a matrix?
+A: A matrix is a two-dimensional array (a table) of numbers.
+
+Q: What is multiplication of Matrix A and Matrix B if:
+
+Q: Name two features with corresponding labels for each position in table 1?
+A: Experience, skills and country are called features and salary is the corresponding label for each position.
+
 2.2 TYPES OF MACHINE LEARNING
 - Supervised Learning: Making predictions by using a labelled set of training examples
 - Unsupervised Learning: Finding patterns in unlabeled data
@@ -31,10 +42,16 @@
 3.2 REGRESSION
 - tries to find a relationship between several predictor variables (features) and a continuous response variable (label), predicting of house prices based on the square footage of the house is an example of regression task
 - Linear regression, regression tree, and support vector regression are some examples of regression techniques
+Q: Suppose your email program watches which emails you do or do not mark as spam, and based on that learns how to better filter spam. Should you treat this as a classification or regression problem?
+A: Classification as there is two categorical output including spam and not spam email.
 
 4 OVERVIEW OF UNSUPERVISED LEARNING
 - used for searching for similarities, finding patterns, learning features, detecting outliers, and reducing dimension
 - As an example of unsupervised learning, consider a dataset that includes images of cats and dogs without their associated labels, the unsupervised learning algorithm categorizes images into class of dogs and cats based on finding structures and pattern in the data
+Q: Which of the following examples address using an unsupervised learning algorithm?
+(a)  Given email labelled as spam/not spam, learn a spam filter.
+(b)  Given a database of customer data, automatically discover market segments and group customers into different market segments
+A: (b)
 
 4.1 CLUSTERING
 - machine learning technique that groups data points without any prior knowledge of the structure in data
