@@ -1,0 +1,50 @@
+1 INTRODUCTION
+- main difference between supervised and unsupervised techniques is that with unsupervised learning the instances are not labelled and the model classifies a dataset by discovering hidden patterns in data
+- K-means algorithm which is one of the most common unsupervised clustering techniques
+
+1.1 CLUSTERING
+- Clustering is a machine learning technique that groups data points without any prior knowledge of the structure in data
+- This method is a type of unsupervised learning that automatically assigns tags to features based on measuring distances or similarities between objects while in supervised learning those tags are already available
+- There are different clustering approaches used in data science including Centroid Clustering, Density Clustering and Distribution Clustering
+
+2 K-MEANS CLUSTERING
+- K-means clustering is a simple unsupervised clustering technique which groups given data points into k disjoint clusters such that within each cluster the sum of squared distances between the data points and their respective cluster is minimized
+- K-means is divided into two iterative steps to find clusters as follows:
+  - Assignment step
+    - Given a set of k clusters, the algorithm starts by randomly selecting k points as the initial centers called cluster centroid . Then each observation is assigned to its closest cluster centroid that has the least Euclidean distance (Eq. 2) from the center of that cluster
+  - Centroid update step
+    - After the assignment step, the mean of k clusters is calculated and the cluster centroids will be updated based on the new mean values
+
+2.1 K-MEANS OPTIMIZATION OBJECTIVE
+- K-means also has cost function that is going to be minimized
+
+Q: Which of the following can act as possible termination conditions in K-Means?
+1 A fixed number of iterations.
+2 The assignment of observations to clusters that does not change between iterations. Except for cases with a bad local minimum.
+
+Choose the correct answer.
+1
+1, 2
+2
+All of the above
+
+A:
+(d) is the correct answer.
+
+All four conditions can be used as possible termination condition in K-Means clustering:
+
+This condition limits the runtime of the clustering algorithm, but in some cases the quality of the clustering will be poor because of an insufficient number of iterations.
+Except for cases with a bad local minimum, this produces a good clustering, but runtimes may be unacceptably long.
+
+2.2 RANDOM INITIALIZATION
+- K-means can end up converging to different solutions dependent on how the clusters were initialized, and therefore it is depending on the random initialization
+- There are few ways that we can randomly initialize the cluster centroid, but one of the most recommended one is to try multiple, random initialization instead of just initializing k-means once and select the ones that gives you the lowest cost
+
+2.3 CHOOSING THE NUMBER OF CLUSTERS
+- How should we choose the number of clusters?
+  - Calculating the cost for each k in the range of cluster numbers
+  - Plotting the curve of cost according to the number of clusters.
+  - The bend location in the plot is an indicator of the optimal number of clusters
+
+
+

@@ -1,0 +1,26 @@
+1 INTRODUCTION
+- In this lesson, we are concerned with tasks involving sequences, for example translation, and how neural nets can be utilized to solve such problems
+
+2 CYCLES IN COMPUTATION GRAPH
+- we want the network to have states, consider a model with a hidden state that varies through time and parameters that are shared through time
+
+3 RECURRENT NEURAL NETS
+- consider the model introduced in the previous section and add an output to it as well so that after updating the hidden state the network also produces an output
+- the method for optimizing RNNs are gradient based methods (SGD, Adam, ...), in order to get insight on the training we first need to develop the forward phase
+
+4 COMPUTING GRADIENT
+- The back-prop through time needs to compute gradient
+
+
+5 LANGUAGE MODEL
+- goal is to learn a probability distribution over natural language text, in other words we want a model that given a sentence can determine how likely it is for that sentence to be uttered
+
+6 ENCODER-DECODER ARCHITECTURE
+- This model consists of two parts,
+  - An encoder that processes the input sequence,
+  - A decoder that is conditioned on that fixed-length vector to generate the output sequence,
+
+Q: How can this type of architecture help when dealing with more than two languages?
+A: The encoders and decoders can be shared between different languages. Inputs of any language would be mapped to a common semantic space, and then any other language could be generated from that semantic representation
+
+7 LONG TERM DEPENDENCY

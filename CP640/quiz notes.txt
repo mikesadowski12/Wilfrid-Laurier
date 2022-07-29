@@ -18,7 +18,7 @@ overfitting:
 - high variance
 - Regularization: adds a penalty on different parameters to prevent training a flexible model, therefore the model is less probable to fit the noise and the generalization capability is improved
 
- 
+
 ------------------------------------------------------------------------
 underfitting:
 - underfitting (high bias) occurs when the model not only fails to fit the training data but also has a poor result on test data.
@@ -27,4 +27,4 @@ underfitting:
 
 
 
-
+ VISUALIZE: T-DISTRIBUTED STOCHASTIC NEIGHBOR EMBEDDING (TSNE)

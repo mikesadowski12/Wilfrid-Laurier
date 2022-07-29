@@ -1,0 +1,52 @@
+1 INTRODUCTION TO COMPUTER VISION
+- field of study that enables the computer to view the world as human and gives computers the ability to understand the contents of visual data such as digital images and videos
+
+2 INTRODUCTION TO CONVOLUTIONAL NEURAL NETWORKS (CNNS, CONVNET)
+- type of deep learning model that is designed to recognize an image by transforming the image via layers to class scores
+- ConvNet architectures are based on the assumption that the input is an image and see it as an array of pixels
+- Based on the image resolution, the input matrix of pixel values (input volume) will have different dimensions:
+  - Two dimensions for a grayscale image: [height x width]
+  - Three dimensions for an RGB image: [height x width x depth]
+- an RGB image of 6 × 6 × 3 array is separated by its three color channels (Red, Green, and Blue) and 3 refer to RGB values
+
+Q: For the above example, what is an array of the matrix [height x width x depth] for a grayscale image (2D)?
+A: [6 × 6 × 1] or [6 × 6].
+1 refers to grayscale image (2D).
+
+3 TYPES OF LAYERS IN CONVOLUTION NEURAL NETWORKS
+- The Convolution Layer (Convo + Relu)
+- The Pooling Layer
+- The Fully Connected (FC) Layer
+
+3.1 CONVOLUTION LAYER - THE KERNEL
+- Convolution is a mathematical operation that takes two inputs: an image matrix of dimension: , and a filter or kernel matrix of dimension:  which is a matrix of weights
+- it performs the element-wise product of these two matrices and sums up the results into a single output pixel
+- The Convolution Layer is the main building block of ConvNet and comprised of a set of independent filters that convolved with the image independently at every layer
+- There are two common choices for padding the image in which the dimensionality is either increased or remains the same
+  - Valid pad (no padding):
+  - Same pad: the output size is the same as the input size
+- Strided Convolution: Another piece of the basic block of convolutions used in CNN is stride which is defined as the number of pixels shifted over the input matrix
+- Computing the output volume in general
+- Non Linearity (ReLU) Layer:
+  - In the deep neural network lesson, you learned how different activation functions such as tanh, sigmoid, and relu add non-linearity to the network. To add non-linearity to the ConvNet, relu is the activation function that most data scientists and ML engineers are using as the performance of this function is better than the other two
+
+3.2 POOLING LAYER
+- There are different types of pooling:
+  - Max Pooling
+  - Average Pooling
+  - Sum Pooling
+- Max pooling returns the largest element inside the window for each scanning location and you can similarly define layers for average pooling or minimum pooling, however, max pooling is the most commonly used pooling layer with the filter size of 2x2 and a stride of 2
+
+3.3 FULLY CONNECTED (FC) LAYER - CLASSIFICATION
+- in a fully connected layer, neurons have full connections to all activations from the previous layer
+
+4 LAYER PATTERNS
+- The most common pattern of a ConvNet architecture is stacking some CONVReLU layers, proceeding with POOL layers, and replicating this pattern until the image dimension changes to a smaller size
+Q: In order to classify an image with CNN, can you name the two parts of the learning algorithm?
+A: CNN has two parts: feature learning (Conv, Relu,and Pool) and classification (FC and softmax).
+
+4.1 AVAILABLE CNN ARCHITECTURES
+- LeNet
+- AlexNet
+- VGGNet
+- ResNet
